@@ -1,5 +1,6 @@
 <?php include('../includes/header.php'); ?>
-<title>journey</title>
+<title>Journey</title>
+<link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
 <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
 
 
