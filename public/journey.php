@@ -1,4 +1,8 @@
-<?php include('../includes/header.php'); ?>
+<?php
+include('../includes/header.php');
+include('../sql/connect.php');
+include('../includes/session.php');
+?>
 <title>Journey</title>
 <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
 <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
@@ -11,6 +15,25 @@
     </div>
 </div>
 <div class="navbar_space"></div>
+
+
+<?php
+$stm = $conn->prepare("SELECT * FROM locations");
+$stm->execute();
+$result = $stm->fetchAll(PDO::FETCH_ASSOC);
+foreach($result as $i)
+{echo "<div class='journey_base_div'>
+    <div class='journey_div'>
+    <div class='journey_img'>
+    <div class='journey_img_img' src='".$i['name']."'.png> alt='".$i['name']."'</div>
+    <div class='journey_txt'>
+    <p>".$i['text']."</p></div>
+    <div class='yourney_buttons'>
+    <a class='journey_buttons_link'><button class='journey_buttons_butn' href=\"product.php?product_id=".$i['ID']."\">boek</button></a>
+    </div></div></div>";}
+?>
+
+
 <div class="journey_base_div">
     <div class="journey_div">
         <div class="journey_img">
