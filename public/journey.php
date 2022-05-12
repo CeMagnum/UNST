@@ -1,6 +1,6 @@
 <?php
 include('../includes/header.php');
-// include('../sql/connect.php');
+include('../includes/connect.php');
 // include('../includes/session.php');
 ?>
 <title>Journey</title>
@@ -18,16 +18,16 @@ include('../includes/header.php');
 
 
 <?php
-$stm = $conn->prepare("SELECT * FROM locations");
+$stm = $conn->prepare("SELECT * FROM journeys");
 $stm->execute();
 $result = $stm->fetchAll(PDO::FETCH_ASSOC);
 foreach($result as $i)
 {echo "<div class='journey_base_div'>
     <div class='journey_div'>
     <div class='journey_img'>
-    <div class='journey_img_img' src='".$i['name']."'.png> alt='".$i['name']."'</div>
+    <div class='journey_img_img' src=\'../assets/img/planets/".$i['name']."\'.png> alt=\'".$i['name']."\'</div>
     <div class='journey_txt'>
-    <p>".$i['text']."</p></div>
+    <p>".$i['description']."</p></div>
     <div class='yourney_buttons'>
     <a class='journey_buttons_link'><button class='journey_buttons_butn' href=\"product.php?product_id=".$i['ID']."\">boek</button></a>
     </div></div></div>";}
