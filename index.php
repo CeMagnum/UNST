@@ -5,4 +5,4 @@
     <h1>Welcome to United Nations Space Travel</h1>
     <h2><a href="public/journey.php">Join the great journey!</a></h2>
 </body>
-<?php include("includes/footer.php") ?>
+</html>
