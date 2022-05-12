@@ -1,7 +1,7 @@
 <?php
 include('../includes/header.php');
-include('../sql/connect.php');
-include('../includes/session.php');
+// include('../sql/connect.php');
+// include('../includes/session.php');
 ?>
 <title>Journey</title>
 <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">

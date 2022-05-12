@@ -45,6 +45,18 @@
             </div>
         </div>
     </div>
-    <div calss="contact_buttonto_div"></div>
+    <div class="contact_link_div">
+        <div class="contact_link_section">
+            <a class="contact_link_link"><button class="contact_link_butn">link to email</button></a>
+        </div>
+        <div class="contact_link_section">
+            <a class="contact_link_link"><button class="contact_link_butn">link to idk simething to think about</button></a>
+        </div>
+        <div class="contact_link_section">
+            <a class="contact_link_link"><button class="contact_link_butn">link to external website</button></a>
+        </div>
+    </div>
+
+    <div class="contact_buttonto_div"></div>
 
 </html>
