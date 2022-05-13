@@ -6,15 +6,7 @@ include('../includes/connect.php');
 <title>Journey</title>
 <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
 <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
-
-
-<div class="navbar_main_div">
-    <div class="navbar_middle_div">
-        <a class="navbar_link" href="../index.php"><button class="navbar_butn">Home</button></a>
-        <a class="navbar_link" href=""><button class="navbar_butn">Plan your great journey</button></a>
-        <a class="navbar_link" href=""><button class="navbar_butn">log in</button></a>
-    </div>
-</div>
+<?php include("../includes/navbar.php")?>
 <div class="navbar_space"></div>
 
 
@@ -30,14 +22,14 @@ foreach($result as $i)
     <img class='journey_img_img' src='../assets/img/planets/".$i['name'].".png'></div>
     <div class='journey_txt'>
     <h1>".$i['name']."</h1>
-    <p>".$i['description']."</p></div>
-    <div class='yourney_buttons'>
-    <a class='journey_buttons_link'><button class='journey_buttons' href=\"product.php?product_id=".$i['ID']."\">boek</button></a>
+    <p>".$i['shortdescription']."</p></div>
+    <div class='journey_buttons'>
+    <a class='journey_buttons_link'><button class='journey_buttons_butn' href=\"book.php?product_id=".$i['ID']."\">Information</button></a>
     </div></div></div>";}
 ?>
 
 
-<div class="journey_base_div">
+<!-- <div class="journey_base_div">
     <div class="journey_div">
         <div class="journey_img">
             <img class="journey_img_img" src="../assets/img/planets/Planet Reach.png" alt="lol">
@@ -51,7 +43,7 @@ foreach($result as $i)
             <a class="journey_buttons_link"><button class="journey_buttons_butn">boek</button></a>
         </div>
     </div>
-</div>
+</div> -->
 
 <script src="../assets/js/backtotop.js"></script>
 <?php include('../includes/footer.php'); ?>
