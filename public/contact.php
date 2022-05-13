@@ -1,6 +1,5 @@
 <?php include('../includes/header.php'); ?>
 <?php include("../includes/navbar.php")?>
-<div class="navbar_space"></div>
 <div class="contact_main_div">
     <div class="contact_info_div">
         <div class="contact_info_txt_div">

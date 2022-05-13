@@ -6,3 +6,4 @@
         <a class="navbar_link" href="login.php"><button class="navbar_butn">log in</button></a>
     </div>
 </div>
+<div class="navbar_space"></div>

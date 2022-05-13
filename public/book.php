@@ -17,7 +17,6 @@ foreach($result as $i)
     <h1>".$i['name']."</h1>
     <p>".$i['description']."</p></div>
     <div class='journey_buttons'>
-    <a class='journey_buttons_link'><button class='journey_buttons_butn' href=\"book.php?product_id=".$i['ID']."\">Information</button></a>
     </div></div></div>
 ";}?>
 

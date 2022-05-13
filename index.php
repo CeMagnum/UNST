@@ -1,4 +1,7 @@
-<?php include("includes/header.php") ?>
+<?php
+include("includes/header.php");
+include("includes/connect.php")
+?>
 <link rel="stylesheet" href="./assets/css/style.css">
 <title>UNST Landing</title>
 <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
@@ -48,9 +51,35 @@
         </div>
     </div>
 </div>
-<div class
+<div class="home_carrousel">
+    <div class="slideshow-container">
+
+    <?php 
+    $stm = $conn->query("SELECT * FROM journeys");
+    $stm->execute();
+    $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+    foreach($result as $i)
+    {echo "
+        <div class='mySlides fade'>
+        <img class='img_slideshow' src='assets/img/planets/".$i['name'].".png'>
+        <div class='txt_slideshow'>".$i['shortdescription']."</div>
+        </div>
+    ";}?>
+    </div><br><div class="dot_container">
+    <?php foreach($result as $i)
+    {echo "<span class='dot'></span>";}?>
+    </div>
+</div>
+
+<div class="home_recenties_div">
+    <div class="recenties_txt_div">
+        <h1>Recenties van onze klanten</h1>
+        <p>onze klanten houden van de ruimte. want de ruimte is mooi met al die sterren enzovoort. je moet een weeten waar noble six zit lekker in mijn achtertuin.</p>
+    </div     
+</div>
+
     <h1>Welcome to United Nations Space Travel</h1>
     <h2><a href="public/journey.php">Join the great journey!</a></h2>
 </body>
-</html>
+<script src="./assets/js/carousel.js"></script>
 <?php include('includes/footer.php'); ?>
