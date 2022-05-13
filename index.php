@@ -38,19 +38,7 @@ include("includes/connect.php")
     </div>
 </div>
 <div class="home_journeys_div">
-    <div class="home_journey_card">
-        <div class="home_journey_img">
-            <img scr="plz boris fix dit">
-        </div>
-        <div class="home_journey_short">
-            <p>
-                lol
-            </p>
-        <div class="home_journey_visit">
-            <a href="dit moet naar de journey page en de planeet zelf"><button class="visit_butn">visit</button></a>
-        </div>
-    </div>
-</div>
+
 <div class="home_carrousel">
     <div class="slideshow-container">
 
@@ -61,8 +49,8 @@ include("includes/connect.php")
     foreach($result as $i)
     {echo "
         <div class='mySlides fade'>
-        <img class='img_slideshow' src='assets/img/planets/".$i['name'].".png'>
-        <div class='txt_slideshow'>".$i['shortdescription']."</div>
+        <a href=\"public/book.php?journey=".$i['planet']."\"><img class='img_slideshow' src='assets/img/planets/".$i['planet'].".png'></a>
+        <div class='txt_slideshow'>".$i['planet']."<br>".$i['shortdescription']."</div>
         </div>
     ";}?>
     </div><br><div class="dot_container">
@@ -75,11 +63,93 @@ include("includes/connect.php")
     <div class="recenties_txt_div">
         <h1>Recenties van onze klanten</h1>
         <p>onze klanten houden van de ruimte. want de ruimte is mooi met al die sterren enzovoort. je moet een weeten waar noble six zit lekker in mijn achtertuin.</p>
-    </div     
-</div>
+    </div>
 
-    <h1>Welcome to United Nations Space Travel</h1>
-    <h2><a href="public/journey.php">Join the great journey!</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+<div class="home_recentie_div">
+    <div class="recenties_div">
+        <div class="recenties_div_1">
+            <div class="recenties_div_2">
+                <div class="recenties_div_3">
+                    <div class="recentie_content">
+                        <div class="recentie_content_ster">
+                            <p>ster hier</P>
+                        </div>
+                        <div class="recentie_content_naam">
+                            <p>Naam hier</p>
+                        </div>
+                        
+                        <div class="recentie_content_plaats">
+                            <p>Plaats hier</p>
+                        </div>
+                        <div class="recentie_content_txt">
+                            <p>Tekst hier</p>
+                        </div>
+                    </div>
+                    <div class="recentie_content">
+                        <div class="recentie_content_ster">
+                            <p>ster hier</P>
+                        </div>
+                        <div class="recentie_content_naam">
+                            <p>Naam hier</p>
+                        </div>
+                        <div class="recentie_content_plaats">
+                            <p>Plaats hier</p>
+                        </div>
+                        <div class="recentie_content_txt">
+                            <p>Tekst hier</p>
+                        </div>
+                    </div>
+                    <div class="recentie_content">
+                        <div class="recentie_content_ster">
+                            <p>ster hier</P>
+                           
+                        </div>
+                        <div class="recentie_content_naam">
+                            <p>Naam hier</p>
+                        </div>
+                        
+                        <div class="recentie_content_plaats">
+                            <p>Plaats hier</p>
+                        </div>
+                        <div class="recentie_content_txt">
+                            <p>Tekst hier</p>
+                        </div>
+                        
+                    </div>
+                    <div class="recentie_content">
+                        <div class="recentie_content_ster">
+                            <p>ster hier</P>
+                        </div>
+                        <div class="recentie_content_naam">
+                            <p>Naam hier</p>
+                        </div> 
+                        
+                        <div class="recentie_content_plaats">
+                            <p>Plaats hier</p>
+                        </div>
+                        <div class="recentie_content_txt">
+                            <p>Tekst hier</p>
+                        </div>
+                       
+                    </div>
+                </div>   
+            </div>   
+        </div>
+</div>
+   
+</div>     
+</div>
 </body>
 <script src="./assets/js/carousel.js"></script>
 <?php include('includes/footer.php'); ?>

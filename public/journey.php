@@ -16,12 +16,12 @@ foreach($result as $i)
     <div class='journey_div'>
     <div class='journey_img'>
     <div class='aspect_div'>
-    <img class='journey_img_img' src='../assets/img/planets/".$i['name'].".png'></div></div>
+    <img class='journey_img_img' src='../assets/img/planets/".$i['planet'].".png'></div></div>
     <div class='journey_txt'>
-    <h1>".$i['name']."</h1>
+    <h1>".$i['planet']."</h1>
     <p>".$i['shortdescription']."</p></div>
     <div class='journey_buttons'>
-    <a class='journey_buttons_link' href=\"book.php?product_id=".$i['ID']."\"><button class='journey_buttons_butn'>Information</button></a>
+    <a class='journey_buttons_link' href=\"book.php?journey=".$i['planet']."\"><button class='journey_buttons_butn'>Information</button></a>
     </div></div></div>";}
 ?>
 
