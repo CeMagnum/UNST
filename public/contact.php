@@ -2,6 +2,7 @@
 <div class="navbar_main_div">
     <div class="navbar_middle_div">
         <a class="navbar_link" href="../index.php"><button class="navbar_butn">Home</button></a>
+        <a class="navbar_link" href=""><button class="navbar_butn">Plan your great journey</button></a>
         <a class="navbar_link" href=""><button class="navbar_butn">log in</button></a>
     </div>
 </div>
