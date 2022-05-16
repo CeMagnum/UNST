@@ -6,7 +6,7 @@
           <p>Log in</p>
         </div>
         <div class="loggin_form">
-          <form class="loggin_log" action="phpmethods/login.php" method="post"> 
+          <form class="loggin_log" action="../includes/login.php" method="post"> 
             <label for="name">Naam:</label><br>
             <input type="text" id="name" name="fname"><br>
             <label for="pass">Wachtwoord:</label><br>
