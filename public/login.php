@@ -8,18 +8,14 @@
         <div class="loggin_form">
           <form class="loggin_log" action="../includes/login.php" method="post"> 
             <label for="name">Naam:</label><br>
-            <input type="text" id="name" name="fname"><br>
+            <input type="text" id="name" autocomplete="off"><br>
             <label for="pass">Wachtwoord:</label><br>
-            <input type="password" id="pass" name="Lname"><br>
-            <input type="submit" name="login" value="Login">
+            <input type="password" id="pass" autocomplete="off"><br>
+            <input type="submit" id="button" name="login" value="Login">
           </form>  
       </div>
     </div>
 </div>
-    <?php
-        if (isset($_POST["sub"])){
-        echo $_POST["fname"], $_POST["Lname"], $_POST["age"]; 
-        }
-    ?> 
-  </body>
+<!-- <script src="../assets/js/fieldvalidation.js"></script> -->
+</body>
 </html>

@@ -34,13 +34,13 @@
   </div>
   <div class="contact_link_div">
     <div class="contact_link_section">
-      <a class="contact_link_link"
-        ><button class="contact_link_butn">link to email</button></a
+      <a class="contact_link_link" href="mailto:mail@pornhub.com">
+          <button class="contact_link_butn">link to email</button></a
       >
     </div>
     <div class="contact_link_section">
-      <a class="contact_link_link"
-        ><button class="contact_link_butn">
+      <a class="contact_link_link">
+          <button class="contact_link_butn">
           link to idk simething to think about
         </button></a
       >
