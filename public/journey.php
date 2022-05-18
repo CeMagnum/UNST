@@ -12,7 +12,7 @@ $stm = $conn->query("SELECT * FROM journeys");
 $stm->execute();
 $result = $stm->fetchAll(PDO::FETCH_ASSOC);
 foreach($result as $i)
-{echo "<div class='journey_base_div'>
+{echo "<div class='journey_base_div' id='".$i['planet']."'>
     <div class='journey_div'>
     <div class='journey_img'>
     <div class='aspect_div'>
