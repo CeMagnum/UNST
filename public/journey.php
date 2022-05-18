@@ -14,11 +14,11 @@ include('../includes/connect.php');
 <?php   
     if (isset($_GET['search'])){
     $search = '%'.$_GET['search'].'%';
-    $sql = "SELECT * FROM journeys WHERE planet LIKE :search";
+    $sql = "SELECT * FROM journeys WHERE planet LIKE :search ORDER BY planet ASC";
     $stm = $conn->prepare($sql);
     $stm->bindParam(":search", $search);
   } else {
-    $sql = "SELECT * FROM journeys";
+    $sql = "SELECT * FROM journeys ORDER BY planet ASC";
     $stm = $conn->prepare($sql);
   }
     $stm->execute();
@@ -42,4 +42,4 @@ include('../includes/connect.php');
 ?>
 
 <script src="../assets/js/backtotop.js"></script>
-<?php include('../includes/footer.php'); ?>
+</html>

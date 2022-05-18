@@ -43,7 +43,7 @@ include("includes/connect.php")
     <div class="slideshow-container">
 
     <?php 
-    $stm = $conn->query("SELECT * FROM journeys");
+    $stm = $conn->query("SELECT * FROM journeys ORDER BY RAND()");
     $stm->execute();
     $result = $stm->fetchAll(PDO::FETCH_ASSOC);
     foreach($result as $i)
@@ -65,89 +65,33 @@ include("includes/connect.php")
         <p>onze klanten houden van de ruimte. want de ruimte is mooi met al die sterren enzovoort. je moet een weeten waar noble six zit lekker in mijn achtertuin.</p>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
 <div class="home_recentie_div">
     <div class="recenties_div">
         <div class="recenties_div_1">
             <div class="recenties_div_2">
                 <div class="recenties_div_3">
-                    <div class="recentie_content">
-                        <div class="recentie_content_ster">
-                            <p>ster hier</P>
-                        </div>
-                        <div class="recentie_content_naam">
-                            <p>Naam hier</p>
-                        </div>
-                        
-                        <div class="recentie_content_plaats">
-                            <p>Plaats hier</p>
-                        </div>
-                        <div class="recentie_content_txt">
-                            <p>Tekst hier</p>
-                        </div>
-                    </div>
-                    <div class="recentie_content">
-                        <div class="recentie_content_ster">
-                            <p>ster hier</P>
-                        </div>
-                        <div class="recentie_content_naam">
-                            <p>Naam hier</p>
-                        </div>
-                        <div class="recentie_content_plaats">
-                            <p>Plaats hier</p>
-                        </div>
-                        <div class="recentie_content_txt">
-                            <p>Tekst hier</p>
-                        </div>
-                    </div>
-                    <div class="recentie_content">
-                        <div class="recentie_content_ster">
-                            <p>ster hier</P>
-                           
-                        </div>
-                        <div class="recentie_content_naam">
-                            <p>Naam hier</p>
-                        </div>
-                        
-                        <div class="recentie_content_plaats">
-                            <p>Plaats hier</p>
-                        </div>
-                        <div class="recentie_content_txt">
-                            <p>Tekst hier</p>
-                        </div>
-                        
-                    </div>
-                    <div class="recentie_content">
-                        <div class="recentie_content_ster">
-                            <p>ster hier</P>
-                        </div>
-                        <div class="recentie_content_naam">
-                            <p>Naam hier</p>
-                        </div> 
-                        
-                        <div class="recentie_content_plaats">
-                            <p>Plaats hier</p>
-                        </div>
-                        <div class="recentie_content_txt">
-                            <p>Tekst hier</p>
-                        </div>
-                       
-                    </div>
+                <?php $blem = $conn->prepare("SELECT * FROM reviews ORDER BY RAND()");
+                    $blem->execute();
+                    $result = $blem->fetchAll(PDO::FETCH_ASSOC);
+                    foreach($result as $i)
+                    {echo "
+                    <div class='recentie_content'>
+                    <div class='recentie_content_naam'>
+                    <p>".$i['username']."</p></div>
+                    <div class='recentie_content_plaats'><p>".$i['planet']."</p></div>
+                    <div class='recentie_content_txt'>
+                    <p>".$i['text']."</p></div>
+                    <div class='recentie_content_ster'>
+                    <p>".$i['stars']." stars</p>
+                    </div></div>";}?>
                 </div>   
             </div>   
         </div>
+    </div>
 </div>
    
+
+
 </div>     
 </div>
 </body>
