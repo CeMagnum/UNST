@@ -26,23 +26,86 @@
       <div class="base_txt">
         <p class="txt_1">
           welcome to tekst 1 there is supposed to be a lot of tekst here so i
-          can tekst better
+          can test the tekst better
         </p>
-        <p class="txt_2">welcome to tekst 2</p>
-        <p class="txt_3">welcome to tekst 3</p>
-        <p class="txt_4">welcome to tekst 4</p>
-        <p class="txt_5">welcome to tekst 5</p>
-        <p class="txt_6">welcome to tekst 6</p>
+        <p class="txt_2">
+          welcome to tekst 2 there is supposed to be a lot of tekst here so i
+          can test the tekst better
+        </p>
+        <p class="txt_3">
+          welcome to tekst 3 there is supposed to be a lot of tekst here so i
+          can test the tekst better
+        </p>
+        <p class="txt_4">
+          welcome to tekst 4 there is supposed to be a lot of tekst here so i
+          can test the tekst better
+        </p>
+        <p class="txt_5">
+          welcome to tekst 5 there is supposed to be a lot of tekst here so i
+          can test the tekst better
+        </p>
+        <p class="txt_6">
+          welcome to tekst 6 there is supposed to be a lot of tekst here so i
+          can test the tekst better
+        </p>
       </div>
       <div class="base_button">
-        <button class="base_header_butn">headertext</button>
         <button class="base_1_butn">insert tekst</button>
         <button class="base_2_butn">insert tekst</button>
         <button class="base_3_butn">insert tekst</button>
         <button class="base_4_butn">insert tekst</button>
+        <button class="base_5_butn">insert tekst</button>
+        <button class="base_header_butn">insert header</button>
       </div>
-      <div class="base_header"></div>
-      <div class="base_footer"></div>
+      <div class="base_header">
+        <div class="navbar_main_div">
+          <div class="navbar_logo">
+            <img src="../assets/img/UNSC_Logo_White.svg" alt="logo" />
+          </div>
+          <div class="navbar_middle_div">
+            <a class="navbar_link" href="../index.php"
+              ><button class="navbar_butn">Home</button></a
+            >
+            <a class="navbar_link" href="journey.php"
+              ><button class="navbar_butn">great journey</button></a
+            >
+            <a class="navbar_link" href="contact.php"
+              ><button class="navbar_butn">Contact</button></a
+            >
+            <a class="navbar_link" href="login.php"
+              ><button class="navbar_butn">log in</button></a
+            >
+          </div>
+        </div>
+        <div class="navbar_space"></div>
+      </div>
+      <div class="base_footer">
+        <footer class="foot_div">
+          <!-- Ik wil ook een footer ik ben ook een klant. Neem contact op
+          <a class="navbar_link" href="../public/contact.php">Contact</a> -->
+          <div class="footer_left">
+            <img src="../assets/img/vehicles/Frigate.png" alt="Frigate" />
+            <img src="../assets/img/vehicles/Pelican.png" alt="Pelican" />
+          </div>
+          <div class="footer_rigt">
+            <div class="footer_list">
+              <div class="footer_item"></div>
+              <br class="footer_br" />
+              <div class="footer_item"></div>
+            </div>
+            <div class="footer_list">
+              <div class="footer_item"></div>
+              <br class="footer_br" />
+              <div class="footer_item"></div>
+            </div>
+            <div class="footer_list">
+              <div class="footer_item"></div>
+              <br class="footer_br" />
+              <div class="footer_item"></div>
+            </div>
+          </div>
+        </footer>
+      </div>
       <div class="base_color">
         <div class="color_1"></div>
         <div class="color_2"></div>
@@ -58,7 +121,7 @@
       </div>
       <div class="base_search"></div>
     </div>
-
+    <script src="../assets/js/scrollfunciton.js"></script>
     <?php include('includes/footer.php'); ?>
   </body>
 </html>
