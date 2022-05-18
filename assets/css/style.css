@@ -5,6 +5,19 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --lightgrey: #77776b;
+  --gery: #4d4d4d;
+  --darkgrey: #2e2e2e;
+  --darkgreen: #2d5034;
+  --red: #9e3434;
+  --white: #f3f3f3;
+  --purewhite: #ffffff;
+  --lightgreen: #33bb77;
+  --darkpurple: #772846;
+  --gery: #ffffff;
+}
+
 body {
   background-color: plum;
 }
@@ -564,6 +577,123 @@ footer {
   width: 400px;
   height: 400px;
   object-fit: cover;
+}
+
+/* base page */
+.base_div {
+  width: 100%;
+  height: auto;
+  min-height: 1000px;
+  background-color: #2e2e2e;
+}
+
+.base_title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.title_1 {
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+  font-size: 100px;
+}
+.title_2 {
+  font-family: "Rajdhani", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 100px;
+  letter-spacing: -4px;
+  font-weight: -10;
+  text-transform: uppercase;
+}
+.title_3 {
+  font-family: "Quicksand", sans-serif;
+  color: #717171;
+  font-size: 100px;
+  letter-spacing: 1px;
+  font-weight: 10;
+  text-transform: capitalize;
+}
+.title_4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 100px;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+.title_5 {
+}
+.title_6 {
+}
+
+.base_txt {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.base_button {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.base_header {
+}
+.base_footer {
+}
+.base_color {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.base_color div {
+  width: 300px;
+  height: 300px;
+}
+.color_1 {
+  background-color: #2e2e2e;
+  border: white 2px;
+}
+.color_2 {
+  background-color: #4d4d4d;
+}
+.color_3 {
+  background-color: #4d4d4d;
+}
+.color_4 {
+  background-color: #77776b;
+}
+.color_5 {
+  background-color: #2d5034;
+}
+.color_6 {
+  background-color: #9e3434;
+}
+.color_7 {
+  background-color: #33bb77;
+}
+.color_8 {
+  background-color: #368144;
+}
+.color_9 {
+  background-color: #b3b038;
+}
+.color_10 {
+  background-color: #772846;
+}
+.color_11 {
+  background-color: #af3aaf;
 }
 
 /* js css ----------------------------------------------------------- */

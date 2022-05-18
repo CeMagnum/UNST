@@ -16,11 +16,12 @@ include("includes/connect.php")
 </div>
 <div class="navbar_space"></div>
 <div class="home_landing_title">
-   <h1>Welcome to United Nations Travels</h1>
+   <h1>Welcome to United Nations Travels</h1> 
     <p>
         We are very pleased for picking our flight industry. We know that we are one of fewe so we try to get you to the best places as save as possible
         we have verry good transportation.
     </p> 
+    <a href="private/base.php">private</a>
 </div>
 <div class="space_medium"></div>
 <div class="home_info_div">
