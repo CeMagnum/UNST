@@ -5,9 +5,24 @@ include('../includes/connect.php');
 <title>Journey</title>
 <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
 <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
-<?php include("../includes/navbar.php");
+<?php include("../includes/navbar.php");?>
+<form class="nav_form" method="post" action="#">
+<input class="nav_bar" type="text" placeholder="Find your great journey" name="search"></form> 
+<?php
 
-// $stm = $conn->prepare("SELECT * FROM journeys");
+if (!empty($_POST)){
+    $search = '%'.$_POST['search'].'%';
+    $sql = "SELECT * FROM menu WHERE Naam LIKE :search AND Type = :typ";
+    $stm = $pdo->prepare($sql);
+    $stm->bindParam(":search", $search);  
+    $stm->bindParam(":typ", $category);  
+   
+  } else {
+    $sql = "SELECT * FROM menu WHERE Type = :typ";
+    $stm = $pdo->prepare($sql);
+    $stm->bindParam(":typ", $category);  
+}
+
 $stm = $conn->query("SELECT * FROM journeys");
 $stm->execute();
 $result = $stm->fetchAll(PDO::FETCH_ASSOC);
