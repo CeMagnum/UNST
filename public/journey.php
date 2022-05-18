@@ -7,12 +7,11 @@ include('../includes/connect.php');
 <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
 <?php include("../includes/navbar.php");?>
 
-<form class="nav_form" method="get" action="#">
-    <input class="nav_bar" type="text" placeholder="Find your great journey" name="search">
+<form class="nav_form" method="get">
+    <input type="text" placeholder="Find your great journey" name="search">
 </form>
 
 <?php   
-
     if (isset($_GET['search'])){
     $search = '%'.$_GET['search'].'%';
     $sql = "SELECT * FROM journeys WHERE planet LIKE :search";
