@@ -71,7 +71,7 @@ include("includes/connect.php");
         <div class="recenties_div_1">
             <div class="recenties_div_2">
                 <div class="recenties_div_3">
-                <?php $blem = $conn->prepare("SELECT * FROM reviews ORDER BY RAND()");
+                <?php $blem = $conn->prepare("SELECT * FROM reviews WHERE curated = 2 ORDER BY RAND()");
                     $blem->execute();
                     $result = $blem->fetchAll(PDO::FETCH_ASSOC);
                     foreach($result as $i)
@@ -83,7 +83,7 @@ include("includes/connect.php");
                     <div class='recentie_content_txt'>
                     <p>".$i['text']."</p></div>
                     <div class='recentie_content_ster'>
-                    <p>".$i['stars']." stars</p>
+                    <p>".str_repeat('⭐', $i['stars'])."</p>
                     </div></div>";}?>
                 </div>   
             </div>   

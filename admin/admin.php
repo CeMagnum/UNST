@@ -45,7 +45,7 @@
     </div>
     </div>
     <div id="b">
-        <div id="d">Insert
+        <div id="d">Insert⭐
         <form method="post" action="../functions/insert.php">
             <input type="text" name="planet" placeholder="Planet name">
             <!-- <input type="text" name="img" placeholder="Image"> -->
