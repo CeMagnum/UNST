@@ -36,9 +36,17 @@
     {echo "<div class='c'><h1>".$i['planet']."\n</h1>
         <img src='../assets/img/planets/".$i['planet'].".png'>
         <p>".$i['shortdescription']."</p>
-        <div><a><button>edit</button></a><a><button>delete</button></a></div>
+        <div><a><button>edit</button></a>
+        
+        <form action='../functions/delete.php' method='POST'>
+            <input class='invisible' type='text' value=\"".$i['planet']."\" name='product_name'/>
+            <button type='submit' name='deleteitem' value='delete item'>Delete</button>
+        </form>
+        
+        </div>
         </div><br><hr><br>";}?>
     
     </div>
+
 </body>
 </html>
