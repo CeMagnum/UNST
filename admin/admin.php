@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../assets/css/admin.css">
     <title>Admin</title>
 </head>
-    <?php include('admin_session.php'); 
+    <?php 
+    // include('admin_session.php'); 
         include('../includes/connect.php');
     ?>
 

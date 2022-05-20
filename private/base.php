@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="../assets/css/base.css" />
     <title>Document</title>
   </head>
-  <?php include('user_session.php'); ?>
+  <?php 
+  // include('user_session.php'); 
+  ?>
   <body>
     <div class="base_div">
       <div class="base_title">
