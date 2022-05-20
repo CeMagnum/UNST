@@ -84,27 +84,24 @@
       </div>
       <div class="base_footer">
         <footer class="foot_div">
-          <!-- Ik wil ook een footer ik ben ook een klant. Neem contact op
-          <a class="navbar_link" href="../public/contact.php">Contact</a> -->
           <div class="footer_left">
-            <img src="../assets/img/vehicles/Frigate.png" alt="Frigate" />
             <img src="../assets/img/vehicles/Pelican.png" alt="Pelican" />
           </div>
-          <div class="footer_rigt">
+          <div class="footer_right">
             <div class="footer_list">
-              <div class="footer_item"></div>
-              <br class="footer_br" />
-              <div class="footer_item"></div>
+              <p>Home</p>
+              <hr class="footer_br" />
+              <p>locations</p>
             </div>
             <div class="footer_list">
-              <div class="footer_item"></div>
-              <br class="footer_br" />
-              <div class="footer_item"></div>
+              <p>Contact</p>
+              <hr class="footer_br" />
+              <p>email</p>
             </div>
             <div class="footer_list">
-              <div class="footer_item"></div>
-              <br class="footer_br" />
-              <div class="footer_item"></div>
+              <p>journey</p>
+              <hr class="footer_br" />
+              <p>recenties</p>
             </div>
           </div>
         </footer>
