@@ -1,6 +1,6 @@
 <?php
 include("includes/header.php");
-include("includes/connect.php")
+include("includes/connect.php");
 ?>
 <link rel="stylesheet" href="./assets/css/style.css">
 <title>UNST Landing</title>
