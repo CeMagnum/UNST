@@ -1,20 +1,14 @@
 <?php
 include("includes/header.php");
-include("includes/connect.php")
+include("includes/connect.php");
 ?>
 <link rel="stylesheet" href="./assets/css/style.css">
 <title>UNST Landing</title>
 <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
 <body>
-<div class="navbar_main_div">
-    <div class="navbar_middle_div">
-        <a class="navbar_link" href="index.php"><button class="navbar_butn">Home</button></a>
-        <a class="navbar_link" href="public/journey.php"><button class="navbar_butn">Plan your great journey</button></a>
-        <a class="navbar_link" href="public/contact.php"><button class="navbar_butn">Contact</button></a>
-        <a class="navbar_link" href="public/login.php"><button class="navbar_butn">log in</button></a>
-    </div>
-</div>
-<div class="navbar_space"></div>
+    <?php
+    include("includes/navbar_index.php");
+    ?>
 <div class="home_landing_title">
    <h1>Welcome to United Nations Travels</h1> 
     <p>
@@ -65,7 +59,7 @@ include("includes/connect.php")
         <h1>Recenties van onze klanten</h1>
         <p>onze klanten houden van de ruimte. want de ruimte is mooi met al die sterren enzovoort. je moet een weeten waar noble six zit lekker in mijn achtertuin.</p>
     </div>
-
+</div>
 <div class="home_recentie_div">
     <div class="recenties_div">
         <div class="recenties_div_1">
@@ -90,11 +84,10 @@ include("includes/connect.php")
         </div>
     </div>
 </div>
-   
-
-
+</div>
+</div>
 </div>     
 </div>
 </body>
 <script src="./assets/js/carousel.js"></script>
-<?php include('includes/footer.php'); ?>
+<?php include('includes/footer_index.php'); ?>

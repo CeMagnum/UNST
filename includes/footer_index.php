@@ -1,6 +1,6 @@
 <footer class="foot_div">
     <div class="footer_left">
-    <img src="../assets/img/vehicles/Pelican.png" alt="Pelican" />
+    <img src="./assets/img/vehicles/Pelican.png" alt="Pelican" />
     </div>
     <div class="footer_right">
     <div class="footer_list">
