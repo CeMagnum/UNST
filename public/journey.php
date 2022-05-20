@@ -31,7 +31,6 @@ include('../includes/connect.php');
   }
     $stm->execute();
     $result = $stm->fetchAll(PDO::FETCH_ASSOC);
-    
     foreach($result as $i)
     {echo "
         <div class='journey_base_div' id='".$i['planet']."'>
@@ -46,7 +45,7 @@ include('../includes/connect.php');
         <a class='journey_buttons_link' href=\"book.php?journey=".$i['planet']."\"><button class='journey_buttons_butn'>Information</button></a>
         </div></div></div>";}
 
-include('../includes/footer_index.php');
+include('../includes/footer.php');
 ?>
 
 <script src="../assets/js/backtotop.js"></script>
