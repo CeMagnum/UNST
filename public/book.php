@@ -15,7 +15,7 @@ foreach($result as $i)
     <img class='journey_img_img' src='../assets/img/planets/".$i['planet'].".png'></div>
     <div class='journey_txt'>
     <h1>".$i['planet']."</h1>
-    <p>".$i['description']."</p></div>
+    <p>".$i['longdescription']."</p></div>
     <div class='journey_buttons'>
     </div></div></div>
 ";}?>

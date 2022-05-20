@@ -14,11 +14,11 @@
 
     
 <body>
-    <div class="adminpanel" id="a"><h2>Logged in as admin.</h2><a href="../includes/logout.php"><h4>Logout</h4></a></div>
+    <div class="adminpanel" id="a"><h2>Logged in as admin.</h2><a href="../functions/logout.php"><h4>Logout</h4></a></div>
     <div class="adminpanel" id="b">
-    <div class="home_recentie_div">
-        <div class="recenties_div_1">
-            <div class="recenties_div_2">
+    <div class="hrd" id="a">
+        <div class="rd1">
+            <div class="rd2">
     <?php
     if (isset($_GET['search'])){
     $search = '%'.$_GET['search'].'%';
@@ -37,16 +37,28 @@
         <img src='../assets/img/planets/".$i['planet'].".png'>
         <p>".$i['shortdescription']."</p>
         <div><a><button>edit</button></a>
-        
         <form action='../functions/delete.php' method='POST'>
             <input class='invisible' type='text' value=\"".$i['planet']."\" name='product_name'/>
             <button type='submit' name='deleteitem' value='delete item'>Delete</button>
-        </form>
-        
-        </div>
-        </div><br><hr><br>";}?>
-    
+        </form></div></div><br><hr><br>";}?>
     </div>
-
+    </div>
+    </div>
+    <div id="b">
+        <div id="d">Insert⭐
+        <form method="post" action="../functions/insert.php">
+            <input type="text" name="planet" placeholder="Planet name">
+            <!-- <input type="text" name="img" placeholder="Image"> -->
+            <input type="text" name="shortdescription" placeholder="Short description">
+            <input type="text" name="longdescription" placeholder="Long description">
+            <input type="text" name="price" placeholder="Price">
+            <input type="submit" value="send" name="bttn">
+        </form>
+        </div>
+        <!-- <div id="d">?</div>
+        <div id="d">?</div> -->
+    </div>
+    </div>
+    </div>
 </body>
 </html>
