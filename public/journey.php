@@ -6,10 +6,18 @@ include('../includes/connect.php');
 <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
 <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
 <?php include("../includes/navbar.php");?>
-
-<form class="nav_form" method="get">
+<div class="journey_search_div">
+  <h1>
+      Search your journey!
+  </h1>
+  <p>
+      We here at the united nation space travels wouold like to take you on your great Journey
+  </p>
+  <form class="nav_form" method="get">
     <input type="text" placeholder="Find your great journey" name="search">
 </form>
+</div>
+
 
 <?php   
     if (isset($_GET['search'])){
@@ -38,7 +46,7 @@ include('../includes/connect.php');
         <a class='journey_buttons_link' href=\"book.php?journey=".$i['planet']."\"><button class='journey_buttons_butn'>Information</button></a>
         </div></div></div>";}
 
-
+include('../includes/footer_index.php');
 ?>
 
 <script src="../assets/js/backtotop.js"></script>
