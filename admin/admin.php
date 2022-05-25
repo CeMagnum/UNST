@@ -47,30 +47,29 @@
     <div id="b">
         <div id="d">Insert⭐
         <form method="post" action="insert.php">
+            <input type="text" name="price" placeholder="Price">
             <input type="text" name="planet" placeholder="Planet name">
             <!-- <input type="text" name="img" placeholder="Image"> -->
             <input type="text" name="shortdescription" placeholder="Short description">
             <input type="text" name="longdescription" placeholder="Long description">
-            <input type="text" name="price" placeholder="Price">
             <input type="submit" value="send" name="bttn">
-        </form>
-        <?php 
-        $mts = $conn->prepare("SELECT * FROM journeys WHERE planet_id = :planet_id");
-        $mts->bindParam(":planet_id", $_GET['planet_id'], PDO::PARAM_INT);
-        $mts->execute();
-        $result = $mts->fetchAll(PDO::FETCH_ASSOC);
-        foreach($result as $i)
-        {echo "
-            <div>
-            <div>
-            <div>
-            <img class='journey_img_img' src='../assets/img/planets/".$i['planet'].".png'></div>
-            <div class='journey_txt'>
-            <h1>".$i['planet']."</h1>
-            <p>".$i['longdescription']."</p></div>
-            <div class='journey_buttons'>
-            </div></div></div>
-        ";}?>
+        </form><br><br>
+        <?php //EDIT
+            $sql = "SELECT * FROM journeys WHERE planet_id = :planet_id";
+            $stm = $conn->prepare($sql);
+            $stm->bindParam(":planet_id", $_GET['planet_id'], PDO::PARAM_STR);
+            $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+            foreach($result as $i)
+            {echo "<div><h2>".$i['price']."<h2><br>".$i['planet']."<br><img src=\"../assets/img/planets/".$i['planet']."\" alt='".$i['shortdescription']."' /><br>".$i['longdescription']."</div>";}?>
+
+            <form method="POST" action="edit.php">
+                <input type="text" name="price" placeholder="Price" value="<?php echo $i['price']?>">
+                <input type="text" name="planet" placeechholder="Planet and image name" value="<?php echo $i['planet']?>">
+                <input type="text" name="description"  placeholder="Short description" value="<?php echo $i['shortdescription']?>">
+                <input type="text" name="description"  placeholder="Long descrtiption" value="<?php echo $i['longdescription']?>">
+                <input class="invisible" type="text" value="<?php echo $_GET['planet_id']?>" name="planet_id" />
+                <button type="submit" name="editItem" value="Edit item">Push edit</button>
+            </form>
         </div>
         <!-- <div id="d">?</div>
         <div id="d">?</div> -->
