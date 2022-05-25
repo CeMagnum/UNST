@@ -4,7 +4,7 @@
     box-sizing:         border-box;
     scroll-behavior:    smooth;
     flex-wrap: wrap;
-    font-family: 'Courier New', monospace;
+    font-family: Arial, sans-serif;
     text-decoration: none;
     color: black;
 }
@@ -23,12 +23,17 @@ body {
     background-color: white;
 }
 
+.invisible {
+    display: none;
+}
+
 img{
     max-width: 10em;
     max-height: 10em;
     min-width: 10em;
     min-height: 10em;
     object-fit: cover;
+    background-color: black;
 }
 
 #a {
@@ -36,6 +41,8 @@ img{
 }
 #b {
     width: 73%;
+    display: flex;
+    flex-direction: row;
 }
 
 .c {
@@ -44,7 +51,15 @@ img{
     width: 45%;
 }
 
-.home_recentie_div {
+#d {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.hrd {
     width: 100%;
     height: 100%;
     display: flex;
@@ -52,12 +67,12 @@ img{
     align-items: center;
   }
 
-.recenties_div_1 {
+.rd1 {
     height: 90vh;
     position: relative;
     }
 
-.recenties_div_2 {
+.rd2 {
     max-height: 100%;
     overflow: auto;
     overflow-y: none;

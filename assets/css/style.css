@@ -27,6 +27,7 @@
 body {
   background-color: var(--bluegrey);
 }
+
 /* navbar */
 
 .navbar_main_div {
@@ -416,6 +417,8 @@ body {
 
 .journey_img_img {
   height: 90%;
+  background-color: black;
+  border-radius: 10px;
 }
 
 .journey_txt {

@@ -1,6 +1,6 @@
 <div class="navbar_main_div">
     <div class="navbar_logo">
-        <img src="../assets/img/UNSC_Logo_White.svg" alt="logo" />
+        <a href="../index.php"><img src="../assets/img/UNSC_Logo_White.svg" alt="logo" /></a>
     </div>
     <div class="navbar_middle_div">
     <a class="navbar_link" href="../index.php">

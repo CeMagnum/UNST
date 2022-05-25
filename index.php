@@ -6,9 +6,26 @@ include("includes/connect.php");
 <title>UNST Landing</title>
 <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
 <body>
-    <?php
-    include("includes/navbar_index.php");
-    ?>
+    <div class="navbar_main_div">
+        <div class="navbar_logo">
+            <img src="./assets/img/UNSC_Logo_White.svg" alt="logo" />
+        </div>
+        <div class="navbar_middle_div">
+            <a class="navbar_link" href="index.php">
+            <button class="navbar_butn">Home</button>
+            </a>
+            <a class="navbar_link" href="./public/journey.php ">
+            <button class="navbar_butn">great journey</button>
+            </a>
+            <a class="navbar_link" href="./public/contact.php">
+            <button class="navbar_butn">Contact</button>
+            </a>
+            <a class="navbar_link" href="login.php">
+            <button class="navbar_butn">log in</button>
+            </a>
+        </div>
+    </div>
+<div class="navbar_space"></div>
 <div class="home_landing_title">
    <h1>Welcome to United Nations Travels</h1> 
     <p>
@@ -65,7 +82,7 @@ include("includes/connect.php");
         <div class="recenties_div_1">
             <div class="recenties_div_2">
                 <div class="recenties_div_3">
-                <?php $blem = $conn->prepare("SELECT * FROM reviews ORDER BY RAND()");
+                <?php $blem = $conn->prepare("SELECT * FROM reviews WHERE curated = 2 ORDER BY RAND()");
                     $blem->execute();
                     $result = $blem->fetchAll(PDO::FETCH_ASSOC);
                     foreach($result as $i)
@@ -77,7 +94,7 @@ include("includes/connect.php");
                     <div class='recentie_content_txt'>
                     <p>".$i['text']."</p></div>
                     <div class='recentie_content_ster'>
-                    <p>".$i['stars']." stars</p>
+                    <p>".str_repeat('⭐', $i['stars'])."</p>
                     </div></div>";}?>
                 </div>   
             </div>   
@@ -88,6 +105,33 @@ include("includes/connect.php");
 </div>
 </div>     
 </div>
-</body>
 <script src="./assets/js/carousel.js"></script>
-<?php include('includes/footer_index.php'); ?>
+<footer class="foot_div">
+    <div class="footer_left">
+    <img src="./assets/img/vehicles/Pelican.png" alt="Pelican" />
+    </div>
+    <div class="footer_right">
+    <div class="footer_list">
+        <a href="../index.php"><p>Home</p></a>
+        <hr class="footer_hr" />
+        <a href="../index.php"><p>recenties</p></a>
+        <a href="../index.php"><p>top locatiets</p></a>
+    </div>
+    <div class="footer_list">
+        <a href="../public/contact.php"><p>Contact</p></a>
+        <hr class="footer_hr" />
+        <a href="../public/contact.php"><p>Contact</p></a>
+        <a href="../public/contact.php"><p>Contact</p></a>
+        <a href="../public/contact.php"><p>Contact</p></a>
+    </div>
+    <div class="footer_list">
+        <a href="../public/journey.php"><p>journey</p></a>
+        <hr class="footer_hr" />
+        <a href="../public/journey.php"><p>journey</p></a>
+        <a href="../public/journey.php"><p>journey</p></a>
+        <a href="../public/journey.php"><p>journey</p></a>
+        <a href="../public/journey.php"><p>journey</p></a>
+    </div>
+    </div>
+</body>
+</footer></html>
