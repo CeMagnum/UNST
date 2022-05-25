@@ -356,8 +356,6 @@ body {
 /* great journey */
 
 .journey_base_div {
-  /* background-color: rgb(160, 160, 160); */
-  background-image: linear-gradient(#fe667d, #ffa375);
   width: 100%;
   height: auto;
 }
@@ -386,25 +384,27 @@ body {
   color: var(--white);
 }
 
-.nav_form input[style="text"] {
-  width: 400px;
-  height: 20px;
+.nav_form input[type="text"] {
+  width: 450px;
+  height: 40px;
   padding: 2px;
   border-radius: 30px;
   background-color: var(--white);
   color: var(--black);
+  border: none;
+  box-shadow: 0px 6px 9px 5px var(--darkbluegrey);
 }
 
 /* journey card */
 .journey_div {
   width: 100%;
-  height: 450px;
+  height: 500px;
   margin-bottom: 20px;
-  background-color: rgb(151, 31, 31);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  border-bottom: solid 3px var(--white);
 }
 
 .journey_img {
@@ -429,9 +429,20 @@ body {
   justify-content: center;
   align-items: center;
 }
+.journey_txt h1 {
+  font-family: "Quicksand", sans-serif;
+  color: var(--lightblue);
+  font-size: 60px;
+  letter-spacing: 1px;
+  font-weight: 10;
+  text-transform: capitalize;
+}
 
 .journey_txt p {
-  color: red;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 20px;
+  font-weight: 510;
+  color: var(--white);
 }
 
 .journey_buttons {
@@ -443,17 +454,144 @@ body {
 }
 
 .journey_buttons_link {
-  width: 50px;
+  width: 100%;
   height: 50px;
-  background-color: green;
-  border-radius: 100%;
 }
 
 .journey_buttons_butn {
   width: 100%;
+  height: 50px;
+  background-color: var(--green);
+  transition: 0.1s;
+  color: var(--white);
+  border-radius: 40px;
+  border: none;
+}
+.journey_buttons_butn:hover {
+  background-color: transparent;
+  border: solid 8px var(--green);
+  transition: 0.3s;
+}
+.booking_div {
+  width: 100%;
+  height: 1000px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: solid 3px var(--white);
+}
+
+.booking_img {
+  width: 95%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking_img_img {
+  height: 90%;
+}
+
+.booking_txt {
+  width: 95%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.booking_txt h1 {
+  font-family: "Quicksand", sans-serif;
+  color: var(--lightblue);
+  font-size: 60px;
+  letter-spacing: 1px;
+  font-weight: 10;
+  text-transform: capitalize;
+}
+
+.booking_txt p {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 20px;
+  font-weight: 510;
+  color: var(--white);
+}
+
+.booking_buttons {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.booking_section {
+  width: 300px;
   height: 100%;
-  background-color: green;
-  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.booking_section h1 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 33px;
+  font-weight: 1;
+  letter-spacing: 2px;
+  color: var(--lightblue);
+}
+
+.booking_section p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--white);
+}
+
+.booking_slider_person {
+  width: 95%;
+  height: 40px;
+}
+
+.booking_slider_person input[type="text"] {
+  background-color: transparent;
+  border: none;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--white);
+}
+
+.booking_slider_person input[type="range"] {
+  width: 100%;
+  height: 100%;
+}
+
+.booking_date {
+}
+
+.booking_buttons_link {
+  width: 150px;
+  height: 50px;
+}
+
+.booking_buttons_butn {
+  width: 150px;
+  height: 50px;
+  background-color: var(--green);
+  transition: 0.1s;
+  color: var(--white);
+  border-radius: 40px;
+  border: none;
+}
+.booking_buttons_butn:hover {
+  background-color: transparent;
+  border: solid 8px var(--green);
+  transition: 0.3s;
 }
 
 /* contact */

@@ -10,14 +10,53 @@ $result = $stm->fetchAll(PDO::FETCH_ASSOC);
 foreach($result as $i)
 {echo "
     <div class='journey_base_div'>
-    <div class='journey_div'>
-    <div class='journey_img'>
-    <img class='journey_img_img' src='../assets/img/planets/".$i['planet'].".png'></div>
-    <div class='journey_txt'>
+    <div class='booking_div'>
+    <div class='booking_img'>
+    <img class='booking_img_img' src='../assets/img/planets/".$i['planet'].".png'></div>
+    <div class='booking_txt'>
     <h1>".$i['planet']."</h1>
     <p>".$i['longdescription']."</p></div>
-    <div class='journey_buttons'>
-    </div></div></div>
+    <div class='booking_buttons'>
+    <div class='booking_section'>
+    <h1>
+        Price    
+    </h1>
+    <br>
+    <p>".$i['price']."</p>
+    </div>
+    <div class='booking_section'>
+    <h1>
+        How many travellers?    
+    </h1>
+    <br>
+    <div class='booking_slider_person'>
+        <input type='range' name='rangeInput' onchange='updateTextInput(this.value);'min='1' max='10' step='1'value='1' id='slider_booking'>
+    <input type='text' value='1' readonly id='textInput'>..</p>
+    </div>
+    </div>
+    <div class='booking_section'>
+    <h1>
+        Date?    
+    </h1>
+    <br>
+    <div class='booking_date'>
+        <p>From</p>    
+        <input type='date' value='2022-05-25' min='2022-05-25' max='3000-12-31' id='booking_date'>
+    </div>
+    <div class='booking_date'>
+        <p>to</p>    
+        <input type='date' value='2022-05-25' min='2022-05-25' max='3000-12-31' id='booking_date'>
+    </div>
+    </div>
+    <div class='booking_section'>
+    <h1>
+        Go on a great journey!    
+    </h1>
+    <br>
+    <a class='journey_buttons_link' href=\"book.php?journey=".$i['planet']."\"><button class='journey_buttons_butn'>order!</button></a>
+    </div>
+
+</div></div></div>
 ";}?>
 
 
@@ -51,5 +90,8 @@ foreach($result as $i)
 ik wil ook kaas ik ben ook een klant
 ";}
 ?>
-</div></div></div></div></div>     
+</div></div></div></div></div>
+<script src="../assets/js/slider.js"></script>
+</body>
+</html>     
 
