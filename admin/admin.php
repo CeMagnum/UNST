@@ -8,7 +8,7 @@
     <title>Admin</title>
 </head>
     <?php 
-    // include('admin_session.php'); 
+        include('admin_session.php'); 
         include('../includes/connect.php');
     ?>
 
@@ -36,9 +36,9 @@
     {echo "<div class='c'><h1>".$i['planet']."\n</h1>
         <img src='../assets/img/planets/".$i['planet'].".png'>
         <p>".$i['shortdescription']."</p>
-        <div><a><button>edit</button></a>
-        <form action='../functions/delete.php' method='POST'>
-            <input class='invisible' type='text' value=\"".$i['planet']."\" name='product_name'/>
+        <div><a href=\"admin.php?planet_id=".$i['planet_id']."\"><button>edit</button></a>
+        <form action='delete.php' method='POST'>
+            <input class='invisible' type='text' value=\"".$i['planet_id']."\" name='planet_id'/>
             <button type='submit' name='deleteitem' value='delete item'>Delete</button>
         </form></div></div><br><hr><br>";}?>
     </div>
@@ -46,7 +46,7 @@
     </div>
     <div id="b">
         <div id="d">Insert⭐
-        <form method="post" action="../functions/insert.php">
+        <form method="post" action="insert.php">
             <input type="text" name="planet" placeholder="Planet name">
             <!-- <input type="text" name="img" placeholder="Image"> -->
             <input type="text" name="shortdescription" placeholder="Short description">
@@ -54,6 +54,23 @@
             <input type="text" name="price" placeholder="Price">
             <input type="submit" value="send" name="bttn">
         </form>
+        <?php 
+        $mts = $conn->prepare("SELECT * FROM journeys WHERE planet_id = :planet_id");
+        $mts->bindParam(":planet_id", $_GET['planet_id'], PDO::PARAM_INT);
+        $mts->execute();
+        $result = $mts->fetchAll(PDO::FETCH_ASSOC);
+        foreach($result as $i)
+        {echo "
+            <div>
+            <div>
+            <div>
+            <img class='journey_img_img' src='../assets/img/planets/".$i['planet'].".png'></div>
+            <div class='journey_txt'>
+            <h1>".$i['planet']."</h1>
+            <p>".$i['longdescription']."</p></div>
+            <div class='journey_buttons'>
+            </div></div></div>
+        ";}?>
         </div>
         <!-- <div id="d">?</div>
         <div id="d">?</div> -->
