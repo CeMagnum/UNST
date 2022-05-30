@@ -53,14 +53,14 @@ foreach($result as $i)
         Go on a great journey!    
     </h1>
     <br>
-    <a class='booking_buttons_link' href=\"book.php?journey=".$i['planet']."\"><button class='booking_buttons_butn'>order!</button></a>
+    <a class='booking_buttons_link' href='./arrived.php'><button class='booking_buttons_butn'>order!</button></a>
     </div>
 
 </div></div></div>
 ";}?>
 
-
-<div class='recenties_txt_div'>
+<div class="booking_recenties_div">
+    <div class='recenties_txt_div'>
         <h1>Recenties van onze klanten</h1>
         <p>onze klanten houden van de ruimte. want de ruimte is mooi met al die sterren enzovoort. je moet een weeten waar noble six zit lekker in mijn achtertuin.</p>
     </div>
@@ -84,13 +84,14 @@ foreach($result as $i)
 <div class='recentie_content_txt'>
 <p>".$i['text']."</p></div>
 <div class='recentie_content_ster'>
-<p>".$i['stars']." stars</p>
+<p>".str_repeat('⭐', $i['stars'])."</p>
 </div>
 </div>
-ik wil ook kaas ik ben ook een klant
 ";}
 ?>
 </div></div></div></div></div>
+</div>
+
 <script src="../assets/js/slider.js"></script>
 </body>
 </html>     

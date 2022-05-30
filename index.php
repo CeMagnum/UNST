@@ -20,21 +20,27 @@ include("includes/connect.php");
             <a class="navbar_link" href="./public/contact.php">
             <button class="navbar_butn">Contact</button>
             </a>
-            <a class="navbar_link" href="login.php">
+            <a class="navbar_link" href="./public/login.php">
             <button class="navbar_butn">log in</button>
             </a>
         </div>
     </div>
 <div class="navbar_space"></div>
-<div class="home_landing_title">
-   <h1>Welcome to United Nations Travels</h1> 
-    <p>
+<div class="home_landing_title_div">
+    <div class="home_landing_title">
+        <h1>Welcome to</h1>
+        <br>
+        <h1>United Nations Travels</h1> 
+    </div>
+   <div class="home_landing_txt">
+       <p>
         We are very pleased for picking our flight industry. We know that we are one of fewe so we try to get you to the best places as save as possible
-        we have verry good transportation.
+        we have verry good transportation. Drop in with your homeis, contribute to our latest new thiung, spartansm, these kids are "choses" to help us get you from point a to point
+        it will be an epic journey with adventure, death, life and smiles
     </p> 
     <a href="private/base.php">private</a>
+   </div>
 </div>
-<div class="space_medium"></div>
 <div class="home_info_div">
     <div class="home_info_section">
         <h2>Why would fly with us?</h2>
@@ -52,23 +58,39 @@ include("includes/connect.php");
 <div class="home_journeys_div">
 
 <div class="home_carrousel">
-    <div class="slideshow-container">
-
-    <?php 
-    $stm = $conn->query("SELECT * FROM journeys ORDER BY RAND()");
-    $stm->execute();
-    $result = $stm->fetchAll(PDO::FETCH_ASSOC);
-    foreach($result as $i)
-    {echo "
-        <div class='mySlides fade'>
-        <a href=\"public/book.php?journey=".$i['planet']."\"><img class='img_slideshow' src='assets/img/planets/".$i['planet'].".png'></a>
-        <div class='txt_slideshow'>".$i['planet']."<br>".$i['shortdescription']."</div>
+    <div class="home_slideshow_txt">
+        <h1>Greates journeys</h1>
+        <div class="slideshow_txt_div">
+            <p>
+                There are a lot of locations and journeys you can go on. like earth, mars, jupiter and other known locations
+                but did you know there is a dinosaur planet? A cold planet a desert planet and a monkey planet? there are so many option!
+                there is also a midget planet and a chicken planet, there are so many spiecies and stuff. but the coolest place is the cool ring
+                on the ring there are caves, buildings, wierd popckorn things, green and a lot of other people from the other place called UNSC.
+                i dont know what they are doing there    
+            </p> 
         </div>
-    ";}?>
-    </div><br><div class="dot_container">
-    <?php foreach($result as $i)
-    {echo "<span class='dot'></span>";}?>
     </div>
+    <div class="slideshow">
+        <div class="slideshow-container">
+        <?php 
+        $stm = $conn->query("SELECT * FROM journeys ORDER BY RAND()");
+        $stm->execute();
+        $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+        foreach($result as $i)
+        {echo "
+            <div class='mySlides fade'>
+            <a href=\"public/book.php?journey=".$i['planet']."\"><img class='img_slideshow' src='assets/img/planets/".$i['planet'].".png'></a>
+            <div class='txt_slideshow'>".$i['planet']."<br>".$i['shortdescription']."</div>
+            </div>
+        ";}?>
+        </div>
+        <br>
+        <div class="dot_container">
+        <?php foreach($result as $i)
+        {echo "<span class='dot'></span>";}?>
+        </div>
+    </div>
+    
 </div>
 
 <div class="home_recenties_div">

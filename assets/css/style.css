@@ -104,12 +104,22 @@ body {
 }
 
 /* landing page */
-.home_landing_title {
+.home_landing_title_div {
   width: 100%;
-  height: 700px;
+  height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+}
+
+.home_landing_title {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .home_landing_title h1 {
@@ -117,9 +127,17 @@ body {
   color: white;
   font-size: 100px;
   font-weight: 1;
+  text-align: center;
 }
 
-.home_landing_title p {
+.home_landing_txt {
+  width: 95%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home_landing_txt p {
   font-family: "Rajdhani", sans-serif;
   font-size: 25px;
   font-weight: 600;
@@ -129,7 +147,7 @@ body {
 
 .home_info_div {
   width: 100%;
-  height: 600px;
+  height: 500px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -137,10 +155,13 @@ body {
 
 .home_info_section {
   width: 30%;
-  height: 300px;
+  height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: var(--darkbluegrey);
+  padding: 8px;
+  border-radius: 3px;
 }
 
 .home_info_section h2 {
@@ -156,6 +177,50 @@ body {
   font-size: 20px;
   font-weight: 510;
   color: var(--white);
+}
+
+.home_carrousel {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--darkbluegrey);
+}
+
+.home_slideshow_txt {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home_slideshow_txt h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: 900;
+  color: var(--red);
+  text-transform: uppercase;
+}
+.slideshow_txt_div {
+  width: 90%;
+  margin-top: 10px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.slideshow_txt_div p {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 510;
+  color: var(--white);
+}
+
+.slideshow {
+  width: 60%;
+  height: 100%;
 }
 
 /* Slideshow */
@@ -228,10 +293,11 @@ body {
 }
 .recenties_txt_div {
   width: 80%;
-  height: 170px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .recenties_txt_div h1 {
   font-family: "Roboto", sans-serif;
@@ -292,7 +358,7 @@ body {
 }
 .recentie_content_naam {
   width: 95%;
-  height: 20%;
+  height: 15%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -320,7 +386,7 @@ body {
   font-size: 25px;
   font-weight: 10;
   letter-spacing: 2px;
-  color: var(--darkbluegrey);
+  color: var(--white);
 }
 
 .recentie_content_txt {
@@ -347,7 +413,7 @@ body {
 
 .recentie_content_ster p {
   font-family: "Rajdhani", sans-serif;
-  font-size: 35px;
+  font-size: 15px;
   font-weight: 1;
   letter-spacing: 2px;
   color: var(--yellow);
@@ -514,7 +580,7 @@ body {
 
 .booking_txt p {
   font-family: "Didact Gothic", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 510;
   color: var(--white);
 }
@@ -600,6 +666,14 @@ body {
   border: solid 1px var(--black);
   transition: ease 0.3;
   box-shadow: 6px 9px 0 0 var(--black);
+}
+
+.booking_recenties_div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* contact */
@@ -840,6 +914,154 @@ body {
   align-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+/* arrived */
+.arrived_div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.arrived_txt {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrived_txt h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: 900;
+  color: var(--red);
+  text-transform: uppercase;
+}
+
+.arrvived_rev_div {
+  width: 90%;
+  height: 700px;
+}
+
+.arrvived_rev_name_div {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.arrvived_txt {
+  width: 80%;
+  height: 100px;
+}
+
+.arrvived_txt p {
+  font-family: "Quicksand", sans-serif;
+  color: var(--lightblue);
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: 10;
+  text-transform: capitalize;
+}
+.arrvived_rev_name_input {
+  width: 90%;
+  height: 100px;
+}
+.arrvived_rev_name_input input[type="text"] {
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+.arrvived_rev_txt_div {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.arrvided_rev_txt_input textarea {
+  width: 500px;
+  height: 200px;
+  resize: none;
+  border: none;
+  box-shadow: 0px 0px 10px 2px var(--lightblue);
+  border-radius: 30px;
+}
+
+.arrvived_rev_star_div {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.arrvived_rev_star_input {
+  display: flex;
+  flex-direction: column;
+}
+
+.arrvived_rev_star_input input[type="range"] {
+  width: 500px;
+  height: 30px;
+}
+.arrvived_rev_star_input input[type="text"] {
+  background-color: transparent;
+  border: none;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--white);
+}
+
+.arrived_rev_butn {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.arrived_butn1 {
+  width: 250px;
+  height: 50px;
+  background-color: transparent;
+  border: var(--lightblue) solid 2px;
+  transition: ease-in 0.3s;
+  color: var(--white);
+  border-radius: 4px;
+}
+.arrived_butn1:hover {
+  background-color: var(--lightblue);
+  border: var(--lightblue) solid 7px;
+  transition: ease-in 0.1s;
+  color: var(--black);
+  box-shadow: 0px 0px 8px 4px var(--lightblue);
+}
+.arrived_rev_butn input[type="submit"] {
+  width: 250px;
+  height: 50px;
+  background-color: transparent;
+  border: var(--yellow) solid 2px;
+  transition: ease-in 0.3s;
+  color: var(--white);
+  border-radius: 4px;
+}
+.arrived_rev_butn input[type="submit"]:hover {
+  background-color: var(--yellow);
+  border: var(--yellow) solid 7px;
+  transition: ease-in 0.1s;
+  color: var(--black);
+  box-shadow: 0px 0px 8px 4px var(--yellow);
 }
 
 /* footer */
