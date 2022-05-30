@@ -1,10 +1,11 @@
 <?php include('../includes/header.php'); ?>
 <?php include("../includes/navbar.php")?>
+<div class="navbar_space"></div>
 <div class="contact_main_div">
   <div class="contact_info_div">
     <div class="contact_info_txt_div">
       <div class="contact_info_title">
-        <p>waar wij begonen</p>
+        <h1>waar wij begonen</h1>
       </div>
       <div class="contact_info_txt">
         <p>
@@ -17,7 +18,7 @@
     </div>
     <div class="contact_info_txt_div">
       <div class="contact_info_title">
-        <p>waarom wij doorgaan</p>
+        <h1>waarom wij doorgaan</h1>
       </div>
       <div class="contact_info_txt">
         <p>well the destruction of humanity is not so poggers</p>
@@ -25,7 +26,7 @@
     </div>
     <div class="contact_info_txt_div">
       <div class="contact_info_title">
-        <p>waarom jij met ons mee moet doen</p>
+        <h1>waarom jij met ons mee moet doen</h1>
       </div>
       <div class="contact_info_txt">
         <p>we dying so we need u</p>
@@ -35,12 +36,12 @@
   <div class="contact_link_div">
     <div class="contact_link_section">
       <a class="contact_link_link" href="mailto:mail@pornhub.com">
-          <button class="contact_link_butn">link to email</button></a
+        <button class="contact_link_butn">link to email</button></a
       >
     </div>
     <div class="contact_link_section">
       <a class="contact_link_link">
-          <button class="contact_link_butn">
+        <button class="contact_link_butn">
           link to idk simething to think about
         </button></a
       >
@@ -59,7 +60,7 @@
         <p>tell us your name</p>
       </div>
       <div class="contact_mail_name_input">
-        <input type="text" placeholder="type your name here" />
+        <input type="text" placeholder="        type your name here" />
       </div>
     </div>
     <div class="contact_mail_message_div">
@@ -67,7 +68,7 @@
         <p>give me ur souls</p>
       </div>
       <div class="contact_mail_message_txt_input">
-        <textarea placeholder="type somehitng here"></textarea>
+        <textarea placeholder="      type somehitng here"></textarea>
       </div>
     </div>
     <div class="contact_mail_mail_div">
@@ -75,7 +76,7 @@
         <p>enter your mail</p>
       </div>
       <div class="contact_mail_mail_txt_input">
-        <input type="text" placeholder="type your email here" />
+        <input type="text" placeholder="           type your email here" />
       </div>
     </div>
   </div>

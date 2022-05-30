@@ -531,11 +531,12 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .booking_section h1 {
+  text-align: center;
   font-family: "Rajdhani", sans-serif;
   font-size: 33px;
   font-weight: 1;
@@ -582,23 +583,29 @@ body {
 .booking_buttons_butn {
   width: 150px;
   height: 50px;
-  background-color: var(--green);
-  transition: 0.1s;
+  background-color: var(--red);
+  border-radius: 20px;
+  height: 60px;
+  box-shadow: none;
+  transition: ease 0.2s;
   color: var(--white);
-  border-radius: 40px;
-  border: none;
+  border: solid 3px var(--black);
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--white);
 }
 .booking_buttons_butn:hover {
-  background-color: transparent;
-  border: solid 8px var(--green);
-  transition: 0.3s;
+  border: solid 1px var(--black);
+  transition: ease 0.3;
+  box-shadow: 6px 9px 0 0 var(--black);
 }
 
 /* contact */
 .contact_main_div {
   width: 100%;
   height: 1000px;
-  background-color: rgb(70, 151, 156);
   display: flex;
   flex-direction: row;
 }
@@ -606,44 +613,57 @@ body {
 .contact_info_div {
   width: 70%;
   height: 1000px;
-  background-color: #fe667d;
   display: flex;
   flex-direction: column;
 }
 
 .contact_info_txt_div {
   width: 100%;
-  height: 300px;
-  background-color: aqua;
+  height: 500px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .contact_info_title {
   width: 100%;
-  height: 30px;
-  background-color: antiquewhite;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contact_info_title p {
-  color: #2e2e2e;
+.contact_info_title h1 {
+  font-family: "Quicksand", sans-serif;
+  color: var(--lightblue);
+  font-size: 50px;
+  letter-spacing: 1px;
+  font-weight: 10;
+  text-transform: capitalize;
+  text-decoration: underline;
+  text-decoration-color: var(--red);
+  text-decoration-thickness: 2px;
 }
 
 .contact_info_txt {
-  width: 100%;
+  width: 80%;
   height: 270px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.contact_info_txt p {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 510;
+  color: var(--white);
+}
+
 .contact_link_div {
   width: 30%;
   height: 1000px;
-  background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -652,25 +672,38 @@ body {
 .contact_link_section {
   width: 100%;
   height: 30%;
-  background-color: beige;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.contact_link_link,
+.contact_link_link {
+  width: 250px;
+  height: 100px;
+}
 .contact_link_butn {
-  width: 150px;
-  height: 60px;
-  background-color: coral;
-  border-radius: 40px;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 510;
+  color: var(--white);
+  width: 250px;
+  height: 100px;
+  background-color: transparent;
+  transition: ease 0.3s;
+  box-shadow: inset 0 0 0 0;
+  border: double 5px var(--yellow);
+  border-radius: 8px;
+}
+.contact_link_butn:hover {
+  border: none;
+  color: var(--black);
+  box-shadow: inset 300px 0 0 0 var(--yellow);
 }
 
 .contact_message_div {
   width: 100%;
   height: 700px;
-  background-color: greenyellow;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -687,7 +720,6 @@ body {
 .contact_mail_name_div {
   width: 100%;
   height: 250px;
-  background-color: #717171;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -695,30 +727,34 @@ body {
 }
 
 .contact_mail_name {
-  width: 700px;
+  width: 800px;
 }
 
-.contact_mail_name p {
-  color: #f2f2f2;
-  font-size: 60px;
+.contact_mail_name p,
+.contact_mail_mail_txt p,
+.contact_mail_message_txt p {
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+  font-size: 80px;
 }
 
 .contact_mail_name_input {
   width: 100%;
-  height: 60px;
-  background-color: #531f1f;
+  height: 50px;
 }
 
-.contact_mail_name_input input[type="text"] {
+.contact_mail_name_input input[type="text"],
+.contact_mail_mail_txt_input input[type="text"] {
   width: 800px;
   height: 100%;
+  border: none;
+  box-shadow: 0px 0px 10px 2px var(--lightblue);
   border-radius: 30px;
 }
 
 .contact_mail_message_div {
   width: 100%;
   height: 300px;
-  background-color: #023506;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -726,51 +762,35 @@ body {
 }
 
 .contact_mail_message_txt {
-  width: 700px;
+  width: 800px;
 }
-.contact_mail_message_txt p {
-  color: #f2f2f2;
-  font-size: 60px;
-}
+
 .contact_mail_message_txt_input {
   width: 100%;
   height: 140px;
-  background-color: darkgoldenrod;
 }
 
 .contact_mail_message_txt_input textarea {
   width: 900px;
   height: 100%;
   resize: none;
+  border: none;
+  box-shadow: 0px 0px 10px 2px var(--lightblue);
+  border-radius: 30px;
 }
 
 .contact_mail_mail_div {
   width: 100%;
   height: 250px;
-  background-color: #00990d;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
 }
 
-.contact_mail_mail_txt {
-  width: 700px;
-}
-
-.contact_mail_mail_txt p {
-  color: #f2f2f2;
-  font-size: 60px;
-}
-
 .contact_mail_mail_txt_input {
   width: 100%;
   height: 60px;
-}
-.contact_mail_mail_txt_input input[type="text"] {
-  width: 800px;
-  height: 100%;
-  border-radius: 30px;
 }
 
 /* login */
@@ -778,7 +798,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: #2e2e2e;
+  background-color: var(--bluegrey);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -793,9 +813,17 @@ body {
 }
 
 .loggin_txt p {
+  font-family: "Rajdhani", sans-serif;
   color: white;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 100px;
+}
+
+.loggin_log label {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--white);
 }
 
 .loggin_form {
