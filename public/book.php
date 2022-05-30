@@ -53,7 +53,7 @@ foreach($result as $i)
         Go on a great journey!    
     </h1>
     <br>
-    <a class='journey_buttons_link' href=\"book.php?journey=".$i['planet']."\"><button class='journey_buttons_butn'>order!</button></a>
+    <a class='booking_buttons_link' href=\"book.php?journey=".$i['planet']."\"><button class='booking_buttons_butn'>order!</button></a>
     </div>
 
 </div></div></div>
