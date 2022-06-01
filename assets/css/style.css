@@ -77,7 +77,7 @@ body {
   width: 100%;
   border-radius: 5px;
   font-family: "Rajdhani", sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 1;
   letter-spacing: 2px;
   color: var(--white);
@@ -465,7 +465,7 @@ body {
 .journey_div {
   width: 100%;
   height: 500px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -537,6 +537,7 @@ body {
   background-color: transparent;
   border: solid 8px var(--green);
   transition: 0.3s;
+  cursor: pointer;
 }
 .booking_div {
   width: 100%;
@@ -679,25 +680,28 @@ body {
 /* contact */
 .contact_main_div {
   width: 100%;
-  height: 1000px;
+  height: 800px;
   display: flex;
   flex-direction: row;
 }
 
 .contact_info_div {
   width: 70%;
-  height: 1000px;
-  display: flex;
-  flex-direction: column;
-}
-
-.contact_info_txt_div {
-  width: 100%;
-  height: 500px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.contact_info_txt_div {
+  width: 90%;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--darkbluegrey);
 }
 
 .contact_info_title {
@@ -711,18 +715,15 @@ body {
 .contact_info_title h1 {
   font-family: "Quicksand", sans-serif;
   color: var(--lightblue);
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 1px;
   font-weight: 10;
   text-transform: capitalize;
-  text-decoration: underline;
-  text-decoration-color: var(--red);
-  text-decoration-thickness: 2px;
 }
 
 .contact_info_txt {
   width: 80%;
-  height: 270px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -737,7 +738,7 @@ body {
 
 .contact_link_div {
   width: 30%;
-  height: 1000px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -753,16 +754,16 @@ body {
 }
 
 .contact_link_link {
-  width: 250px;
-  height: 100px;
+  width: 230px;
+  height: 80px;
 }
 .contact_link_butn {
   font-family: "Didact Gothic", sans-serif;
   font-size: 16px;
   font-weight: 510;
   color: var(--white);
-  width: 250px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   background-color: transparent;
   transition: ease 0.3s;
   box-shadow: inset 0 0 0 0;
@@ -773,13 +774,23 @@ body {
   border: none;
   color: var(--black);
   box-shadow: inset 300px 0 0 0 var(--yellow);
+  cursor: pointer;
 }
 
 .contact_message_div {
   width: 100%;
-  height: 700px;
+  height: 900px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.contact_message_div form {
+  display: flex;
+  width: 95%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
 }
 .contact_message_mail {
@@ -793,7 +804,7 @@ body {
 
 .contact_mail_name_div {
   width: 100%;
-  height: 250px;
+  height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -809,7 +820,7 @@ body {
 .contact_mail_message_txt p {
   font-family: "Rajdhani", sans-serif;
   color: white;
-  font-size: 80px;
+  font-size: 40px;
 }
 
 .contact_mail_name_input {
@@ -828,7 +839,7 @@ body {
 
 .contact_mail_message_div {
   width: 100%;
-  height: 300px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -855,7 +866,7 @@ body {
 
 .contact_mail_mail_div {
   width: 100%;
-  height: 250px;
+  height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -865,6 +876,30 @@ body {
 .contact_mail_mail_txt_input {
   width: 100%;
   height: 60px;
+}
+.contact_mail_submit {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact_mail_submit input[type="submit"] {
+  width: 210px;
+  height: 50px;
+  background-color: var(--red);
+  border-radius: 20px;
+  box-shadow: none;
+  transition: ease 0.2s;
+  color: var(--white);
+  border: solid 3px var(--black);
+}
+.contact_mail_submit input[type="submit"]:hover {
+  border: solid 1px var(--black);
+  transition: ease 0.3;
+  box-shadow: 10px 13px 0 0 var(--black);
 }
 
 /* login */
@@ -926,7 +961,7 @@ body {
 }
 .arrived_txt {
   width: 100%;
-  height: 200px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -934,7 +969,7 @@ body {
 
 .arrived_txt h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 40px;
+  font-size: 45px;
   letter-spacing: 1px;
   font-weight: 900;
   color: var(--red);
@@ -943,12 +978,12 @@ body {
 
 .arrvived_rev_div {
   width: 90%;
-  height: 700px;
+  height: auto;
 }
 
 .arrvived_rev_name_div {
   width: 100%;
-  height: 140px;
+  height: 80px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -956,30 +991,30 @@ body {
 }
 .arrvived_txt {
   width: 80%;
-  height: 100px;
+  height: 40px;
 }
 
 .arrvived_txt p {
   font-family: "Quicksand", sans-serif;
   color: var(--lightblue);
-  font-size: 40px;
+  font-size: 30px;
   letter-spacing: 1px;
   font-weight: 10;
   text-transform: capitalize;
 }
 .arrvived_rev_name_input {
   width: 90%;
-  height: 100px;
+  height: auto;
 }
 .arrvived_rev_name_input input[type="text"] {
   width: 300px;
   height: 30px;
-  border-radius: 10px;
+  border-radius: 20px;
   border: none;
 }
 .arrvived_rev_txt_div {
   width: 100%;
-  height: 300px;
+  height: 220px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -987,17 +1022,22 @@ body {
 }
 
 .arrvided_rev_txt_input textarea {
-  width: 500px;
-  height: 200px;
+  width: 800px;
+  height: 150px;
   resize: none;
   border: none;
-  box-shadow: 0px 0px 10px 2px var(--lightblue);
-  border-radius: 30px;
+  border-radius: 20px;
+}
+
+.arrvided_rev_txt_input textarea::placeholder {
+  color: var(--black);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
 }
 
 .arrvived_rev_star_div {
   width: 100%;
-  height: 200px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1025,7 +1065,7 @@ body {
 
 .arrived_rev_butn {
   width: 100%;
-  height: 80px;
+  height: 50px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -1035,17 +1075,18 @@ body {
   width: 250px;
   height: 50px;
   background-color: transparent;
-  border: var(--lightblue) solid 2px;
+  border: var(--red) solid 2px;
   transition: ease-in 0.3s;
   color: var(--white);
   border-radius: 4px;
 }
 .arrived_butn1:hover {
-  background-color: var(--lightblue);
-  border: var(--lightblue) solid 7px;
+  background-color: var(--red);
+  border: var(--red) solid 7px;
   transition: ease-in 0.1s;
-  color: var(--black);
-  box-shadow: 0px 0px 8px 4px var(--lightblue);
+  color: var(--white);
+  box-shadow: 0px 0px 8px 4px var(--red);
+  cursor: pointer;
 }
 .arrived_rev_butn input[type="submit"] {
   width: 250px;
@@ -1062,6 +1103,49 @@ body {
   transition: ease-in 0.1s;
   color: var(--black);
   box-shadow: 0px 0px 8px 4px var(--yellow);
+  cursor: pointer;
+}
+
+/* privacy */
+
+.priv_div {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.priv_title_div {
+  width: 90%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.priv_title_div h1 {
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+
+.priv_txt_div {
+  width: 90%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.priv_txt_div p {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 510;
+  color: var(--white);
 }
 
 /* footer */

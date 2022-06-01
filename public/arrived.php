@@ -9,18 +9,18 @@ include("../includes/header.php");
             </div>
             <div class="arrvived_rev_name_div">
               <div class="arrvived_txt">
-                <p>tell us your name</p>
+                <p>Name</p>
               </div>
               <div class="arrvived_rev_name_input">
-                <input type="text" placeholder="        type your name here" />
+                <input type="text" placeholder="        type your name here"/>
               </div>
             </div>
             <div class="arrvived_rev_txt_div">
               <div class="arrvived_txt">
-                <p>What did you think of your trip</p>
+                <p>write your expreriance</p>
               </div>
               <div class="arrvided_rev_txt_input">
-                <textarea placeholder="      type somehitng here"></textarea>
+                <textarea placeholder="        type somehitng here"></textarea>
               </div>
             </div>
             <div class="arrvived_rev_star_div">
@@ -33,8 +33,8 @@ include("../includes/header.php");
               </div>
             </div>
             <div class="arrived_rev_butn">
-                <button class="arrived_butn1">no i do not want to leave a reveiuw</button>
-                <input class="arrived_butn2" type="submit" value="submit reviuw">
+                <a href="../index.php"><button class="arrived_butn1">no i do not want to leave a reveiuw</button></a>
+                <input class="arrived_butn2" type="submit" value="submit reviuw" name="rev_sub" id="sub_rev">
             </div>
         </form>
        

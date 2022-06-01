@@ -23,6 +23,7 @@ foreach($result as $i)
     </h1>
     <br>
     <p>".$i['price']."</p>
+    <br>
     </div>
     <div class='booking_section'>
     <h1>

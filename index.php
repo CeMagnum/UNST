@@ -30,7 +30,7 @@ include("includes/connect.php");
     <div class="home_landing_title">
         <h1>Welcome to</h1>
         <br>
-        <h1>United Nations Travels</h1> 
+        <h1>United Nations Space Travels</h1> 
     </div>
    <div class="home_landing_txt">
        <p>
@@ -80,7 +80,7 @@ include("includes/connect.php");
         {echo "
             <div class='mySlides fade'>
             <a href=\"public/book.php?journey=".$i['planet']."\"><img class='img_slideshow' src='assets/img/planets/".$i['planet'].".png'></a>
-            <div class='txt_slideshow'>".$i['planet']."<br>".$i['shortdescription']."</div>
+            <div class='txt_slideshow'><h1>".$i['planet']."</h1><br><p>".$i['shortdescription']."</p></div>
             </div>
         ";}?>
         </div>
