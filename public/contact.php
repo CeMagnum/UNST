@@ -12,7 +12,13 @@
           aliens came and went on to kill us. they kept screaming about this
           great journey thing. it kinda annoyed us so we startet kidnapping
           chilldren and turning them into crybabys zus they dont like thier
-          helmets or something
+          helmets or something Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Perferendis saepe laboriosam dolor earum, possimus
+          laudantium unde voluptatem quibusdam explicabo doloribus quaerat
+          consequatur, alias rerum blanditiis voluptas iste reprehenderit. Unde
+          laborum a numquam temporibus quas vero autem corporis architecto.
+          Debitis voluptates eius consectetur distinctio ratione, non laborum
+          impedit natus dolore facilis.
         </p>
       </div>
     </div>
@@ -21,7 +27,15 @@
         <h1>waarom wij doorgaan</h1>
       </div>
       <div class="contact_info_txt">
-        <p>well the destruction of humanity is not so poggers</p>
+        <p>
+          well the destruction of humanity is not so poggers Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Perferendis est explicabo
+          consequuntur commodi ipsam fugit, unde iure, accusantium aliquam quia
+          dicta enim error libero, porro in. Minus quod qui laboriosam. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Iste aspernatur
+          maiores, ea autem mollitia sunt distinctio assumenda iusto. Nihil,
+          placeat!
+        </p>
       </div>
     </div>
     <div class="contact_info_txt_div">
@@ -29,7 +43,17 @@
         <h1>waarom jij met ons mee moet doen</h1>
       </div>
       <div class="contact_info_txt">
-        <p>we dying so we need u</p>
+        <p>
+          we dying so we need u Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Assumenda autem repudiandae quas nesciunt molestias,
+          dolorem at sint expedita recusandae earum eligendi ipsum maiores
+          dignissimos, possimus voluptas quaerat odio cupiditate delectus eius,
+          esse odit tempora. Accusantium voluptatibus eveniet omnis ratione.
+          Vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+          aspernatur perspiciatis officiis incidunt assumenda, iure consequatur.
+          Expedita sit laboriosam, explicabo rem dolore repellat aspernatur
+          magnam animi eveniet quaerat aut consectetur.
+        </p>
       </div>
     </div>
   </div>
@@ -54,32 +78,37 @@
   </div>
 </div>
 <div class="contact_message_div">
-  <div class="contact_message_mail">
-    <div class="contact_mail_name_div">
-      <div class="contact_mail_name">
-        <p>tell us your name</p>
+  <form action="post">
+    <div class="contact_message_mail">
+      <div class="contact_mail_name_div">
+        <div class="contact_mail_name">
+          <p>tell us your name</p>
+        </div>
+        <div class="contact_mail_name_input">
+          <input type="text" placeholder="        type your name here" />
+        </div>
       </div>
-      <div class="contact_mail_name_input">
-        <input type="text" placeholder="        type your name here" />
+      <div class="contact_mail_message_div">
+        <div class="contact_mail_message_txt">
+          <p>give me ur souls</p>
+        </div>
+        <div class="contact_mail_message_txt_input">
+          <textarea placeholder="      type somehitng here"></textarea>
+        </div>
+      </div>
+      <div class="contact_mail_mail_div">
+        <div class="contact_mail_mail_txt">
+          <p>enter your mail</p>
+        </div>
+        <div class="contact_mail_mail_txt_input">
+          <input type="text" placeholder="           type your email here" />
+        </div>
+      </div>
+      <div class="contact_mail_submit">
+        <input type="submit" value="inleveren" />
       </div>
     </div>
-    <div class="contact_mail_message_div">
-      <div class="contact_mail_message_txt">
-        <p>give me ur souls</p>
-      </div>
-      <div class="contact_mail_message_txt_input">
-        <textarea placeholder="      type somehitng here"></textarea>
-      </div>
-    </div>
-    <div class="contact_mail_mail_div">
-      <div class="contact_mail_mail_txt">
-        <p>enter your mail</p>
-      </div>
-      <div class="contact_mail_mail_txt_input">
-        <input type="text" placeholder="           type your email here" />
-      </div>
-    </div>
-  </div>
+  </form>
 </div>
 <div class="contact_buttonto_div"></div>
 

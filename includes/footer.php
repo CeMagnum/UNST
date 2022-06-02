@@ -24,5 +24,8 @@
         <a href="../public/journey.php"><p>journey</p></a>
         <a href="../public/journey.php"><p>journey</p></a>
     </div>
+    <div class="footer_list">
+        <a href="../public/privacy_policy.php"><p>privacy policy</p></a>
+    </div>
     </div>
 </footer></html>
