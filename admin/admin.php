@@ -58,9 +58,11 @@
             $sql = "SELECT * FROM journeys WHERE planet_id = :planet_id";
             $stm = $conn->prepare($sql);
             $stm->bindParam(":planet_id", $_GET['planet_id'], PDO::PARAM_STR);
+            $stm->execute();
             $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+            // var_dump($result);
             foreach($result as $i)
-            {echo "<div><h2>".$i['price']."<h2><br>".$i['planet']."<br><img src=\"../assets/img/planets/".$i['planet']."\" alt='".$i['shortdescription']."' /><br>".$i['longdescription']."</div>";}?>
+            {echo "<div><h2>".$i['price']."<h2><br>".$i['planet']."<br><img src=\"../assets/img/planets/".$i['planet'].".png\" alt='".$i['shortdescription']."' /><br>".$i['longdescription']."</div>";}?>
 
             <form method="POST" action="edit.php">
                 <input type="text" name="price" placeholder="Price" value="<?php echo $i['price']?>">
