@@ -58,7 +58,9 @@ foreach($result as $i)
     </div>
 
 </div></div></div>
-";}?>
+";}
+
+?>
 
 <div class="booking_recenties_div">
     <div class='recenties_txt_div'>
