@@ -46,7 +46,7 @@
     </div>
     <div id="b">
         <div id="d">Insert⭐
-        <form method="post" action="insert.php">
+        <form method="post" action="insert_planet.php">
             <input type="text" name="price" placeholder="Price">
             <input type="text" name="planet" placeholder="Planet name">
             <!-- <input type="text" name="img" placeholder="Image"> -->
@@ -57,7 +57,7 @@
         <?php //EDIT
             $sql = "SELECT * FROM journeys WHERE planet_id = :planet_id";
             $stm = $conn->prepare($sql);
-            $stm->bindParam(":planet_id", $_GET['planet_id'], PDO::PARAM_STR);
+            $stm->bindParam(":planet_id", $_GET['planet_id'], PDO::PARAM_INT);
             $stm->execute();
             $result = $stm->fetchAll(PDO::FETCH_ASSOC);
             // var_dump($result);

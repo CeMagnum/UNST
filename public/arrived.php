@@ -43,3 +43,12 @@ include("../includes/header.php");
 <script src="../assets/js/slider.js"></script>
 </body>
 </html>
+
+<!-- <form method="post" action="insert_planet.php">
+            <input type="text" name="price" placeholder="Price">
+            <input type="text" name="planet" placeholder="Planet name">
+            <!-- <input type="text" name="img" placeholder="Image"> -->
+            <input type="text" name="shortdescription" placeholder="Short description">
+            <input type="text" name="longdescription" placeholder="Long description">
+            <input type="submit" value="send" name="bttn">
+        </form> -->
