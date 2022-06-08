@@ -7,14 +7,24 @@
         </div>
         <div class="loggin_form">
           <form class="loggin_log" action="../functions/login.php" method="post"> 
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" autocomplete="off"><br>
+            <label for="name">Username:</label><br>
+            <input type="text" id="name" name="username" autocomplete="off"><br>
             <label for="pass">Password:</label><br>
-            <input type="password" id="pass" autocomplete="off"><br>
+            <input type="password" id="pass" name="password" autocomplete="off"><br>
             <input type="submit" id="button" name="login" value="Login">
           </form>  
       </div>
     </div>
+    <div></div>
+    <form class="loggin_log" action="../functions/register.php" method="post"> 
+            <label for="name">Register<br>Username:</label><br>
+            <input type="text" id="name" name="username" autocomplete="off"><br>
+            <label for="name">Email:</label><br>
+            <input type="text" id="email" name="email" autocomplete="off"><br>
+            <label for="pass">Password:</label><br>
+            <input type="password" id="pass" name="password" autocomplete="off"><br>
+            <input type="submit" id="button" name="Register" value="Register">
+    </form>  
 </div>
 <!-- <script src="../assets/js/fieldvalidation.js"></script> -->
 </body>
