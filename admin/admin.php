@@ -18,6 +18,7 @@
         <div class="adminpanel" id="a"><h2>Logged in as admin.</h2><a href="../functions/logout.php"><h4>Logout</h4></a>
     <div class="rev">
         <div class="admin_rev">
+        <h1>Manage reviews</h1>
             <!-- php copy past this -->
         <div class="admin_rev_panel">
             <form action="POST">
@@ -132,6 +133,8 @@
         <div class="adminpanel" id="a"></a>
             <div class="acc">
                 <div class="admin_acc">
+                <h1>Manage accounts</h1>
+                <!-- php copy -->
                 <div class="admin_acc_panel">
                     <form action="POST">
                         <input type="text" value="..naam..">
@@ -142,6 +145,7 @@
                         <input type="submit" name="delete" value="delete">
                     </form>
                 </div>
+                <!-- php stop copy -->
                 <div class="admin_acc_panel">
                     <form action="POST">
                         <input type="text" value="..naam..">
@@ -179,7 +183,7 @@
             <div class="hrd" id="a">
                 <div class="rd1">
                     <div class="rd2">
-
+            	        <h1>Manage journeys</h1>
                         <!-- php copy -->
                         <div class="admin_panel_journey">
                             <form action="POST">

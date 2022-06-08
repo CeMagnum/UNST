@@ -17,9 +17,7 @@ include('../includes/connect.php');
     <input type="text" placeholder="Find your great journey" name="search">
 </form>
 </div>
-
-
-<?php   
+  <?php   
     if (isset($_GET['search'])){
     $search = '%'.$_GET['search'].'%';
     $sql = "SELECT * FROM journeys WHERE planet LIKE :search ORDER BY planet ASC";
@@ -31,8 +29,8 @@ include('../includes/connect.php');
   }
     $stm->execute();
     $result = $stm->fetchAll(PDO::FETCH_ASSOC);
-    foreach($result as $i)
-    {echo "
+    foreach($result as $i){
+        echo "
         <div class='journey_base_div' id='".$i['planet']."'>
         <div class='journey_div'>
         <div class='journey_img'>
@@ -43,10 +41,14 @@ include('../includes/connect.php');
         <p>".$i['shortdescription']."</p></div>
         <div class='journey_buttons'>
         <a class='journey_buttons_link' href=\"book.php?journey=".$i['planet']."\"><button class='journey_buttons_butn'>Information</button></a>
-        </div></div></div>";}
-
+        </div></div></div>";
+      }
+    if(empty($result)){
+      echo "<div class='journey_fill_div'><h1> No results found!</h1><p>Try searching something else?</p></div>";}
 include('../includes/footer.php');
 ?>
+
+
 
 <script src="../assets/js/backtotop.js"></script>
 </html>

@@ -41,7 +41,13 @@ body {
   justify-content: space-around;
   align-items: center;
   box-shadow: 3px 0 14px 6px var(--black);
+  transition: 0.3s;
 }
+
+/* .navbar_main_div:hover {
+  box-shadow: 3px 0 14px 6px var(--lightblue);
+  transition: 0.2s;
+} */
 
 .navbar_main_div.sticky_nav {
   height: 80px;
@@ -539,6 +545,33 @@ body {
   transition: 0.3s;
   cursor: pointer;
 }
+
+.journey_fill_div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 60vh;
+}
+
+.journey_fill_div h1 {
+  font-family: "Quicksand", sans-serif;
+  color: var(--red);
+  font-size: 60px;
+  letter-spacing: 1px;
+  font-weight: 10;
+  text-transform: capitalize;
+}
+
+.journey_fill_div p {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 20px;
+  font-weight: 510;
+  color: var(--white);
+}
+
 .booking_div {
   width: 100%;
   height: 1000px;
@@ -643,14 +676,29 @@ body {
 .booking_slider_person input[type="range"] {
   width: 100%;
   height: 100%;
+  background-color: var(--lightblue);
 }
 
-.booking_date {
+.booking_slider_person input[type="range"]::-webkit-slider-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--lightblue);
+}
+.booking_slider_person
+  input[type="”range”"]::-moz-range-thumb
+  .booking_slider_person
+  input[type="”range”"]::-ms-thumb
+  .booking_date {
 }
 
 .booking_buttons_link {
   width: 150px;
   height: 50px;
+}
+
+.booking_buttons_link:hover {
+  cursor: pointer;
 }
 
 .booking_buttons_butn {
@@ -673,6 +721,7 @@ body {
   border: solid 1px var(--black);
   transition: ease 0.3;
   box-shadow: 6px 9px 0 0 var(--black);
+  cursor: pointer;
 }
 
 .booking_recenties_div {
@@ -1094,7 +1143,7 @@ body {
   box-shadow: 0px 0px 8px 4px var(--red);
   cursor: pointer;
 }
-.arrived_rev_butn input[type="submit"] {
+.arrived_butn2 {
   width: 250px;
   height: 50px;
   background-color: transparent;
@@ -1103,7 +1152,7 @@ body {
   color: var(--white);
   border-radius: 4px;
 }
-.arrived_rev_butn input[type="submit"]:hover {
+.arrived_butn2:hover {
   background-color: var(--yellow);
   border: var(--yellow) solid 7px;
   transition: ease-in 0.1s;
@@ -1225,7 +1274,9 @@ body {
   height: 400px;
   object-fit: cover;
 }
-
+.invisible {
+  display: none;
+}
 /* js css ----------------------------------------------------------- */
 
 #myBtn {
