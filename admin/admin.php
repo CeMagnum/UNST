@@ -119,7 +119,7 @@
                 <input type="text" name="price" placeholder="Price" value="<?php echo $i['price']?>">
                 <textarea name="short_desc" id="short_desc" cols="30" rows="10"><?php echo $i['shortdescription']?></textarea>
                 <textarea name="long_desc" id="long_desc" cols="30" rows="10"><?php echo $i['longdescription']?></textarea>
-                <!-- <input type="text" name="description"  placeholder="Long descrtiption" value="<?php echo $i['longdescription']?>"> -->
+                <input type="text" name="description"  placeholder="Long descrtiption" value="<?php echo $i['longdescription']?>">
                 <input class="invisible" type="text" value="<?php echo $_GET['planet_id']?>" name="planet_id" />
                 <button type="submit" name="editItem" value="Edit item">Push edit</button>
             </form>
