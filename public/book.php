@@ -54,7 +54,7 @@ foreach($result as $i)
         Go on a great journey!    
     </h1>
     <br>
-    <a class='booking_buttons_link' href='./arrived.php'><button class='booking_buttons_butn'>order!</button></a>
+    <a class='booking_buttons_link' href='../private/arrived.php'><button class='booking_buttons_butn'>order!</button></a>
     </div>
 
 </div></div></div>

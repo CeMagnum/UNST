@@ -62,12 +62,13 @@
             $result = $stm->fetchAll(PDO::FETCH_ASSOC);
             // var_dump($result);
             foreach($result as $i)
-            {echo "<div><h2>".$i['price']."<h2><br>".$i['planet']."<br><img src=\"../assets/img/planets/".$i['planet'].".png\" alt='".$i['shortdescription']."' /><br>".$i['longdescription']."</div>";}?>
+            {echo "<img src=\"../assets/img/planets/".$i['planet'].".png\" alt='".$i['shortdescription']."'</div>";}?>
 
             <form method="POST" action="edit.php">
                 <input type="text" name="price" placeholder="Price" value="<?php echo $i['price']?>">
                 <input type="text" name="planet" placeechholder="Planet and image name" value="<?php echo $i['planet']?>">
-                <input type="text" name="description"  placeholder="Short description" value="<?php echo $i['shortdescription']?>">
+                <textarea name="short_desc" id="short_desc" cols="30" rows="10"><?php echo $i['shortdescription']?></textarea>
+                <textarea name="long_desc" id="long_desc" cols="30" rows="10"><?php echo $i['longdescription']?></textarea>
                 <input type="text" name="description"  placeholder="Long descrtiption" value="<?php echo $i['longdescription']?>">
                 <input class="invisible" type="text" value="<?php echo $_GET['planet_id']?>" name="planet_id" />
                 <button type="submit" name="editItem" value="Edit item">Push edit</button>
