@@ -5,6 +5,22 @@
   scroll-behavior: smooth;
 }
 
+::placeholder {
+  font-size: 25px;
+  color: var(--gery);
+  padding-left: 20px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 900;
+}
+
+textarea {
+  font-family: "Didact Gothic", sans-serif;
+}
+
+input[type="text"] {
+  font-family: "Didact Gothic", sans-serif;
+}
+
 :root {
   --lightgrey: #77776b;
   --gery: #4d4d4d;
@@ -54,7 +70,7 @@ body {
   background-color: var(--darkgrey);
 }
 .navbar_logo {
-  width: 20px;
+  width: 100px;
   height: 100%;
 }
 
@@ -842,7 +858,7 @@ body {
 
 .contact_message_div {
   width: 100%;
-  height: 600px;
+  height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -875,7 +891,7 @@ body {
 }
 
 .contact_mail_name {
-  width: 800px;
+  width: 300px;
 }
 
 .contact_mail_name p,
@@ -888,12 +904,14 @@ body {
 
 .contact_mail_name_input {
   width: 100%;
-  height: 50px;
+  height: 30px;
 }
 
 .contact_mail_name_input input[type="text"],
 .contact_mail_mail_txt_input input[type="text"] {
-  width: 800px;
+  font-size: 20px;
+  max-width: 350px;
+  width: 100%;
   height: 100%;
   border: none;
   box-shadow: 0px 0px 10px 2px var(--lightblue);
@@ -915,16 +933,17 @@ body {
 
 .contact_mail_message_txt_input {
   width: 100%;
-  height: 140px;
+  height: 100px;
 }
 
 .contact_mail_message_txt_input textarea {
-  width: 900px;
+  width: 100%;
   height: 100%;
   resize: none;
   border: none;
   box-shadow: 0px 0px 10px 2px var(--lightblue);
   border-radius: 30px;
+  font-size: 20px;
 }
 
 .contact_mail_mail_div {
@@ -936,10 +955,6 @@ body {
   align-items: flex-start;
 }
 
-.contact_mail_mail_txt_input {
-  width: 100%;
-  height: 60px;
-}
 .contact_mail_submit {
   width: 100%;
   height: 100px;
@@ -973,12 +988,13 @@ body {
   height: 100%;
   background-color: var(--bluegrey);
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 .loggin_main {
   width: 50%;
-  height: 50%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1008,11 +1024,29 @@ body {
 
 .loggin_log {
   width: 300px;
-  height: 200px;
+  height: auto;
   display: flex;
   align-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.loggin_log input[type="submit"] {
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: double 3px var(--yellow);
+  color: var(--white);
+  transition: 0.2s;
+  font-size: 20px;
+}
+
+.loggin_log input[type="submit"]:hover {
+  background-color: var(--yellow);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 /* arrived */
@@ -1320,4 +1354,154 @@ body {
 
 #myBtn:hover {
   background-color: #555;
+}
+@media only screen and (max-width: 800px) {
+  /* index */
+  .navbar_butn {
+    font-size: 19px;
+  }
+  .home_carrousel {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .home_recentie_div {
+    height: 800px;
+  }
+  .recenties_div {
+    height: 700px;
+  }
+  .recentie_content_txt p {
+    font-size: 20px;
+  }
+  .home_slideshow_txt {
+    width: 100%;
+  }
+
+  .recenties_div_3 {
+    flex-direction: column;
+  }
+
+  .recenties_div_1 {
+    height: 700px;
+  }
+  .recentie_content {
+    height: 700px;
+    width: 100%;
+  }
+
+  /* journey */
+  .journey_search_div h1 {
+    font-size: 60px;
+  }
+
+  .journey_search_div p {
+    font-size: 19px;
+  }
+
+  .journey_txt p {
+    font-size: 18px;
+  }
+
+  .aspect_div {
+    width: 300px;
+    height: 300px;
+  }
+
+  .aspect_div img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  /* index */
+  .home_info_div {
+    display: flex;
+    flex-wrap: wrap;
+    height: 1000px;
+  }
+
+  .home_info_section {
+    min-width: 300px;
+  }
+
+  .home_landing_title h1 {
+    font-size: 70px;
+  }
+
+  .home_landing_title p {
+    font-size: 30px;
+  }
+  .home_recenties_div {
+    height: 500px;
+  }
+
+  .recenties_txt_div {
+    height: 400px;
+  }
+  .footer_left img {
+    display: none;
+  }
+  .footer_left {
+    display: none;
+  }
+  .footer_list {
+    width: 400px;
+  }
+  .footer_right {
+    width: 100%;
+  }
+
+  /* journey */
+
+  .journey_search_div {
+    height: 250px;
+  }
+  .journey_search_div h1 {
+    font-size: 50px;
+  }
+  .nav_form input[type="text"] {
+    width: 400px;
+    height: 30px;
+  }
+
+  .aspect_div {
+    width: 200px;
+    height: 200px;
+  }
+
+  .aspect_div img {
+    width: 200px;
+    height: 200px;
+  }
+  .journey_div {
+    height: 400px;
+  }
+
+  .journey_txt h1 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* index */
+  .navbar_logo {
+    display: none;
+  }
+  .navbar_link {
+    width: 100px;
+  }
+
+  .navbar_butn {
+    width: 100px;
+  }
+
+  /* journey */
+  .journey_search_div h1 {
+    font-size: 40px;
+  }
 }

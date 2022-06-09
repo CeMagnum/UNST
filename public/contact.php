@@ -60,20 +60,18 @@
   <div class="contact_link_div">
     <div class="contact_link_section">
       <a class="contact_link_link" href="mailto:mail@pornhub.com">
-        <button class="contact_link_butn">link to email</button></a
-      >
+        <button class="contact_link_butn">link to email</button>
+      </a>
     </div>
     <div class="contact_link_section">
-      <a class="contact_link_link">
-        <button class="contact_link_butn">
-          link to idk simething to think about
-        </button></a
-      >
+      <a class="contact_link_link" href="../public/privacy_policy.php" >
+        <button class="contact_link_butn">View privacy policy?</button>
+      </a>
     </div>
     <div class="contact_link_section">
-      <a class="contact_link_link"
-        ><button class="contact_link_butn">link to external website</button></a
-      >
+      <a class="contact_link_link" href="https://github.com/CeMagnum/UNST">
+        <button class="contact_link_butn">link to our github</button>
+      </a>
     </div>
   </div>
 </div>
@@ -82,26 +80,26 @@
     <div class="contact_message_mail">
       <div class="contact_mail_name_div">
         <div class="contact_mail_name">
-          <p>tell us your name</p>
+          <p>Tell us your name</p>
         </div>
         <div class="contact_mail_name_input">
-          <input type="text" placeholder="        type your name here" />
+          <input type="text" placeholder="type your name here" />
         </div>
       </div>
       <div class="contact_mail_message_div">
         <div class="contact_mail_message_txt">
-          <p>give me ur souls</p>
+          <p>Tell us</p>
         </div>
         <div class="contact_mail_message_txt_input">
-          <textarea placeholder="      type somehitng here"></textarea>
+          <textarea placeholder="type somehitng here"></textarea>
         </div>
       </div>
       <div class="contact_mail_mail_div">
         <div class="contact_mail_mail_txt">
-          <p>enter your mail</p>
+          <p>Enter your mail</p>
         </div>
-        <div class="contact_mail_mail_txt_input">
-          <input type="text" placeholder="           type your email here" />
+        <div class="contact_mail_name_input">
+          <input type="text" placeholder="type your email here" />
         </div>
       </div>
       <div class="contact_mail_submit">
