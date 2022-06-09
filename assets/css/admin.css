@@ -132,7 +132,8 @@ img {
 
 .admin_rev_panel {
   width: 100%;
-  height: 500px;
+  height: fit-content;
+  padding-bottom: 20px;
   background-color: rgba(185, 38, 38, 0.959);
   display: flex;
   flex-direction: column;
@@ -141,7 +142,7 @@ img {
 }
 .admin_rev_panel form {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   flex-direction: column;
   align-items: center;

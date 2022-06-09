@@ -19,44 +19,28 @@
     <div class="rev">
         <div class="admin_rev">
         <h1>Manage reviews</h1>
-            <!-- php copy past this -->
-        <div class="admin_rev_panel">
-            <form action="POST">
-                <h1>..naam..</h1>
-                <p>..txt..</p>
-                <p>..ster..</p>
-                <input type="submit" name="accept" value="accept">
-                <input type="submit" name="decline" value="decline">
-            </form>
-        </div>
-        <!-- php stop hier -->
-        <div class="admin_rev_panel">
-            <form action="POST">
-                <h1>..naam..</h1>
-                <p>..txt..</p>
-                <p>..ster..</p>
-                <input type="submit" name="accept" value="accept">
-                <input type="submit" name="decline" value="decline">
-            </form>
-        </div>
-        <div class="admin_rev_panel">
-            <form action="POST">
-                <h1>..naam..</h1>
-                <p>..txt..</p>
-                <p>..ster..</p>
-                <input type="submit" name="accept" value="accept">
-                <input type="submit" name="decline" value="decline">
-            </form>
-        </div>
-        <div class="admin_rev_panel">
-            <form action="POST">
-                <h1>..naam..</h1>
-                <p>..txt..</p>
-                <p>..ster..</p>
-                <input type="submit" name="accept" value="accept">
-                <input type="submit" name="decline" value="decline">
-            </form>
-        </div>
+        <?php 
+            $blem = $conn->prepare("SELECT * FROM reviews");
+            $blem->execute();
+            $result = $blem->fetchAll(PDO::FETCH_ASSOC);
+            foreach($result as $i)
+            {echo "
+            <div class='admin_rev_panel'>
+                <form action='delete.php' method='POST'>
+                    <h1>".$i['username']."</h1>
+                    <p>".$i['planet']."</p>
+                    <p>".$i['text']."</p>
+                    <p>".$i['curated']."<?p>
+                    <p>".str_repeat('⭐', $i['stars'])."</p>
+                    <input class='invisible' type='text' value=\"".$i['ID']."\" name='ID'/>
+                    <input type='submit' name='deletereview' value='decline'>
+                </form>
+                <form action='delete.php' method='POST'>
+                    <input class='invisible' type='text' value=\"".$i['ID']."\" name='ID'/>
+                    <input type='submit' name='approvereview' value='accept'>
+                </form>
+            </div>";
+            }?>
     </div>
     </div>
     </div>
@@ -135,47 +119,26 @@
                 <div class="admin_acc">
                 <h1>Manage accounts</h1>
                 <!-- php copy -->
-                <div class="admin_acc_panel">
-                    <form action="POST">
-                        <input type="text" value="..naam..">
-                        <input type="text" value="..email..">
-                        <input type="text" value="..wachtwoord..">
-                        <input type="text" value="..admin..">
-                        <input type="submit" name="save" value="save">
-                        <input type="submit" name="delete" value="delete">
-                    </form>
-                </div>
-                <!-- php stop copy -->
-                <div class="admin_acc_panel">
-                    <form action="POST">
-                        <input type="text" value="..naam..">
-                        <input type="text" value="..email..">
-                        <input type="text" value="..wachtwoord..">
-                        <input type="text" value="..admin..">
-                        <input type="submit" name="save" value="save">
-                        <input type="submit" name="delete" value="delete">
-                    </form>
-                </div>
-                <div class="admin_acc_panel">
-                    <form action="POST">
-                        <input type="text" value="..naam..">
-                        <input type="text" value="..email..">
-                        <input type="text" value="..wachtwoord..">
-                        <input type="text" value="..admin..">
-                        <input type="submit" name="save" value="save">
-                        <input type="submit" name="delete" value="delete">
-                    </form>
-                </div>
-                <div class="admin_acc_panel">
-                    <form action="POST">
-                        <input type="text" value="..naam..">
-                        <input type="text" value="..email..">
-                        <input type="text" value="..wachtwoord..">
-                        <input type="text" value="..admin..">
-                        <input type="submit" name="save" value="save">
-                        <input type="submit" name="delete" value="delete">
-                    </form>
-                </div>
+<?php 
+$blem = $conn->prepare("SELECT * FROM users");
+$blem->execute();
+$result = $blem->fetchAll(PDO::FETCH_ASSOC);
+foreach($result as $i)
+{echo "
+    <div class='admin_acc_panel'>
+        <form action='delete.php' method='POST'>
+            <p>".$i['user_id']."</p>
+            <input type='text' name='username' value='".$i['username']."'>
+            <input type='text' name='email' value='".$i['email']."'>
+            <input type='text' name='admin' value='".$i['admin']."'>
+            <input class='invisible' type='text' value=\"".$i['user_id']."\" name='user_id'/>
+            <input type='submit' name='edit_user' value='save'>
+        </form>
+        <form action='delete.php' method='POST'>
+            <input class='invisible' type='text' value=\"".$i['user_id']."\" name='user_id'/>
+            <input type='submit' name='delete_user' value='delete'>
+        </form>
+    </div>";}?>
             </div>
             </div>
             </div>
