@@ -8,7 +8,7 @@ include("includes/connect.php");
 <body>
     <div class="navbar_main_div">
         <div class="navbar_logo">
-            <img src="./assets/img/UNSC_Logo_White.svg" alt="logo" />
+            <img src="./assets/img/Logo2_small_WIP.png" alt="logo" />
         </div>
         <div class="navbar_middle_div">
             <a class="navbar_link" href="index.php">
@@ -26,11 +26,12 @@ include("includes/connect.php");
         </div>
     </div>
 <div class="navbar_space"></div>
-<div class="home_landing_title_div">
+<div class="home_landing_title_div" id="landing">
     <div class="home_landing_title">
         <h1>Welcome to</h1>
         <br>
-        <h1>United Nations Space Travels</h1> 
+        <h1>United Nations Space Travels</h1>
+        <p>We help create the greatest journeys</p> 
     </div>
    <div class="home_landing_txt">
        <p>
@@ -41,7 +42,7 @@ include("includes/connect.php");
     <a href="private/base.php">private</a>
    </div>
 </div>
-<div class="home_info_div">
+<div class="home_info_div" id="info">
     <div class="home_info_section">
         <h2>Why would fly with us?</h2>
         <p>You see you dant want to get glassed by aliens do you?</p>
@@ -57,7 +58,7 @@ include("includes/connect.php");
 </div>
 <div class="home_journeys_div">
 
-<div class="home_carrousel">
+<div class="home_carrousel" id="top_location">
     <div class="home_slideshow_txt">
         <h1>Greates journeys</h1>
         <div class="slideshow_txt_div">
@@ -93,7 +94,7 @@ include("includes/connect.php");
     
 </div>
 
-<div class="home_recenties_div">
+<div class="home_recenties_div" id="recenties">
     <div class="recenties_txt_div">
         <h1>Recenties van onze klanten</h1>
         <p>onze klanten houden van de ruimte. want de ruimte is mooi met al die sterren enzovoort. je moet een weeten waar noble six zit lekker in mijn achtertuin.</p>
@@ -130,30 +131,35 @@ include("includes/connect.php");
 <script src="./assets/js/carousel.js"></script>
 <footer class="foot_div">
     <div class="footer_left">
-    <img src="./assets/img/vehicles/Pelican.png" alt="Pelican" />
+    <img src="./assets/img/logo2_WIP.png" alt="Pelican" />
     </div>
     <div class="footer_right">
     <div class="footer_list">
-        <a href="../index.php"><p>Home</p></a>
+        <a href="index.php"><p>Home</p></a>
         <hr class="footer_hr" />
-        <a href="../index.php"><p>recenties</p></a>
-        <a href="../index.php"><p>top locatiets</p></a>
+        <a href="index.php#landing"><p>Landing</p></a>
+        <a href="index.php#info"><p>information</p></a>
+        <a href="index.php#top_location"><p>top locatations</p></a>
+        <a href="index.php#recenties"><p>reviews</p></a>
     </div>
     <div class="footer_list">
-        <a href="../public/contact.php"><p>Contact</p></a>
-        <hr class="footer_hr" />
-        <a href="../public/contact.php"><p>Contact</p></a>
-        <a href="../public/contact.php"><p>Contact</p></a>
-        <a href="../public/contact.php"><p>Contact</p></a>
+    <a href="../public/journey.php"><h1>journey</h1></a>
+    <hr class="footer_hr" />
+    <a href="../public/journey.php#search"><p>search journey</p></a>
+    <a href="../public/journey.php#journey"><p>destinations</p></a>
     </div>
-    <div class="footer_list">
-        <a href="../public/journey.php"><p>journey</p></a>
-        <hr class="footer_hr" />
-        <a href="../public/journey.php"><p>journey</p></a>
-        <a href="../public/journey.php"><p>journey</p></a>
-        <a href="../public/journey.php"><p>journey</p></a>
-        <a href="../public/journey.php"><p>journey</p></a>
-    </div>
+<div class="footer_list">
+    <a href="../public/contact.php"><h1>Contact</h1></a>
+    <hr class="footer_hr" />
+    <a href="../public/contact.php#information"><p>information</p></a>
+    <a href="../public/contact.php#message"><p>contact us</p></a>
+</div>
+
+<div class="footer_list">
+    <a href="../public/privacy_policy.php"><h1>privacy policy</h1></a>
+</div>
+</div>
+
     </div>
 </body>
 </footer></html>

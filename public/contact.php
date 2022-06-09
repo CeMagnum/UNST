@@ -2,7 +2,7 @@
 <?php include("../includes/navbar.php")?>
 <div class="navbar_space"></div>
 <div class="contact_main_div">
-  <div class="contact_info_div">
+  <div class="contact_info_div" id="information">
     <div class="contact_info_txt_div">
       <div class="contact_info_title">
         <h1>waar wij begonen</h1>
@@ -77,7 +77,7 @@
     </div>
   </div>
 </div>
-<div class="contact_message_div">
+<div class="contact_message_div"  id="message">
   <form action="post">
     <div class="contact_message_mail">
       <div class="contact_mail_name_div">
