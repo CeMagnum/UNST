@@ -105,7 +105,7 @@ include("includes/connect.php");
         <div class="recenties_div_1">
             <div class="recenties_div_2">
                 <div class="recenties_div_3">
-                <?php $blem = $conn->prepare("SELECT * FROM reviews WHERE curated = 2 ORDER BY RAND()");
+                <?php $blem = $conn->prepare("SELECT * FROM reviews WHERE curated = 1 ORDER BY RAND()");
                     $blem->execute();
                     $result = $blem->fetchAll(PDO::FETCH_ASSOC);
                     foreach($result as $i)
