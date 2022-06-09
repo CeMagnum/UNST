@@ -60,20 +60,18 @@
   <div class="contact_link_div">
     <div class="contact_link_section">
       <a class="contact_link_link" href="mailto:mail@pornhub.com">
-        <button class="contact_link_butn">link to email</button></a
-      >
+        <button class="contact_link_butn">link to email</button>
+      </a>
     </div>
     <div class="contact_link_section">
-      <a class="contact_link_link">
-        <button class="contact_link_butn">
-          link to idk simething to think about
-        </button></a
-      >
+      <a class="contact_link_link" href="../public/privacy_policy.php" >
+        <button class="contact_link_butn">View privacy policy?</button>
+      </a>
     </div>
     <div class="contact_link_section">
-      <a class="contact_link_link"
-        ><button class="contact_link_butn">link to external website</button></a
-      >
+      <a class="contact_link_link" href="https://github.com/CeMagnum/UNST">
+        <button class="contact_link_butn">link to our github</button>
+      </a>
     </div>
   </div>
 </div>

@@ -159,7 +159,8 @@ include("includes/connect.php");
     <a href="../public/privacy_policy.php"><h1>privacy policy</h1></a>
 </div>
 </div>
-
-    </div>
+</div>
+</footer>
+<script src="./assets/js/scrollfunciton.js"></script>
 </body>
-</footer></html>
+</html>
