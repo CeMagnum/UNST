@@ -70,7 +70,7 @@ body {
   background-color: var(--darkgrey);
 }
 .navbar_logo {
-  width: 20px;
+  width: 100px;
   height: 100%;
 }
 
@@ -891,7 +891,7 @@ body {
 }
 
 .contact_mail_name {
-  width: 800px;
+  width: 300px;
 }
 
 .contact_mail_name p,
@@ -910,7 +910,8 @@ body {
 .contact_mail_name_input input[type="text"],
 .contact_mail_mail_txt_input input[type="text"] {
   font-size: 20px;
-  width: 800px;
+  max-width: 350px;
+  width: 100%;
   height: 100%;
   border: none;
   box-shadow: 0px 0px 10px 2px var(--lightblue);
@@ -936,7 +937,7 @@ body {
 }
 
 .contact_mail_message_txt_input textarea {
-  width: 900px;
+  width: 100%;
   height: 100%;
   resize: none;
   border: none;
@@ -1353,4 +1354,154 @@ body {
 
 #myBtn:hover {
   background-color: #555;
+}
+@media only screen and (max-width: 800px) {
+  /* index */
+  .navbar_butn {
+    font-size: 19px;
+  }
+  .home_carrousel {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .home_recentie_div {
+    height: 800px;
+  }
+  .recenties_div {
+    height: 700px;
+  }
+  .recentie_content_txt p {
+    font-size: 20px;
+  }
+  .home_slideshow_txt {
+    width: 100%;
+  }
+
+  .recenties_div_3 {
+    flex-direction: column;
+  }
+
+  .recenties_div_1 {
+    height: 700px;
+  }
+  .recentie_content {
+    height: 700px;
+    width: 100%;
+  }
+
+  /* journey */
+  .journey_search_div h1 {
+    font-size: 60px;
+  }
+
+  .journey_search_div p {
+    font-size: 19px;
+  }
+
+  .journey_txt p {
+    font-size: 18px;
+  }
+
+  .aspect_div {
+    width: 300px;
+    height: 300px;
+  }
+
+  .aspect_div img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  /* index */
+  .home_info_div {
+    display: flex;
+    flex-wrap: wrap;
+    height: 1000px;
+  }
+
+  .home_info_section {
+    min-width: 300px;
+  }
+
+  .home_landing_title h1 {
+    font-size: 70px;
+  }
+
+  .home_landing_title p {
+    font-size: 30px;
+  }
+  .home_recenties_div {
+    height: 500px;
+  }
+
+  .recenties_txt_div {
+    height: 400px;
+  }
+  .footer_left img {
+    display: none;
+  }
+  .footer_left {
+    display: none;
+  }
+  .footer_list {
+    width: 400px;
+  }
+  .footer_right {
+    width: 100%;
+  }
+
+  /* journey */
+
+  .journey_search_div {
+    height: 250px;
+  }
+  .journey_search_div h1 {
+    font-size: 50px;
+  }
+  .nav_form input[type="text"] {
+    width: 400px;
+    height: 30px;
+  }
+
+  .aspect_div {
+    width: 200px;
+    height: 200px;
+  }
+
+  .aspect_div img {
+    width: 200px;
+    height: 200px;
+  }
+  .journey_div {
+    height: 400px;
+  }
+
+  .journey_txt h1 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* index */
+  .navbar_logo {
+    display: none;
+  }
+  .navbar_link {
+    width: 100px;
+  }
+
+  .navbar_butn {
+    width: 100px;
+  }
+
+  /* journey */
+  .journey_search_div h1 {
+    font-size: 40px;
+  }
 }
