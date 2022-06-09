@@ -3,7 +3,7 @@ include("../includes/header.php");
 ?>
 <div class="arrived_div">
     <div class="arrvived_rev_div">
-        <form  method="post" action="insert.php">
+        <form  method="post" action="insert_review.php">
             <div class="arrived_txt">
                 <h1>Do you want to write a review?</h1>
             </div>
@@ -12,7 +12,7 @@ include("../includes/header.php");
                 <p>write your expreriance</p>
               </div>
               <div class="arrvided_rev_txt_input">
-                <textarea name="text" placeholder="        type somehitng here"></textarea>
+                <textarea name="text" placeholder="        type something here"></textarea>
               </div>
             </div>
             <div class="arrvived_rev_star_div">
@@ -21,13 +21,16 @@ include("../includes/header.php");
               </div>
               <div class="arrvived_rev_star_input">
                 <input type='range' name='rangeInput' onchange='updateTextInput(this.value);'min='1' max='5' step='1'value='5' id='slider_booking'>
-                <input type='text' name="stars" value='5' readonly id='textInput'>..</p>
+                <input type='text' name='stars' value='5' readonly id='textInput'>..</p>
+                <input class='invisible' type='text' name='userid' value='<?php echo $_GET['userid']?>'>
+                <input class='invisible' type='text' name='planet_id' value='<?php echo $_GET['planet_id']?>'>
               </div>
             </div>
             <div class="arrived_rev_butn">
-                <a href="../index.php"><button class="arrived_butn1">no i do not want to leave a reveiuw</button></a>
+                <!-- <a href="../index.php"><button  class="arrived_butn1">no i do not want to leave a reveiuw</button></a> -->
+                <input class="arrived_butn1" type="submit" value="nosend" name="bttn">
                 <input class="arrived_butn2" type="submit" value="send" name="bttn">
-            </div>
+             </div>
         </form>
        
       </div>
