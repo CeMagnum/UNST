@@ -82,26 +82,26 @@
     <div class="contact_message_mail">
       <div class="contact_mail_name_div">
         <div class="contact_mail_name">
-          <p>tell us your name</p>
+          <p>Tell us your name</p>
         </div>
         <div class="contact_mail_name_input">
-          <input type="text" placeholder="        type your name here" />
+          <input type="text" placeholder="type your name here" />
         </div>
       </div>
       <div class="contact_mail_message_div">
         <div class="contact_mail_message_txt">
-          <p>give me ur souls</p>
+          <p>Tell us</p>
         </div>
         <div class="contact_mail_message_txt_input">
-          <textarea placeholder="      type somehitng here"></textarea>
+          <textarea placeholder="type somehitng here"></textarea>
         </div>
       </div>
       <div class="contact_mail_mail_div">
         <div class="contact_mail_mail_txt">
-          <p>enter your mail</p>
+          <p>Enter your mail</p>
         </div>
-        <div class="contact_mail_mail_txt_input">
-          <input type="text" placeholder="           type your email here" />
+        <div class="contact_mail_name_input">
+          <input type="text" placeholder="type your email here" />
         </div>
       </div>
       <div class="contact_mail_submit">

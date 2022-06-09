@@ -5,6 +5,22 @@
   scroll-behavior: smooth;
 }
 
+::placeholder {
+  font-size: 25px;
+  color: var(--gery);
+  padding-left: 20px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 900;
+}
+
+textarea {
+  font-family: "Didact Gothic", sans-serif;
+}
+
+input[type="text"] {
+  font-family: "Didact Gothic", sans-serif;
+}
+
 :root {
   --lightgrey: #77776b;
   --gery: #4d4d4d;
@@ -842,7 +858,7 @@ body {
 
 .contact_message_div {
   width: 100%;
-  height: 600px;
+  height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -888,11 +904,12 @@ body {
 
 .contact_mail_name_input {
   width: 100%;
-  height: 50px;
+  height: 30px;
 }
 
 .contact_mail_name_input input[type="text"],
 .contact_mail_mail_txt_input input[type="text"] {
+  font-size: 20px;
   width: 800px;
   height: 100%;
   border: none;
@@ -915,7 +932,7 @@ body {
 
 .contact_mail_message_txt_input {
   width: 100%;
-  height: 140px;
+  height: 100px;
 }
 
 .contact_mail_message_txt_input textarea {
@@ -925,6 +942,7 @@ body {
   border: none;
   box-shadow: 0px 0px 10px 2px var(--lightblue);
   border-radius: 30px;
+  font-size: 20px;
 }
 
 .contact_mail_mail_div {
@@ -936,10 +954,6 @@ body {
   align-items: flex-start;
 }
 
-.contact_mail_mail_txt_input {
-  width: 100%;
-  height: 60px;
-}
 .contact_mail_submit {
   width: 100%;
   height: 100px;
@@ -973,12 +987,13 @@ body {
   height: 100%;
   background-color: var(--bluegrey);
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 .loggin_main {
   width: 50%;
-  height: 50%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1008,11 +1023,29 @@ body {
 
 .loggin_log {
   width: 300px;
-  height: 200px;
+  height: auto;
   display: flex;
   align-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.loggin_log input[type="submit"] {
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: double 3px var(--yellow);
+  color: var(--white);
+  transition: 0.2s;
+  font-size: 20px;
+}
+
+.loggin_log input[type="submit"]:hover {
+  background-color: var(--yellow);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 /* arrived */
