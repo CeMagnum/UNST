@@ -6,7 +6,7 @@ include('../includes/connect.php');
 <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
 <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
 <?php include("../includes/navbar.php");?>
-<div class="journey_search_div">
+<div class="journey_search_div" id="search">
   <h1>
       Search your journey!
   </h1>
@@ -17,7 +17,8 @@ include('../includes/connect.php');
     <input type="text" placeholder="Find your great journey" name="search">
 </form>
 </div>
-  <?php   
+<div class="journey_main_div" id="journey">
+<?php   
     if (isset($_GET['search'])){
     $search = '%'.$_GET['search'].'%';
     $sql = "SELECT * FROM journeys WHERE planet LIKE :search ORDER BY planet ASC";
@@ -45,7 +46,10 @@ include('../includes/connect.php');
       }
     if(empty($result)){
       echo "<div class='journey_fill_div'><h1> No results found!</h1><p>Try searching something else?</p></div>";}
-include('../includes/footer.php');
+?>
+</div>
+<?php
+ include('../includes/footer.php');
 ?>
 
 

@@ -136,6 +136,14 @@ body {
   text-align: center;
 }
 
+.home_landing_title p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--white);
+}
+
 .home_landing_txt {
   width: 95%;
   height: 200px;
@@ -145,7 +153,7 @@ body {
 
 .home_landing_txt p {
   font-family: "Rajdhani", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 2px;
   color: var(--white);
@@ -953,6 +961,7 @@ body {
 }
 .contact_mail_submit input[type="submit"]:hover {
   border: solid 1px var(--black);
+  cursor: pointer;
   transition: ease 0.3;
   box-shadow: 10px 13px 0 0 var(--black);
 }
@@ -1232,15 +1241,29 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   border-left: solid 2px var(--lightblue);
 }
 
 .footer_list p {
+  margin-left: 9px;
   font-family: "Didact Gothic", sans-serif;
   font-size: 17px;
   font-weight: 10;
   color: var(--white);
+}
+
+.footer_list h1 {
+  margin-left: 9px;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--white);
+}
+
+.footer_list h1:hover {
+  cursor: pointer;
+  color: var(--red);
 }
 
 .footer_list a {
