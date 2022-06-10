@@ -49,6 +49,7 @@ include("includes/connect.php");
     </div>
    <div class="home_landing_txt">
     <p>
+        <a href="./functions/logout.php">logout</a>
         We are very pleased for picking our space flight industry. We know that we are one of few
         so we try to give you the highest quality travels. Our transport is top of the line, the best of the best for the best from the best
         . Bring your friends and family, contribute to our great liniage. Whe have top of the line staff, Specificly chosen and [REDACTED] to suit our needs

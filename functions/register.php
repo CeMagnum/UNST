@@ -31,7 +31,7 @@ if (empty($username || $password ||$email)) {
         $conn->prepare($sql)->execute();
         session_start();
         echo "successfull!";
-        header('location: ../index.php');
+        header('location: ../login.php');
         exit();
     } else {
         echo 'This account exists already!';
