@@ -8,14 +8,21 @@
     <title>Admin</title>
 </head>
     <?php 
-        // include('admin_session.php'); 
+        include('admin_session.php'); 
         include('../includes/connect.php');
     ?>
 
     
 <body>
     <div class="adminpanel_full">
-        <div class="adminpanel" id="a"><h2>Logged in as admin.</h2><a href="../functions/logout.php"><h4>Logout</h4></a>
+        <?php
+    $user_id = (int) $_SESSION['user_id'];
+    $blem = $conn->prepare("SELECT username FROM users WHERE user_id = :userid");
+    $blem->bindParam(":userid", $user_id, PDO::PARAM_INT);
+            $blem->execute();
+            $result = $blem->fetchAll(PDO::FETCH_ASSOC);
+            foreach($result as $i)
+            {echo "<div class='adminpanel' id='a'><h2>Logged in as ".$i['username'].".</h2><a href='../functions/logout.php'><h4>Logout</h4></a>";}?>
     <div class="rev">
         <div class="admin_rev">
         <h1>Manage reviews</h1>

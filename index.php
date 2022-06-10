@@ -23,6 +23,18 @@ include("includes/connect.php");
             <a class="navbar_link" href="./public/login.php">
             <button class="navbar_butn">log in</button>
             </a>
+            <?php
+            if (!empty($_SESSION)) {
+                echo "<h1>";
+                $user_id = (int) $_SESSION['user_id'];
+                $blem = $conn->prepare("SELECT username FROM users WHERE user_id = :userid");
+                $blem->bindParam(":userid", $user_id, PDO::PARAM_INT);
+                    $blem->execute();
+                    $result = $blem->fetchAll(PDO::FETCH_ASSOC);
+                    foreach($result as $i)
+                    {echo "".$i['username']."";}
+                echo "</h1>";
+            }?>
         </div>
     </div>
 <div class="navbar_space"></div>

@@ -17,7 +17,7 @@ kijken of wachtwoorden gelijk zijn
 include("../includes/connect.php");
 $username   =   $_POST['username'];
 $email      =   $_POST['email'];
-$password   =   $_POST['password'];
+$password   =   password_hash($_POST['password'], PASSWORD_DEFAULT);
 if (empty($username || $password ||$email)) {
     echo "All fields must be filled!";
 } else if (isset($_POST['Register'])) {
@@ -26,7 +26,7 @@ if (empty($username || $password ||$email)) {
     $usernamecheck->execute();
     $res = $usernamecheck->fetch(PDO::FETCH_ASSOC);
     if (!$res){
-        $sql = "INSERT INTO `users` (`userid`, `username`, `email`, `password`, `admin`) VALUES (NULL, '$username', '$email', '$password', '0');";
+        $sql = "INSERT INTO `users` (`user_id`, `username`, `email`, `password`, `admin`) VALUES (NULL, '$username', '$email', '$password', '0');";
         echo $sql;
         $conn->prepare($sql)->execute();
         session_start();
