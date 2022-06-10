@@ -1,5 +1,8 @@
-<?php include('../includes/header.php'); ?>
-<?php include("../includes/navbar.php")?>
+<?php
+include('../includes/header.php');
+include('../includes/connect.php');
+include('../includes/navbar.php');
+?>
 <div class="navbar_space"></div>
 <div class="contact_main_div">
   <div class="contact_info_div" id="information">

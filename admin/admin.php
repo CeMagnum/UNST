@@ -8,7 +8,7 @@
     <title>Admin</title>
 </head>
     <?php 
-        include('admin_session.php'); 
+        // include('admin_session.php'); 
         include('../includes/connect.php');
     ?>
 

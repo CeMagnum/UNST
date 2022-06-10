@@ -11,10 +11,9 @@ include("../includes/connect.php");
     // Als die kloppen, dan controleren of admin 0 of 1 is, zodat je weet of je de sessioN_admin op true moet zetten
     // dan sturen naar de juiste pagina, bij admin kan dat de backend zijn, bij user kan het de frontend zijn
     if(isset($_POST['login'])){
-        $sql = "SELECT user_id, admin, password FROM users WHERE username = :username AND password = :password;";
+        $sql = "SELECT user_id, admin, password FROM users WHERE username = :username";
         $usercheck = $conn->prepare($sql);
         $usercheck->bindParam(":username", $username, PDO::PARAM_STR);
-        $usercheck->bindParam(":password", $password, PDO::PARAM_STR);
         $usercheck->execute();
 
         $res = $usercheck->fetch(PDO::FETCH_ASSOC);

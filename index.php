@@ -20,21 +20,23 @@ include("includes/connect.php");
             <a class="navbar_link" href="./public/contact.php">
             <button class="navbar_butn">Contact</button>
             </a>
-            <a class="navbar_link" href="./public/login.php">
-            <button class="navbar_butn">log in</button>
-            </a>
+            
             <?php
-            if (!empty($_SESSION)) {
-                echo "<h1>";
+            session_start();
+            if(isset($_SESSION['user_id'])){
                 $user_id = (int) $_SESSION['user_id'];
                 $blem = $conn->prepare("SELECT username FROM users WHERE user_id = :userid");
                 $blem->bindParam(":userid", $user_id, PDO::PARAM_INT);
-                    $blem->execute();
-                    $result = $blem->fetchAll(PDO::FETCH_ASSOC);
-                    foreach($result as $i)
-                    {echo "".$i['username']."";}
-                echo "</h1>";
+                $blem->execute();
+                $result = $blem->fetchAll(PDO::FETCH_ASSOC);
+                echo "<a class='navbar_link' href='./private/account.php'>
+                <button class='navbar_butn'>Logged in as ".$result[0]['username']."</button></a>";
+            } else {
+                echo "<a class='navbar_link' href='./public/login.php'>
+                <button class='navbar_butn'>Login</button></a>";
             }?>
+            </a>
+        </button>
         </div>
     </div>
 <div class="navbar_space"></div>
