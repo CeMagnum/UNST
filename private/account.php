@@ -26,11 +26,56 @@
         </div>
       </div>
       <!-- PHP end here -->
+      
     </div>
   </div>
   <div class="acc_right_div">
     <div class="acc_rev">
       <h1>Written Reviews</h1>
+      <!-- php start here -->
+      <div class="rev_card">
+        <div class="rev_content">
+          <p>..planet..</p>
+          <textarea name="txt">..TXT..</textarea>
+          <p>..stars..</p>
+        </div>
+      </div>
+      <!-- php end here -->
+      <div class="rev_card">
+        <div class="rev_content">
+          <p>..planet..</p>
+          <textarea name="txt">..TXT..</textarea>
+          <p>..stars..</p>
+        </div>
+      </div>
+      <div class="rev_card">
+        <div class="rev_content">
+          <p>..planet..</p>
+          <textarea name="txt">..TXT..</textarea>
+          <p>..stars..</p>
+        </div>
+      </div>
+      <div class="rev_card">
+        <div class="rev_content">
+          <p>..planet..</p>
+          <textarea name="txt">..TXT..</textarea>
+          <p>..stars..</p>
+        </div>
+      </div>
+      <div class="rev_card">
+        <div class="rev_content">
+          <p>..planet..</p>
+          <textarea name="txt">..TXT..</textarea>
+          <p>..stars..</p>
+        </div>
+      </div>
+      <div class="rev_card">
+        <div class="rev_content">
+          <p>..planet..</p>
+          <textarea name="txt">..TXT..</textarea>
+          <p>..stars..</p>
+        </div>
+      </div>
       <div class="rev_card">
         <div class="rev_content">
           <p>..planet..</p>
@@ -40,11 +85,4 @@
       </div>
     </div>
   </div>
-  <!-- usernamname
-email
-password
-forget acc
-
-bookings
-revieuws -->
 </div>
