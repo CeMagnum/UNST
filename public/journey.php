@@ -11,7 +11,7 @@ include('../includes/connect.php');
       Search your journey!
   </h1>
   <p>
-      We here at the united nation space travels wouold like to take you on your great Journey
+      We would like to take on a GREAT JOURNEY!
   </p>
   <form class="nav_form" method="get">
     <input type="text" placeholder="Find your great journey" name="search">
