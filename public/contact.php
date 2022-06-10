@@ -5,36 +5,27 @@
   <div class="contact_info_div" id="information">
     <div class="contact_info_txt_div">
       <div class="contact_info_title">
-        <h1>waar wij begonen</h1>
+        <h1>Where we started</h1>
       </div>
       <div class="contact_info_txt">
         <p>
-          aliens came and went on to kill us. they kept screaming about this
-          great journey thing. it kinda annoyed us so we startet kidnapping
-          chilldren and turning them into crybabys zus they dont like thier
-          helmets or something Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Perferendis saepe laboriosam dolor earum, possimus
-          laudantium unde voluptatem quibusdam explicabo doloribus quaerat
-          consequatur, alias rerum blanditiis voluptas iste reprehenderit. Unde
-          laborum a numquam temporibus quas vero autem corporis architecto.
-          Debitis voluptates eius consectetur distinctio ratione, non laborum
-          impedit natus dolore facilis.
+          We were founded the moment that space travel became possible. Suddenly The earth was not a boundry anymore. Planets were the new destinations.
+          Our founder, Doris van Parken wanted to give the human race an easy wat to safetly, fast, cheap and secure way to travel in space.
+          He started to first build his own first spaceship. It blew up and he died but his blueprints were found and used by the current head of our company, Danish Harker.
+          With those blueprints he started to build more and more ships, With his gain he started a company. This company. It was super succesfull. With more and more ships, journeys, planets and new technoligies. we still thirve today.
+          All thanks to you!
+
         </p>
       </div>
     </div>
     <div class="contact_info_txt_div">
       <div class="contact_info_title">
-        <h1>waarom wij doorgaan</h1>
+        <h1>Why we continue</h1>
       </div>
       <div class="contact_info_txt">
         <p>
-          well the destruction of humanity is not so poggers Lorem ipsum dolor
-          sit amet consectetur adipisicing elit. Perferendis est explicabo
-          consequuntur commodi ipsam fugit, unde iure, accusantium aliquam quia
-          dicta enim error libero, porro in. Minus quod qui laboriosam. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Iste aspernatur
-          maiores, ea autem mollitia sunt distinctio assumenda iusto. Nihil,
-          placeat!
+          Right now we have many planets, ships, journeys and staff. We keep growning in scalle and not slowwing down. With our new partner, the title wave we have found new opportunitys to grow and thrive. New staff, managment and ships will be availeble to the public in a few months. But thats not all we have great new things planned. We dont want to ruin the supprise but we can say that the reformation has begon.
+          As you just read we have many things planned and in the works. 
         </p>
       </div>
     </div>

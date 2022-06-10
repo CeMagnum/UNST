@@ -13,7 +13,7 @@
             <label for="pass">Password:</label><br>
             <input type="password" id="pass" name="password" autocomplete="off"><br>
             <input type="submit" id="button" name="login" value="Login">
-          </form>  
+          </form>
       </div>
     </div>
     <div class="loggin_main">

@@ -34,26 +34,27 @@ include("includes/connect.php");
         <p>We help create the greatest journeys</p> 
     </div>
    <div class="home_landing_txt">
-       <p>
-        We are very pleased for picking our flight industry. We know that we are one of fewe so we try to get you to the best places as save as possible
-        we have verry good transportation. Drop in with your homeis, contribute to our latest new thiung, spartansm, these kids are "choses" to help us get you from point a to point
-        it will be an epic journey with adventure, death, life and smiles
+    <p>
+        We are very pleased for picking our space flight industry. We know that we are one of few
+        so we try to give you the highest quality travels. Our transport is top of the line, the best of the best for the best from the best
+        . Bring your friends and family, contribute to our great liniage. Whe have top of the line staff, Specificly chosen and [REDACTED] to suit our needs
+        Many journeys await you along with great memmories, experiences and joy! 
     </p> 
     <a href="private/base.php">private</a>
    </div>
 </div>
 <div class="home_info_div" id="info">
     <div class="home_info_section">
-        <h2>Why would fly with us?</h2>
-        <p>You see you dant want to get glassed by aliens do you?</p>
+        <h2>Why fly with us?</h2>
+        <p>The galaxy is a dangaerous space. Its cold, dark, very very large and hostile. With us your needs will be provided and your dreams are ours to fufill.</p>
     </div>
     <div class="home_info_section">
         <h2>Why we fly for you</h2>
-        <p>We need your children for a special case that will save humantiy. We do not know the survival rate but i means does anyone?</p>
+        <p>We all at the UNST have ben longing for a great space travel industry. So we all worked hard to get this company and industry going. Our blood, sweat and teers are al to thank.</p>
     </div>
     <div class="home_info_section">
-        <h2>Why Us and not the Covenant?</h2>
-        <p>Well the Covenant is full of Bullys. They bully humanity and we dont like bullies dont we?</p>
+        <h2>Why Us and not the other companys?</h2>
+        <p>The amount of choice for travel extends out of our company. But The UNSC last year had a chil kidnapping accident, and the Covenanat was acussed of genocide. SO the choice is obvious</p>
     </div>
 </div>
 <div class="home_journeys_div">
@@ -63,11 +64,10 @@ include("includes/connect.php");
         <h1>Greates journeys</h1>
         <div class="slideshow_txt_div">
             <p>
-                There are a lot of locations and journeys you can go on. like earth, mars, jupiter and other known locations
-                but did you know there is a dinosaur planet? A cold planet a desert planet and a monkey planet? there are so many option!
-                there is also a midget planet and a chicken planet, there are so many spiecies and stuff. but the coolest place is the cool ring
-                on the ring there are caves, buildings, wierd popckorn things, green and a lot of other people from the other place called UNSC.
-                i dont know what they are doing there    
+                The amount of diffrent, unique, special and great journeys are astounding. Every week we add a new location to our list. We keep exploring new and exiting places, planets and metal wierd rings in space.
+                But we also look back at the history of our own solar system. Mars, Jupiter, Saturn, URanus and plutoI and plutoII are great planets to visit.
+                We also have some great new additions. Like a planet full of monkeys[CURRENTLY UNAVAILABLE], trolls, chickens, bugs and living teleporting robots. But our most precious journeys are the ring worlds.
+                There are so many journeys to take part in. So many locals to meet. So many adventures to be had. So choose, plan and believe! in the greatest moments of your live. And start your GREAT JOURNEY!   
             </p> 
         </div>
     </div>
@@ -96,8 +96,8 @@ include("includes/connect.php");
 
 <div class="home_recenties_div" id="recenties">
     <div class="recenties_txt_div">
-        <h1>Recenties van onze klanten</h1>
-        <p>onze klanten houden van de ruimte. want de ruimte is mooi met al die sterren enzovoort. je moet een weeten waar noble six zit lekker in mijn achtertuin.</p>
+        <h1>Reviews from customers</h1>
+        <p>Read what our customers Think of us. Maybey be inspired to pick your next adventrure or to gain new insight!</p>
     </div>
 </div>
 <div class="home_recentie_div">
