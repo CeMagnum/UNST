@@ -689,12 +689,18 @@ body {
 
 .booking_slider_person input[type="text"] {
   background-color: transparent;
+  width: 23px;
+  height: max-content;
   border: none;
   font-family: "Rajdhani", sans-serif;
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 2px;
   color: var(--white);
+}
+
+.booking_slider_person input[type="text"]:active {
+  border: none;
 }
 
 .booking_slider_person input[type="range"] {
@@ -754,6 +760,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.credits {
+  display: flex;
+  flex-direction: row;
 }
 
 /* contact */
@@ -1052,7 +1063,7 @@ body {
 /* arrived */
 .arrived_div {
   width: 100%;
-  height: auto;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1076,7 +1087,20 @@ body {
 
 .arrvived_rev_div {
   width: 90%;
-  height: auto;
+  height: 100%;
+}
+
+.arrived_form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  background-color: var(--darkbluegrey);
+  border-radius: 30px;
+  padding: 20px;
 }
 
 .arrvived_rev_name_div {
@@ -1394,6 +1418,10 @@ body {
   width: 90%;
   height: 100px;
   resize: none;
+  background-color: transparent;
+  color: var(--white);
+  border: none;
+  font-family: "Rajdhani", sans-serif;
 }
 
 .rev_content p {

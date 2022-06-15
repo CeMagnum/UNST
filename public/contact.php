@@ -53,7 +53,7 @@ include('../includes/navbar.php');
   </div>
   <div class="contact_link_div">
     <div class="contact_link_section">
-      <a class="contact_link_link" href="mailto:mail@pornhub.com">
+      <a class="contact_link_link" href="mailto:boris@borisbanMaarten.com">
         <button class="contact_link_butn">link to email</button>
       </a>
     </div>

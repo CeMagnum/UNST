@@ -62,6 +62,7 @@ if(!isset($_SESSION['user_id'])){
       }?>
       
       <a href="..IDK LINK NAAR FORGOT PASSWORD">
+
         <button>DELETE ACCOUTN</button>
       </a>
       <a href="../functions/logout.php">
