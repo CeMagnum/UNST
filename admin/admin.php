@@ -8,7 +8,7 @@
     <title>Admin</title>
 </head>
     <?php 
-        // include('admin_session.php'); 
+        include('admin_session.php'); 
         include('../includes/connect.php');
     ?>
 
@@ -19,10 +19,11 @@
     $user_id = (int) $_SESSION['user_id'];
     $blem = $conn->prepare("SELECT username FROM users WHERE user_id = :userid");
     $blem->bindParam(":userid", $user_id, PDO::PARAM_INT);
-            $blem->execute();
-            $result = $blem->fetchAll(PDO::FETCH_ASSOC);
-            foreach($result as $i)
-            {echo "<div class='adminpanel' id='a'><h2>Logged in as ".$i['username'].".</h2><a href='../functions/logout.php'><h4>Logout</h4></a>";}?>
+    $blem->execute();
+    $result = $blem->fetchAll(PDO::FETCH_ASSOC);
+    foreach($result as $i){
+        echo "<div class='adminpanel' id='a'><h2>Logged in as ".$i['username'].".</h2><a href='../functions/logout.php'><h4>Logout</h4></a>";
+        }?>
     <div class="rev">
         <div class="admin_rev">
         <h1>Manage reviews</h1>
@@ -153,19 +154,27 @@ foreach($result as $i)
             <div class="hrd" id="a">
                 <div class="rd1">
                     <div class="rd2">
-            	        <h1>Manage journeys</h1>
+            	        <h1>Manage bookings</h1>
                         <!-- php copy -->
-                        <div class="admin_panel_journey">
-                            <form action="POST">
-                                <input type="text" name="acc_id" id="acc_id" value="..ID..">
-                                <input type="text" name="planet" id="planet" value="..planet..">
-                                <input type="text" name="total" id="total" value="..total..">
-                                <input type="date" name="date_start" id="date_start" value="..start..">
-                                <input type="date" name="date_end" id="date_end" value="..end..">
-                                <input type="submit" name="save_edit" id="submit" value="save edit">
-                                <input type="submit" name="delete" id="delete" value="delete">
+                        <?php
+                        $blem = $conn->prepare("SELECT * FROM bookings");
+                        $blem->execute();
+                        $result = $blem->fetchAll(PDO::FETCH_ASSOC);
+                        foreach($result as $i)
+                        echo "
+                        <div class='admin_panel_journey'>
+                            <form action='delete.php' method='POST'>
+                                <input type='text' name='planet' id='planet' value='".$i['planet_id']."'>
+                                <input type='text' name='total' id='total' value='. .total..'>
+                                <input type='date' name='date_start' id='date_start' value='..start..'>
+                                <input type='date' name='date_end' id='date_end' value='..end..'>
+                                <input type='submit' name='save_edit' id='submit' value='save edit'>
                             </form>
-                        </div>
+                            <form action='delete.php' method='POST'>
+                                <input type='submit' name='delete' id='delete' value='delete'>
+                            </form>
+                        </div>";
+                        ?>
                         <!-- php stop here -->
                         <div class="admin_panel_journey">
                             <form action="POST">
