@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* color: white;
+    overflow-y: none;   
+    scrollbar-width: none; */
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+a:link,a:visited {color: white;}
+
+body {
+    /* kaas */
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: darkgray;
+    margin-bottom: 10px;
+    height: 4rem;
+
+}
+
+nav h1 {
+    background-color: white;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 8rem;
+    text-align: center;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+    transition: background-color, color, 0.5s;
+}
+
+nav h1:hover {
+    background-color: black;
+    color: white;
+    transition: background-color, color, padding, 0.2s;
+    width: 12rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 88rem;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+}
+
+tr {
+    background-color: aliceblue;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+footer {
+    background-color: black;
+    height: 2rem;
+    color: white;
+    padding-left: 10px;
+}
+
+.btns {
+    align-items: center;
+    background-color: white;
+}
+
+.inv {
+    display: none;
+}
+
+input[type="text"], input[type="date"]{
+    border: none;
+    font-size: large;
+}
+
+input[type="submit"]{
+    border: none;
+    font-size: medium;
+    width: 100%;
+    height: 2rem;
+    color: white;
+    margin: 1px;
+}
+
+.good{background-color: #4CAF50;}
+.bad{background-color: #f44336;}
