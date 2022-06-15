@@ -196,7 +196,7 @@ body {
 
 .home_info_section h2 {
   font-family: "Rajdhani", sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 1;
   letter-spacing: 2px;
   color: var(--lightblue);
@@ -204,7 +204,7 @@ body {
 
 .home_info_section p {
   font-family: "Didact Gothic", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 510;
   color: var(--white);
 }
@@ -1248,7 +1248,7 @@ body {
 
 .acc_main_div {
   width: 100%;
-  height: 800px;
+  height: 85vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1259,17 +1259,24 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  background-color: var(--darkbluegrey);
+  border-radius: 20px;
 }
 .acc_info {
   width: 90%;
-  height: auto;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }
 
 .acc_info h1 {
   font-family: "Didact Gothic", sans-serif;
-  font-size: 25px;
+  font-size: 40px;
   font-weight: 510;
-  color: var(--white);
+  color: var(--red);
 }
 .acc_info p {
   font-family: "Rajdhani", sans-serif;
@@ -1279,17 +1286,28 @@ body {
   color: var(--white);
 }
 
+.acc_info input[type=""] .acc_middle_div {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--darkbluegrey);
+  border-radius: 20px;
+}
+
 .acc_middle_div {
   width: 33%;
   height: 100%;
   display: flex;
   align-items: center;
+  background-color: var(--darkbluegrey);
+  border-radius: 20px;
 }
 
 .acc_booked {
-  width: 90%;
+  width: 100%;
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1303,11 +1321,14 @@ body {
   letter-spacing: -3px;
 }
 .book_card {
-  width: 100%;
+  width: 93%;
   height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--darkgrey);
+  margin-top: 10px;
+  border-radius: 20px;
 }
 .card_content {
   width: 90%;
@@ -1330,12 +1351,57 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
+  background-color: var(--darkbluegrey);
+  border-radius: 20px;
 }
 .acc_rev {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.acc_rev h1 {
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+
 .rev_card {
+  width: 93%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--darkgrey);
+  margin-top: 10px;
+  border-radius: 20px;
 }
 .rev_content {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.rev_content textarea {
+  width: 90%;
+  height: 100px;
+  resize: none;
+}
+
+.rev_content p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--white);
 }
 
 /* footer */

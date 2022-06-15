@@ -49,7 +49,8 @@ include("includes/connect.php");
     </div>
    <div class="home_landing_txt">
     <p>
-        <a href="./functions/logout.php">logout</a>
+
+       <a href="./functions/logout.php">logout</a>
         We are very pleased for picking our space flight industry. We know that we are one of few
         so we try to give you the highest quality travels. Our transport is top of the line, the best of the best for the best from the best
         . Bring your friends and family, contribute to our great liniage. Whe have top of the line staff, Specificly chosen and [REDACTED] to suit our needs
@@ -61,15 +62,16 @@ include("includes/connect.php");
 <div class="home_info_div" id="info">
     <div class="home_info_section">
         <h2>Why fly with us?</h2>
-        <p>The galaxy is a dangaerous space. Its cold, dark, very very large and hostile. With us your needs will be provided and your dreams are ours to fufill.</p>
+        <p>The galaxy is a dangerous space. Its cold, dark, very large and hostile. With us your needs will be provided and your dreams are ours to fulfill.</p>
     </div>
     <div class="home_info_section">
         <h2>Why we fly for you</h2>
-        <p>We all at the UNST have ben longing for a great space travel industry. So we all worked hard to get this company and industry going. Our blood, sweat and teers are al to thank.</p>
-    </div>
+        <p>We all at the UNST have been longing for a great space travel industry. So we all worked hard to get this company and industry going. Our blood, sweat and tears are all to thank.
+        </p>   
+        </div>
     <div class="home_info_section">
         <h2>Why Us and not the other companys?</h2>
-        <p>The amount of choice for travel extends out of our company. But The UNSC last year had a chil kidnapping accident, and the Covenanat was acussed of genocide. SO the choice is obvious</p>
+        <p>The amount of choice for travel extends out of our company. But The UNSC last year had a child kidnapping accident, and the Covenant was accused of genocide. So the choice is obvious</p>
     </div>
 </div>
 <div class="home_journeys_div">
@@ -79,10 +81,10 @@ include("includes/connect.php");
         <h1>Greates journeys</h1>
         <div class="slideshow_txt_div">
             <p>
-                The amount of diffrent, unique, special and great journeys are astounding. Every week we add a new location to our list. We keep exploring new and exiting places, planets and metal wierd rings in space.
-                But we also look back at the history of our own solar system. Mars, Jupiter, Saturn, URanus and plutoI and plutoII are great planets to visit.
-                We also have some great new additions. Like a planet full of monkeys[CURRENTLY UNAVAILABLE], trolls, chickens, bugs and living teleporting robots. But our most precious journeys are the ring worlds.
-                There are so many journeys to take part in. So many locals to meet. So many adventures to be had. So choose, plan and believe! in the greatest moments of your live. And start your GREAT JOURNEY!   
+                The amount of different, unique, special and great journeys are astounding. Every week we add a new location to our list. We keep exploring new and exiting places, planets and metal rings in space.
+                But we also look back at the history of our own solar system. Mars, Jupiter, Saturn, Uranus and Pluto are great planets to visit.
+                We also have some great new additions. Like a planet full of monkeys[CURRENTLY UNAVAILABLE], trolls, chickens, bugs and living flying robots. But our most precious journeys are the ring worlds.
+                There are so many journeys to take part in. So many locals to meet. So many adventures to be had. Choose, plan and believe! In the greatest moments of your live. And start your GREAT JOURNEY!  
             </p> 
         </div>
     </div>

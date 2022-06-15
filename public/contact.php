@@ -12,12 +12,11 @@ include('../includes/navbar.php');
       </div>
       <div class="contact_info_txt">
         <p>
-          We were founded the moment that space travel became possible. Suddenly The earth was not a boundry anymore. Planets were the new destinations.
-          Our founder, Doris van Parken wanted to give the human race an easy wat to safetly, fast, cheap and secure way to travel in space.
-          He started to first build his own first spaceship. It blew up and he died but his blueprints were found and used by the current head of our company, Danish Harker.
-          With those blueprints he started to build more and more ships, With his gain he started a company. This company. It was super succesfull. With more and more ships, journeys, planets and new technoligies. we still thirve today.
-          All thanks to you!
-
+        We were founded the moment that space travel became possible. Suddenly The earth was not a boundary anymore. Planets were the new destinations.
+        Our founder, Doris van Parken wanted to give the human race an easy way to safety, fast, cheap and secure way to travel in space.
+        He started to first build his own first spaceship. It blew up and he died but his blueprints were found and used by the current head of our company, Danish Harker.
+        With those blueprints he started to build more and more ships, With his gain he started a company. This company. It was super successful. With more and more ships, journeys, planets and new technologies. We still thrive today.
+        All thanks to you!
         </p>
       </div>
     </div>
@@ -27,8 +26,13 @@ include('../includes/navbar.php');
       </div>
       <div class="contact_info_txt">
         <p>
-          Right now we have many planets, ships, journeys and staff. We keep growning in scalle and not slowwing down. With our new partner, the title wave we have found new opportunitys to grow and thrive. New staff, managment and ships will be availeble to the public in a few months. But thats not all we have great new things planned. We dont want to ruin the supprise but we can say that the reformation has begon.
-          As you just read we have many things planned and in the works. 
+        Right now we have many planets, ships, journeys and staff. 
+        We keep growing in scale and not slowing down. 
+        With our new partner, the title wave we have found new opportunities to grow and thrive. 
+        New staff, management and ships will be available to the public in a few months. But that's not all we have great new things planned. We don't want to ruin the surprise but we can say that the reformation has begun.
+        As you just read we have many things planned and in the works. 
+        We want to make sure that anyone can enjoy a pleasant flight with no hiccups, mishaps, problems or negative emotions. We don't strive for perfection, we strive beyond that. So we continue for performance, perfection and your wallet.
+
         </p>
       </div>
     </div>
@@ -38,15 +42,11 @@ include('../includes/navbar.php');
       </div>
       <div class="contact_info_txt">
         <p>
-          we dying so we need u Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Assumenda autem repudiandae quas nesciunt molestias,
-          dolorem at sint expedita recusandae earum eligendi ipsum maiores
-          dignissimos, possimus voluptas quaerat odio cupiditate delectus eius,
-          esse odit tempora. Accusantium voluptatibus eveniet omnis ratione.
-          Vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-          aspernatur perspiciatis officiis incidunt assumenda, iure consequatur.
-          Expedita sit laboriosam, explicabo rem dolore repellat aspernatur
-          magnam animi eveniet quaerat aut consectetur.
+        Our team is made from the group up. Trained to work 100% efficient. To be able to work 26/7 a day, Never need to rest and never need to think for themselves.
+        Every day, new people apply to our company. We only hire those who have potential and are hardworking. Working in this team is a dream come true.
+        Everyone is welcome and accepted in our team.
+        The pay is great, you will be taking of by our best crew cabins and bed. But you won't have to sleep at all! With our crew specialized appetite, you won't have to feel hungry no more.
+        So join us now!
         </p>
       </div>
     </div>
