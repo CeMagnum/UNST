@@ -11,6 +11,9 @@
       <a href="..IDK LINK NAAR FORGOT PASSWORD">
         <button>DELETE ACCOUTN</button>
       </a>
+      <a href="../functions/logout.php">
+        <button>Logout</button>
+      </a>
     </div>
   </div>
   <div class="acc_middle_div">
@@ -26,7 +29,6 @@
         </div>
       </div>
       <!-- PHP end here -->
-      
     </div>
   </div>
   <div class="acc_right_div">

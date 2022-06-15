@@ -13,12 +13,10 @@ include('../includes/navbar.php');
       <div class="contact_info_txt">
         <p>
         We were founded the moment that space travel became possible. Suddenly The earth was not a boundary anymore. Planets were the new destinations.
-Our founder, Doris van Parken wanted to give the human race an easy way to safety, fast, cheap and secure way to travel in space.
-He started to first build his own first spaceship. It blew up and he died but his blueprints were found and used by the current head of our company, Danish Harker.
-With those blueprints he started to build more and more ships, With his gain he started a company. This company. It was super successful. With more and more ships, journeys, planets and new technologies. We still thrive today.
-All thanks to you!
-
-
+        Our founder, Doris van Parken wanted to give the human race an easy way to safety, fast, cheap and secure way to travel in space.
+        He started to first build his own first spaceship. It blew up and he died but his blueprints were found and used by the current head of our company, Danish Harker.
+        With those blueprints he started to build more and more ships, With his gain he started a company. This company. It was super successful. With more and more ships, journeys, planets and new technologies. We still thrive today.
+        All thanks to you!
         </p>
       </div>
     </div>
@@ -44,11 +42,11 @@ All thanks to you!
       </div>
       <div class="contact_info_txt">
         <p>
-        Our team is made from the group up. Trained to work 100% efficient. To be able to work 26/7 a day, Never need to rest and never need think for them selves.
-Every day new people apply for our company. We only hire those who have potential and are hard working. Working in this team is a dream come true.
-Everyone is welcome and accepted in our team.
-The pay is great, you will be taking of by our best crew cabins and bed. But you wont have to sleep at all! With our crew specialized appetite you wont have to feel hungry no more.
-So join us now!
+        Our team is made from the group up. Trained to work 100% efficient. To be able to work 26/7 a day, Never need to rest and never need to think for themselves.
+        Every day, new people apply to our company. We only hire those who have potential and are hardworking. Working in this team is a dream come true.
+        Everyone is welcome and accepted in our team.
+        The pay is great, you will be taking of by our best crew cabins and bed. But you won't have to sleep at all! With our crew specialized appetite, you won't have to feel hungry no more.
+        So join us now!
         </p>
       </div>
     </div>
