@@ -40,7 +40,7 @@ include("../includes/navbar.php");
       <div class="rev_card">
         <div class="rev_content">
           <p>..planet..</p>
-          <textarea name="txt">..TXT..</textarea>
+          <textarea readonly name="txt">..TXT..</textarea>
           <p>..stars..</p>
         </div>
       </div>
@@ -48,21 +48,21 @@ include("../includes/navbar.php");
       <div class="rev_card">
         <div class="rev_content">
           <p>..planet..</p>
-          <textarea name="txt">..TXT..</textarea>
+          <textarea readonly name="txt">..TXT..</textarea>
           <p>..stars..</p>
         </div>
       </div>
       <div class="rev_card">
         <div class="rev_content">
           <p>..planet..</p>
-          <textarea name="txt">..TXT..</textarea>
+          <textarea readonly name="txt">..TXT..</textarea>
           <p>..stars..</p>
         </div>
       </div>
       <div class="rev_card">
         <div class="rev_content">
           <p>..planet..</p>
-          <textarea name="txt">..TXT..</textarea>
+          <textarea readonly name="txt">..TXT..</textarea>
           <p>..stars..</p>
         </div>
       </div>
