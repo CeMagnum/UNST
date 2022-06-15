@@ -3,7 +3,7 @@ include("../includes/header.php");
 ?>
 <div class="arrived_div">
     <div class="arrvived_rev_div">
-        <form  method="post" action="insert_review.php">
+        <form class="arrived_form" method="post" action="insert_review.php">
             <div class="arrived_txt">
                 <h1>Do you want to write a review?</h1>
             </div>

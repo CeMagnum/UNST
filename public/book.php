@@ -22,8 +22,13 @@ foreach($result as $i)
         Price    
     </h1>
     <br>
-    <p>".$i['price']."</p>
+    <div class='credits'>
+        <svg height='100%' viewBox='0 0 52 45' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M38.5 1h-7.87l-3.241 5.136h-9.722L1 35.083h19.907l6.945-10.271h11.574l-2.315 3.735H30.63L19.982 44.42h7.87l6.018-9.805h7.408L51 18.275H24.148l-6.481 10.272h-4.63l9.26-15.875h8.333L38.5 1z' fill='#C4C4C4' stroke='#000'></path>
+    <p> 
+    ".$i['price']."</p>
     <br>
+    </div>
+    
     </div>
     <div class='booking_section'>
     <h1>
@@ -42,11 +47,11 @@ foreach($result as $i)
     <br>
     <div class='booking_date'>
         <p>From</p>    
-        <input type='date' value='2022-05-25' min='2022-05-25' max='3000-12-31' id='booking_date'>
+        <input type='date' id='currentDate' value='2022-05-25' min='2022-05-25' max='3000-12-31' >
     </div>
     <div class='booking_date'>
         <p>to</p>    
-        <input type='date' value='2022-05-25' min='2022-05-25' max='3000-12-31' id='booking_date'>
+        <input type='date' id='currentDate2' value='2022-05-25' min='2022-05-25' max='3000-12-31'>
     </div>
     </div>
     <div class='booking_section'>
@@ -96,6 +101,9 @@ foreach($result as $i)
 </div>
 
 <script src="../assets/js/slider.js"></script>
+<script src="../assets/js/date.js"></script>
+
 </body>
+
 </html>     
 

@@ -1,5 +1,7 @@
-<?php include('../includes/header.php'); ?>
-<?php include("../includes/navbar.php")?>
+<?php include('../includes/header.php');
+include('../includes/connect.php');
+include("../includes/navbar.php");
+?>
 <div class="acc_main_div">
   <div class="acc_left_div">
     <div class="acc_info">
@@ -8,7 +10,7 @@
       <p>..username..</p>
       <p>email:</p>
       <p>..email..</p>
-      <a href="..IDK LINK NAAR FORGOT PASSWORD">
+      <a href="..IDK LINK NAAR YEETUS DELETUS">
         <button>DELETE ACCOUTN</button>
       </a>
       <a href="../functions/logout.php">
