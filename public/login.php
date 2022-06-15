@@ -22,9 +22,6 @@ include("../includes/navbar.php") ?>
       <div class="loggin_txt">
         <p>Register</p>
       </div>
-      <?php 
-      var_dump($_SESSION['user_id']);
-      ?>
       <form class="loggin_log" action="../functions/register.php" method="post"> 
             <label>Username:</label><br>
             <input type="text" id="name" name="username" autocomplete="off"><br>

@@ -28,11 +28,13 @@
         <div class="admin_rev">
         <h1>Manage reviews</h1>
         <?php 
-            $blem = $conn->prepare("SELECT * FROM reviews");
+            $blem = $conn->prepare("SELECT reviews.*,journeys.planet,users.username FROM reviews INNER JOIN journeys ON reviews.planet_id=journeys.planet_id INNER JOIN users ON reviews.user_id=users.user_id");
             $blem->execute();
             $result = $blem->fetchAll(PDO::FETCH_ASSOC);
             foreach($result as $i)
-            {echo "
+            {
+            // var_dump($i);
+            echo "
             <div class='admin_rev_panel'>
                 <form action='delete.php' method='POST'>
                     <h1>".$i['username']."</h1>
@@ -40,11 +42,11 @@
                     <p>".$i['text']."</p>
                     <p>".$i['curated']."<?p>
                     <p>".str_repeat('⭐', $i['stars'])."</p>
-                    <input class='invisible' type='text' value=\"".$i['ID']."\" name='ID'/>
+                    <input class='invisible' type='text' value=\"".$i['review_id']."\" name='review_id'/>
                     <input type='submit' name='deletereview' value='decline'>
                 </form>
                 <form action='delete.php' method='POST'>
-                    <input class='invisible' type='text' value=\"".$i['ID']."\" name='ID'/>
+                    <input class='invisible' type='text' value=\"".$i['review_id']."\" name='review_id'/>
                     <input type='submit' name='approvereview' value='accept'>
                 </form>
             </div>";
@@ -107,7 +109,7 @@
             {echo "<img src=\"../assets/img/planets/".$i['planet'].".png\" alt='".$i['shortdescription']."'</div>";}?>
 
             <div class="edit_panel">
-                <form method="POST" action="edit.php">
+                <form method="POST" action="delete.php">
                 <input type="text" name="planet" placeechholder="Planet and image name" value="<?php echo $i['planet']?>">
                 <input type="text" name="price" placeholder="Price" value="<?php echo $i['price']?>">
                 <textarea name="short_desc" id="short_desc" cols="30" rows="10"><?php echo $i['shortdescription']?></textarea>
@@ -126,7 +128,6 @@
             <div class="acc">
                 <div class="admin_acc">
                 <h1>Manage accounts</h1>
-                <!-- php copy -->
 <?php 
 $blem = $conn->prepare("SELECT * FROM users");
 $blem->execute();
@@ -135,7 +136,6 @@ foreach($result as $i)
 {echo "
     <div class='admin_acc_panel'>
         <form action='delete.php' method='POST'>
-            <p>".$i['user_id']."</p>
             <input type='text' name='username' value='".$i['username']."'>
             <input type='text' name='email' value='".$i['email']."'>
             <input type='text' name='admin' value='".$i['admin']."'>
@@ -157,18 +157,20 @@ foreach($result as $i)
             	        <h1>Manage bookings</h1>
                         <!-- php copy -->
                         <?php
-                        $blem = $conn->prepare("SELECT * FROM bookings");
+                        $blem = $conn->prepare("SELECT bookings.*,users.username,journeys.planet FROM `bookings` INNER JOIN users ON bookings.user_id=users.user_id INNER JOIN journeys ON bookings.planet_id=journeys.planet_id;");
                         $blem->execute();
                         $result = $blem->fetchAll(PDO::FETCH_ASSOC);
                         foreach($result as $i)
                         echo "
                         <div class='admin_panel_journey'>
                             <form action='delete.php' method='POST'>
-                                <input type='text' name='planet' id='planet' value='".$i['planet_id']."'>
-                                <input type='text' name='total' id='total' value='. .total..'>
-                                <input type='date' name='date_start' id='date_start' value='..start..'>
-                                <input type='date' name='date_end' id='date_end' value='..end..'>
-                                <input type='submit' name='save_edit' id='submit' value='save edit'>
+                                <input type='text' name='planet' id='planet' value='".$i['planet']."'>
+                                <input type='text' name='total' id='total' value='".$i['price']."'>
+                                <input type='text' name='username' id='username' value='".$i['username']."'>
+                                <input type='text' name='travellers' id='travellers' value='".$i['travellers']."'>
+                                <input type='date' name='date_start' id='date_start' value='".$i['start']."'>
+                                <input type='date' name='date_end' id='date_end' value='".$i['end']."'>
+                                <input type='submit' name='save_edit' id='submit' value='submit'>
                             </form>
                             <form action='delete.php' method='POST'>
                                 <input type='submit' name='delete' id='delete' value='delete'>
@@ -176,28 +178,6 @@ foreach($result as $i)
                         </div>";
                         ?>
                         <!-- php stop here -->
-                        <div class="admin_panel_journey">
-                            <form action="POST">
-                                <input type="text" name="acc_id" id="acc_id" value="..ID..">
-                                <input type="text" name="planet" id="planet" value="..planet..">
-                                <input type="text" name="total" id="total" value="..total..">
-                                <input type="date" name="date_start" id="date_start" value="..start..">
-                                <input type="date" name="date_end" id="date_end" value="..end..">
-                                <input type="submit" name="save_edit" id="submit" value="save edit">
-                                <input type="submit" name="delete" id="delete" value="delete">
-                            </form>
-                        </div>
-                        <div class="admin_panel_journey">
-                            <form action="POST">
-                                <input type="text" name="acc_id" id="acc_id" value="..ID..">
-                                <input type="text" name="planet" id="planet" value="..planet..">
-                                <input type="text" name="total" id="total" value="..total..">
-                                <input type="date" name="date_start" id="date_start" value="..start..">
-                                <input type="date" name="date_end" id="date_end" value="..end..">
-                                <input type="submit" name="save_edit" id="submit" value="save edit">
-                                <input type="submit" name="delete" id="delete" value="delete">
-                            </form>
-                        </div>
                         <div class="admin_panel_journey">
                             <form action="POST">
                                 <input type="text" name="acc_id" id="acc_id" value="..ID..">
