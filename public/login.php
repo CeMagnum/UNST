@@ -1,4 +1,6 @@
-<?php include("../includes/header.php"); include("../includes/navbar.php") ?>
+<?php include("../includes/header.php");
+include('../includes/connect.php');
+include("../includes/navbar.php") ?>
 <body>
     <div class="login_div">
       
@@ -20,6 +22,9 @@
       <div class="loggin_txt">
         <p>Register</p>
       </div>
+      <?php 
+      var_dump($_SESSION['user_id']);
+      ?>
       <form class="loggin_log" action="../functions/register.php" method="post"> 
             <label>Username:</label><br>
             <input type="text" id="name" name="username" autocomplete="off"><br>

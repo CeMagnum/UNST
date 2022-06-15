@@ -27,7 +27,7 @@ include("../includes/connect.php");
                 exit();
             }
         }
-        header('location: ../index.php');
+        header('location: ../login.php');
         exit();
     } else{
     header('location: ../index.php');

@@ -15,6 +15,7 @@
       <button class="navbar_butn">Contact</button>
     </a>
     <?php
+      include('../includes/connect.php');
       session_start();
       if(isset($_SESSION['user_id'])){
           $user_id = (int) $_SESSION['user_id'];
