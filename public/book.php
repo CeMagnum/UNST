@@ -1,7 +1,4 @@
 <?php
-
-use LDAP\Result;
-
 include("../includes/connect.php");
 include("../includes/header.php"); 
 include("../includes/navbar.php");
