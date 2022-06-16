@@ -1,8 +1,10 @@
 <?php
+
+use LDAP\Result;
+
 include("../includes/connect.php");
 include("../includes/header.php"); 
 include("../includes/navbar.php");
-
 $stm = $conn->prepare("SELECT * FROM journeys WHERE planet = :journey");
 $stm->bindParam(":journey", $_GET['journey'], PDO::PARAM_STR);
 $stm->execute();
@@ -37,7 +39,7 @@ foreach($result as $i)
     <br>
     <div class='booking_slider_person'>
         <input type='range' name='rangeInput' onchange='updateTextInput(this.value);'min='1' max='10' step='1'value='1' id='slider_booking'>
-    <input type='text' value='1' readonly id='textInput'>..</p>
+    <input type='text' value='1' readonly id='textInput'></p>
     </div>
     </div>
     <div class='booking_section'>
@@ -79,7 +81,8 @@ foreach($result as $i)
                     <div class='recenties_div_3'>
 
 <?php
-$blem = $conn->prepare("SELECT * FROM reviews WHERE planet = :planetname");
+$blem = $conn->prepare("SELECT users.username, journeys.planet, reviews.text, reviews.stars FROM reviews INNER JOIN journeys ON reviews.planet_id=journeys.planet_id INNER JOIN users ON reviews.user_id=users.user_id WHERE planet = :planetname;");
+// $blem = $conn->prepare("SELECT * FROM reviews WHERE planet = :planetname");
 $blem->bindParam(":planetname", $_GET['journey'], PDO::PARAM_STR);
 $blem->execute();
 $result = $blem->fetchAll(PDO::FETCH_ASSOC);

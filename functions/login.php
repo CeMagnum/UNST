@@ -1,6 +1,5 @@
 <?php
 include("../includes/connect.php");
-
     $username = $_POST['username'];
     $password = $_POST['password'];
 
@@ -22,12 +21,15 @@ include("../includes/connect.php");
             $_SESSION['user_id'] = $res['user_id'];
             if ($res['admin'] == 1) {
                 $_SESSION['admin'] = true;
-                $firstplanet = "SELECT planet_id FROM journeys ORDER BY planet ASC LIMIT 1";
-                header('location: ../admin/admin.php?planet_id='.$firstplanet.'');
+                // $firstplanet = "SELECT planet_id FROM journeys ORDER BY planet ASC LIMIT 1";
+                header('location: ../admin/admin.php');
+                exit();
+            } else {
+                header('location: ../private/account.php');
                 exit();
             }
         }
-        header('location: ../login.php');
+        header('location: ../public/login.php');
         exit();
     } else{
     header('location: ../index.php');

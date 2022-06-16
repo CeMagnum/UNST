@@ -46,7 +46,7 @@ if(!isset($_SESSION['user_id'])){
   <div class="acc_left_div">
     <div class="acc_info">
       <h1>Hello <?php 
-      session_start();
+      // session_start();
       if(isset($_SESSION['user_id'])){
           $user_id = (int) $_SESSION['user_id'];
           $blem = $conn->prepare("SELECT * FROM users WHERE user_id = :userid");
@@ -57,7 +57,7 @@ if(!isset($_SESSION['user_id'])){
           <p>username:</p>
           <p>".$result[0]['username']."</p>
           <p>email:</p>
-          <p>.$result[0]['email'].</p>
+          <p>".$result[0]['email']."</p>
           ";
       }?>
       
@@ -74,71 +74,40 @@ if(!isset($_SESSION['user_id'])){
     <div class="acc_booked">
       <h1>Planned bookings</h1>
       <!-- PHP start here -->
+      <?php 
+      $blem = $conn->prepare('SELECT bookings.booking_id, users.username, journeys.planet, bookings.start, bookings.end FROM bookings INNER JOIN users ON bookings.user_id=users.user_id INNER JOIN journeys ON bookings.planet_id=journeys.planet_id;');
+      $blem->execute();
+      $result = $blem->fetchAll(PDO::FETCH_ASSOC);
+      foreach($result as $i)
+      {echo '
       <div class="book_card">
         <div class="card_content">
-          <p>..username..</p>
-          <p>..planet..</p>
-          <p>..datestart..</p>
-          <p>..dateend..</p>
+          <p>'.$i["username"].'</p>
+          <p>'.$i["planet"].'</p>
+          <p>'.$i["start"].'</p>
+          <p>'.$i["end"].'</p>
         </div>
       </div>
-      <!-- PHP end here -->
+      ';}?>
     </div>
   </div>
   <div class="acc_right_div">
     <div class="acc_rev">
       <h1>Written Reviews</h1>
-      <!-- php start here -->
-      <div class="rev_card">
+      <?php 
+      $blem = $conn->prepare('SELECT reviews.review_id, journeys.planet, reviews.text, reviews.stars FROM reviews INNER JOIN journeys ON reviews.planet_id=journeys.planet_id;');
+      $blem->execute();
+      $result = $blem->fetchAll(PDO::FETCH_ASSOC);
+      foreach($result as $i)
+      {echo '
+        <div class="rev_card">
         <div class="rev_content">
-          <p>..planet..</p>
-          <textarea readonly name="txt">..TXT..</textarea>
-          <p>..stars..</p>
+          <p>'.$i["planet"].'</p>
+          <p name="txt">'.$i['text'].'</p>
+          <p>'.str_repeat('⭐',$i['stars']).'</p>
         </div>
       </div>
-      <!-- php end here -->
-      <div class="rev_card">
-        <div class="rev_content">
-          <p>..planet..</p>
-          <textarea readonly name="txt">..TXT..</textarea>
-          <p>..stars..</p>
-        </div>
-      </div>
-      <div class="rev_card">
-        <div class="rev_content">
-          <p>..planet..</p>
-          <textarea readonly name="txt">..TXT..</textarea>
-          <p>..stars..</p>
-        </div>
-      </div>
-      <div class="rev_card">
-        <div class="rev_content">
-          <p>..planet..</p>
-          <textarea readonly name="txt">..TXT..</textarea>
-          <p>..stars..</p>
-        </div>
-      </div>
-      <div class="rev_card">
-        <div class="rev_content">
-          <p>..planet..</p>
-          <textarea name="txt">..TXT..</textarea>
-          <p>..stars..</p>
-        </div>
-      </div>
-      <div class="rev_card">
-        <div class="rev_content">
-          <p>..planet..</p>
-          <textarea name="txt">..TXT..</textarea>
-          <p>..stars..</p>
-        </div>
-      </div>
-      <div class="rev_card">
-        <div class="rev_content">
-          <p>..planet..</p>
-          <textarea name="txt">..TXT..</textarea>
-          <p>..stars..</p>
-        </div>
-      </div>
+      ';}?>
     </div>
   </div>
 </div>
