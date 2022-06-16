@@ -42,10 +42,10 @@ include("includes/connect.php");
 <div class="navbar_space"></div>
 <div class="home_landing_title_div" id="landing">
     <div class="home_landing_title">
-        <h1>Welcome to</h1>
+        <!-- <h1>Welcome to</h1>
         <br>
         <h1>United Nations Space Travels</h1>
-        <p>We help create the greatest journeys</p> 
+        <p>We help create the greatest journeys</p>  -->
     </div>
    <div class="home_landing_txt">
     <p>
@@ -58,6 +58,7 @@ include("includes/connect.php");
     </p> 
     <a href="private/base.php">private</a>
    </div>
+
 </div>
 <div class="home_info_div" id="info">
     <div class="home_info_section">

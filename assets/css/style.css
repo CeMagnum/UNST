@@ -133,6 +133,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-image: url(../img/bannerlogo2_WIP.png);
+  background-repeat: no-repeat;
+  background-size: contain, cover;
 }
 
 .home_landing_title {
@@ -165,6 +168,7 @@ body {
   height: 200px;
   display: flex;
   flex-direction: column;
+  border-bottom: solid 6px var(--red);
 }
 
 .home_landing_txt p {
@@ -512,9 +516,8 @@ body {
 }
 
 .journey_img_img {
-  height: 90%;
-  background-color: black;
-  border-radius: 10px;
+  background-color: transparent;
+  border-radius: 50%;
 }
 
 .journey_txt {
