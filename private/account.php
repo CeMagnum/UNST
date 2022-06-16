@@ -94,7 +94,6 @@ if(!isset($_SESSION['user_id'])){
   <div class="acc_right_div">
     <div class="acc_rev">
       <h1>Written Reviews</h1>
-      <!-- php start here -->
       <?php 
       $blem = $conn->prepare('SELECT reviews.review_id, journeys.planet, reviews.text, reviews.stars FROM reviews INNER JOIN journeys ON reviews.planet_id=journeys.planet_id;');
       $blem->execute();

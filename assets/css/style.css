@@ -926,7 +926,7 @@ body {
   height: 100%;
   border: none;
   box-shadow: 0px 0px 10px 2px var(--lightblue);
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .contact_mail_message_div {
@@ -939,7 +939,7 @@ body {
 }
 
 .contact_mail_message_txt {
-  width: 800px;
+  width: auto;
 }
 
 .contact_mail_message_txt_input {
@@ -953,7 +953,7 @@ body {
   resize: none;
   border: none;
   box-shadow: 0px 0px 10px 2px var(--lightblue);
-  border-radius: 30px;
+  border-radius: 10px;
   font-size: 20px;
 }
 
@@ -1541,6 +1541,21 @@ body {
 #myBtn:hover {
   background-color: #555;
 }
+
+@media only screen and (max-width: 900px) {
+  /* contact */
+
+  .contact_main_div {
+    height: 1300px;
+  }
+  .contact_info_txt_div {
+    height: 400px;
+  }
+  .booking_div {
+    height: 1200px;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   /* index */
   .navbar_butn {
@@ -1601,6 +1616,79 @@ body {
     width: 300px;
     height: 300px;
   }
+  /* contact */
+
+  .contact_info_title h1 {
+    font-size: 30px;
+  }
+  .contact_info_txt p {
+    font-size: 15px;
+  }
+
+  .contact_main_div {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .contact_info_div {
+    width: 100%;
+    height: 1000px;
+  }
+  .contact_info_txt_div {
+    height: 300px;
+  }
+  .contact_info_txt {
+    width: 90%;
+    height: 300px;
+  }
+
+  .contact_link_div {
+    width: 100%;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .contact_link_section {
+    width: 200px;
+    height: 80px;
+  }
+  .contact_link_link {
+    width: inherit;
+    height: inherit;
+  }
+  .contact_message_mail {
+    width: 90%;
+    align-items: center;
+  }
+  /* booking */
+
+  /* account */
+  .acc_main_div {
+    height: 1600px;
+    flex-direction: column;
+  }
+  .acc_middle_div,
+  .acc_left_div,
+  .acc_right_div {
+    width: 90%;
+    height: 500px;
+  }
+
+  .acc_info {
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .acc_info p {
+    font-size: 30px;
+  }
+  .acc_info h1 {
+    font-size: 50px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1609,6 +1697,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     height: 1000px;
+  }
+  .slideshow {
+    width: auto;
   }
 
   .home_info_section {
@@ -1623,7 +1714,7 @@ body {
     font-size: 30px;
   }
   .home_recenties_div {
-    height: 500px;
+    height: 300px;
   }
 
   .recenties_txt_div {
@@ -1640,6 +1731,10 @@ body {
   }
   .footer_right {
     width: 100%;
+  }
+
+  .recenties_txt_div h1 {
+    font-size: 40px;
   }
 
   /* journey */
@@ -1665,11 +1760,37 @@ body {
     height: 200px;
   }
   .journey_div {
-    height: 400px;
+    flex-direction: column;
+    height: 600px;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
+  .journey_img {
+    width: 90%;
+  }
+  .journey_txt {
+    width: 90%;
+  }
   .journey_txt h1 {
     font-size: 50px;
+  }
+
+  /* booking */
+  .booking_div {
+    height: auto;
+  }
+  .booking_buttons {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .booking_section {
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -1685,9 +1806,20 @@ body {
   .navbar_butn {
     width: 100px;
   }
-
+  .home_info_section {
+    width: 100%;
+  }
+  .home_landing_txt {
+    height: 300px;
+  }
   /* journey */
   .journey_search_div h1 {
     font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .contact_link_section {
+    width: 150px;
   }
 }
