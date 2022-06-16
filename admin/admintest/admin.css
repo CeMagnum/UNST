@@ -12,10 +12,6 @@
 
 a:link,a:visited {color: white;}
 
-body {
-    /* kaas */
-}
-
 nav {
     display: flex;
     flex-direction: row;
@@ -87,6 +83,7 @@ footer {
 input[type="text"], input[type="date"]{
     border: none;
     font-size: large;
+    /* background-color: #4CAF50; */
 }
 
 input[type="submit"]{
@@ -96,7 +93,23 @@ input[type="submit"]{
     height: 2rem;
     color: white;
     margin: 1px;
+    transition: height, 0.2s;
 }
+
+input[type="submit"]:hover{
+    height: 3rem;
+    transition: height, 0.2s;
+}
+
 
 .good{background-color: #4CAF50;}
 .bad{background-color: #f44336;}
+
+.row{
+    display: flex;
+    flex-direction: row;}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
