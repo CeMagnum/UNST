@@ -123,7 +123,7 @@ include("includes/connect.php");
         <div class="recenties_div_1">
             <div class="recenties_div_2">
                 <div class="recenties_div_3">
-                <?php $blem = $conn->prepare("SELECT reviews.*,journeys.planet FROM reviews INNER JOIN journeys ON reviews.planet_id=journeys.planet_id WHERE curated = 1 ORDER BY RAND(); ");
+                <?php $blem = $conn->prepare("SELECT reviews.*,journeys.planet,users.username FROM reviews INNER JOIN journeys ON reviews.planet_id=journeys.planet_id INNER JOIN users ON reviews.user_id=users.user_id WHERE curated = 1 ORDER BY RAND(); ");
                     $blem->execute();
                     $result = $blem->fetchAll(PDO::FETCH_ASSOC);
                     foreach($result as $i)
