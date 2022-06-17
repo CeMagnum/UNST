@@ -721,11 +721,15 @@ body {
   border-radius: 50%;
   background-color: var(--lightblue);
 }
-.booking_slider_person
-  input[type="”range”"]::-moz-range-thumb
-  .booking_slider_person
-  input[type="”range”"]::-ms-thumb
-  .booking_date {
+.booking_slider_person {
+}
+input[type="”range”"]::-moz-range-thumb {
+}
+.booking_slider_person {
+}
+input[type="”range”"]::-ms-thumb {
+}
+.booking_date {
 }
 
 .booking_buttons_link {

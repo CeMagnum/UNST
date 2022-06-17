@@ -5,7 +5,7 @@
         <tr>
             <th>Planet</th>
             <th>Price</th>
-            <th>Username</th>
+            <th>User</th>
             <th>Passengers</th>
             <th>Start date</th>
             <th>End date</th>
@@ -14,10 +14,10 @@
         $blem->execute();
         $result = $blem->fetchAll(PDO::FETCH_ASSOC);
         foreach($result as $i){ echo '
-        <tr><form action="delete.php" method="POST">
+        <tr><form action="functions_admin.php" method="POST">
             <td><input type="text" name="planet" value='.$i['planet'].'></td>
             <td><input type="text" name="total" value='.$i['price'].'></td>
-            <td><input type="text" name="username" value='.$i['username'].'></td>
+            <td>'.$i['username'].'</td>
             <td><input type="text" name="travellers" value='.$i['travellers'].'></td>
             <td><input type="date" name="date_start" value='.$i['start'].'></td>
             <td><input type="date" name="date_end" value='.$i['end'].'></td>
@@ -25,7 +25,7 @@
             <input class="inv" type="text" value='.$i['booking_id'].'name="booking_id"/>
             <input class="good" type="submit" name="save_edit" value="submit">
             </form>
-            <form action="delete.php" method="POST">
+            <form action="functions_admin.php" method="POST">
                 <input class="inv" type="text" value='.$i['booking_id'].'name="booking_id"/>
                 <input class="bad" type="submit" name="delete" value="delete">
             </form></td>

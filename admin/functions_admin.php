@@ -6,14 +6,21 @@ include('admin_session.php');
             $stm->execute();
         }
         if(isset($_POST['deletereview'])){
-            $stm = $conn->prepare("DELETE FROM reviews WHERE ID = :review_id");
-            $stm->bindParam(":review_id", $_POST['ID'], PDO::PARAM_INT);
+            $stm = $conn->prepare("DELETE FROM reviews WHERE review_id = :review_id");
+            $stm->bindParam(":review_id", $_POST['review_id'], PDO::PARAM_INT);
             $stm->execute();
+            // header("Location: ../admin/reviews.php");
+            // exit();
+            var_dump($_POST);
         }
         if(isset($_POST['approvereview'])){
-            $stm = $conn->prepare("UPDATE reviews SET curated=1 WHERE ID = :review_id");
-            $stm->bindParam(":review_id", $_POST['ID'], PDO::PARAM_INT);
+            $stm = $conn->prepare("UPDATE reviews SET curated=1 WHERE review_id = :review_id");
+            $stm->bindParam(":review_id", $_POST['review_id'], PDO::PARAM_INT);
             $stm->execute();
+            // header("Location: ../admin/reviews.php");
+            // exit();
+            var_dump($_POST);
+            var_dump($_POST['review_id']);
         }
         if(isset($_POST['edit_user'])){
             $username   =   $_POST['username'];
@@ -43,6 +50,6 @@ include('admin_session.php');
             $stm->bindParam(":userid", $_POST['user_id'], PDO::PARAM_INT);
             $stm->execute();
         }
-        header("Location: ../admin/admin.php");
-        exit();
+        // header("Location: ../admin/admin.php");
+        // exit();
 ?>

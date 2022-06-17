@@ -22,7 +22,7 @@ include("../includes/connect.php");
             if ($res['admin'] == 1) {
                 $_SESSION['admin'] = true;
                 // $firstplanet = "SELECT planet_id FROM journeys ORDER BY planet ASC LIMIT 1";
-                header('location: ../admin/admin.php');
+                header('location: ../admin/reviews.php');
                 exit();
             } else {
                 header('location: ../private/account.php');
