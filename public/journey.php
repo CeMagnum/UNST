@@ -41,7 +41,7 @@ include('../includes/connect.php');
         <h1>".$i['planet']."</h1>
         <p>".$i['shortdescription']."</p></div>
         <div class='journey_buttons'>
-        <a class='journey_buttons_link' href=\"book.php?journey=".$i['planet']."\"><button class='journey_buttons_butn'>Information</button></a>
+        <a class='journey_buttons_link' href=\"../private/book.php?journey=".$i['planet']."\"><button class='journey_buttons_butn'>Information</button></a>
         </div></div></div>";
       }
     if(empty($result)){

@@ -28,16 +28,16 @@
         $blem->execute();
         $result = $blem->fetchAll(PDO::FETCH_ASSOC);
         foreach($result as $i){ echo '
-        <tr><form method="POST" action="delete.php">
+        <tr><form method="POST" action="functions_admin.php">
             <td><input type="text" name="planet" value="'.$i['planet'].'"/></td>
             <td><input type="text" name="price" value="'.$i['price'].'"/></td>
-            <td><img src="../../assets/img/planets/'.$i['planet'].'.png" alt="'.$i['planet'].'"> </td>
+            <td><img src="../assets/img/planets/'.$i['planet'].'.png" alt="'.$i['planet'].'"> </td>
             <td><textarea type="text" name="shortdescription">'.$i['shortdescription'].'</textarea></td>
             <td><textarea type="text" name="longdescription"/>'.$i['longdescription'].'</textarea></td>
             <td class="btns">
                 <input class="inv" type="text" name="planet_id" value="'.$i['planet_id'].'">
                 <input class="good" type="submit" name="editItem" value="Edit item"></form>
-            <form method="POST" action="delete.php">
+            <form method="POST" action="functions_admin.php">
                 <input class="inv" type="text" name="planet_id" value='.$i['planet_id'].'/>
                 <input class="bad" type="submit" name="delete" value="delete">
             </form>

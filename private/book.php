@@ -34,9 +34,10 @@ foreach($result as $i)
         How many travellers?    
     </h1>
     <br>
+    <form method='POST' action='functions_admin.php'>
     <div class='booking_slider_person'>
         <input type='range' name='rangeInput' onchange='updateTextInput(this.value);'min='1' max='10' step='1'value='1' id='slider_booking'>
-    <input type='text' value='1' readonly id='textInput'></p>
+        <input type='text' value='1' name='travellers'  readonly id='textInput'></p>
     </div>
     </div>
     <div class='booking_section'>
@@ -46,11 +47,11 @@ foreach($result as $i)
     <br>
     <div class='booking_date'>
         <p>From</p>    
-        <input type='date' id='currentDate' value='2022-05-25' min='2022-05-25' max='3000-12-31' >
+        <input type='date' name='start_date' id='currentDate' value='2022-05-25' min='2022-05-25' max='3000-12-31' >
     </div>
     <div class='booking_date'>
-        <p>to</p>    
-        <input type='date' id='currentDate2' value='2022-05-25' min='2022-05-25' max='3000-12-31'>
+        <p>to</p>
+        <input type='date' name='end_date' id='currentDate2' value='2022-05-25' min='2022-05-25' max='3000-12-31'>
     </div>
     </div>
     <div class='booking_section'>
@@ -58,8 +59,8 @@ foreach($result as $i)
         Go on a great journey!    
     </h1>
     <br>
-    <a class='booking_buttons_link' href='../private/arrived.php'><button class='booking_buttons_butn'>order!</button></a>
-    </div>
+    <button class='booking_buttons_link'><input type='submit' name='book' class='booking_buttons_butn' value='order!'/></button>
+    </div></form>
 
 </div></div></div>
 ";}

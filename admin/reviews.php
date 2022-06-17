@@ -22,13 +22,13 @@
             <td>'; if($i['curated']==1){echo'Approved';}else{echo'Pending';} echo '</td>
             <td class="btns">';
             if($i['curated']!=1){echo '
-            <form action="delete.php" method="POST">
-                <input class="inv" type="text" value='.$i['review_id'].'name="review_id"/>
+            <form action="functions_admin.php" method="POST">
+                <input class="inv" type="text" value="'.$i['review_id'].'"name="review_id"/>
                 <input class="good" type="submit" name="approvereview" value="accept">
             </form>';} echo'
-            <form action="delete.php" method="POST">
-                <input class="inv" type="text" value='.$i['review_id'].'name="review_id"/>
-                <input class="bad" type="submit" name="deletereview" value="decline">
+            <form action="functions_admin.php" method="POST">
+                <input class="inv" type="text" value="'.$i['review_id'].'"name="review_id"/>
+                <input class="bad" type="submit" name="deletereview" value="delete">
             </form></td>
         </tr>';}?>
     </table>
