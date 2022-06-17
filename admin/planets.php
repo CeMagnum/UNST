@@ -2,11 +2,10 @@
 <main>
     <h1>Add a planet</h1>
 
-    <div class="row">
+    <div class="row_planet">
         <div class="column">
-            <input type="text" name="name">
-            <input type="text" name="price">
-            <input type="text" name="img">
+            <input placeholder="planet" type="text" name="name">
+            <input placeholder="price" type="text" name="price">
         </div>
         <div class="column">
             <textarea name="shortdescription"></textarea>
