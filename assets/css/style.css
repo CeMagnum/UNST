@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Didact Gothic", sans-serif;
 }
 
 ::placeholder {
@@ -475,6 +476,7 @@ body {
   font-weight: 900;
   color: var(--red);
   text-transform: uppercase;
+  text-align: center;
 }
 
 .journey_search_div p {
@@ -626,6 +628,7 @@ body {
 
 .booking_img_img {
   height: 90%;
+  border-radius: 50%;
 }
 
 .booking_txt {
@@ -924,7 +927,7 @@ body {
 .contact_mail_name_input input[type="text"],
 .contact_mail_mail_txt_input input[type="text"] {
   font-size: 20px;
-  max-width: 350px;
+  max-width: max-content;
   width: 100%;
   height: 100%;
   border: none;
@@ -997,18 +1000,17 @@ body {
 
 /* login */
 .login_div {
-  position: fixed;
   width: 100%;
-  height: 100%;
+  height: 80vh;
   background-color: var(--bluegrey);
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .loggin_main {
   width: 50%;
-  height: auto;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1021,7 +1023,15 @@ body {
   font-size: 100px;
 }
 
-.loggin_log label {
+.loggin_form {
+  height: 80%;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  display: flex;
+}
+
+.loggin_form form label {
   font-family: "Rajdhani", sans-serif;
   font-size: 25px;
   font-weight: 600;
@@ -1029,23 +1039,17 @@ body {
   color: var(--white);
 }
 
-.loggin_form {
-  color: white;
-  font-size: 20px;
-  font-weight: 900;
-  display: flex;
-}
-
-.loggin_log {
+.loggin_form form {
   width: 300px;
-  height: auto;
+  height: 100%;
   display: flex;
   align-content: center;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 }
 
-.loggin_log input[type="submit"] {
+.loggin_form form input[type="submit"] {
   width: 150px;
   height: 50px;
   border-radius: 20px;
@@ -1056,7 +1060,7 @@ body {
   font-size: 20px;
 }
 
-.loggin_log input[type="submit"]:hover {
+.loggin_form form input[type="submit"]:hover {
   background-color: var(--yellow);
   border: none;
   cursor: pointer;
@@ -1152,6 +1156,7 @@ body {
   resize: none;
   border: none;
   border-radius: 20px;
+  font-size: 20px;
 }
 
 .arrvided_rev_txt_input textarea::placeholder {
@@ -1180,6 +1185,7 @@ body {
 }
 .arrvived_rev_star_input input[type="text"] {
   background-color: transparent;
+  width: 25px;
   border: none;
   font-family: "Rajdhani", sans-serif;
   font-size: 20px;
@@ -1557,6 +1563,10 @@ body {
   .booking_div {
     height: 1200px;
   }
+
+  .login_div {
+    align-items: flex-start;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1778,6 +1788,12 @@ body {
   .journey_txt h1 {
     font-size: 50px;
   }
+  .journey_buttons {
+    width: 40%;
+  }
+  .journey_buttons_link {
+    height: 65px;
+  }
 
   /* booking */
   .booking_div {
@@ -1794,6 +1810,16 @@ body {
     height: 150px;
     align-items: center;
     justify-content: center;
+  }
+  /* log */
+  .login_div {
+    flex-direction: column;
+    height: 1300px;
+    overflow-y: auto;
+  }
+  .loggin_main {
+    width: 100%;
+    height: 600px;
   }
 }
 
@@ -1819,10 +1845,135 @@ body {
   .journey_search_div h1 {
     font-size: 40px;
   }
+
+  /* login */
+
+  .login_div {
+    align-items: flex-start;
+  }
+  .loggin_txt p {
+    font-size: 80px;
+  }
+
+  .loggin_log label {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 550px) {
+  .home_landing_title_div {
+    height: 550px;
+  }
   .contact_link_section {
     width: 150px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar_link {
+    width: 90px;
+  }
+
+  .contact_link_section {
+    width: 130px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .navbar_main_div {
+    justify-content: center;
+  }
+
+  .navbar_middle_div {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .home_landing_txt p {
+    font-size: 17px;
+  }
+
+  .home_recenties_div {
+    height: 250px;
+  }
+
+  .recenties_txt_div p {
+    font-size: 16px;
+  }
+
+  .contact_info_div {
+    height: 1250px;
+  }
+  .contact_info_txt_div {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .slideshow-container {
+    width: 300px;
+    height: 300px;
+  }
+  .img_slideshow {
+    width: 300px;
+    height: 300px;
+  }
+  .footer_list h1 {
+    font-size: 16px;
+  }
+  .footer_list p {
+    font-size: 14px;
+  }
+  .recentie_content_txt p {
+    font-size: 15px;
+  }
+  .home_landing_title_div {
+    height: 480px;
+  }
+  .home_landing_txt p {
+    font-size: 15px;
+  }
+  .nav_form input[type="text"] {
+    width: 330px;
+  }
+  .contact_info_div {
+    height: 1500px;
+  }
+  .contact_info_txt_div {
+    height: 440px;
+  }
+  .contact_link_section {
+    width: 90px;
+    height: 50px;
+  }
+  .contact_link_butn {
+    font-size: 15px;
+    border: solid 2px var(--yellow);
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .foot_div {
+    height: 300px;
+  }
+  .footer_list {
+    width: 100%;
+    height: max-content;
+  }
+  .footer_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .navbar_link {
+    width: 20%;
+  }
+  .navbar_butn {
+    width: 100%;
+    font-size: 15px;
+  }
+  .contact_mail_name p,
+  .contact_mail_mail_txt p,
+  .contact_mail_message_txt p {
+    font-size: 25px;
   }
 }

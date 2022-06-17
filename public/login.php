@@ -1,4 +1,5 @@
-<?php include("../includes/header.php");
+<?php 
+include("../includes/header.php");
 include('../includes/connect.php');
 include("../includes/navbar.php") ?>
 <body>
@@ -9,11 +10,11 @@ include("../includes/navbar.php") ?>
           <p>Log in</p>
         </div>
         <div class="loggin_form">
-          <form class="loggin_log" action="../functions/login.php" method="post"> 
-            <label for="name">Username:</label><br>
-            <input type="text" id="name" name="username" autocomplete="off" placeholder="username here" ><br>
-            <label for="pass">Password:</label><br>
-            <input type="password" id="pass" name="password" autocomplete="off"><br>
+          <form action="../functions/login.php" method="post"> 
+            <label for="name">Username:</label>
+            <input type="text" id="name" name="username" autocomplete="off" placeholder="username here">
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="password" autocomplete="off">
             <input type="submit" id="button" name="login" value="Login">
           </form>
       </div>
@@ -22,15 +23,18 @@ include("../includes/navbar.php") ?>
       <div class="loggin_txt">
         <p>Register</p>
       </div>
-      <form class="loggin_log" action="../functions/register.php" method="post"> 
-            <label>Username:</label><br>
-            <input type="text" id="name" name="username" autocomplete="off"><br>
-            <label for="name">Email:</label><br>
-            <input type="text" id="email" name="email" autocomplete="off"><br>
-            <label for="pass">Password:</label><br>
-            <input type="password" id="pass" name="password" autocomplete="off"><br>
+      <div class="loggin_form">       
+      <form action="../functions/register.php" method="post"> 
+            <label>Username:</label>
+            <input type="text" id="name" name="username" autocomplete="off">
+            <label for="name">Email:</label>
+            <input type="text" id="email" name="email" autocomplete="off">
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="password" autocomplete="off">
             <input type="submit" id="button" name="Register" value="Register">
       </form> 
+      </div>
+
     </div>
  
 </div>
