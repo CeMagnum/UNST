@@ -1,9 +1,42 @@
 <?php
 include("../includes/connect.php");
-include("../includes/header.php"); 
-include("../includes/navbar.php");
-include('./user_session.php');
+include("../includes/header.php");
+include("./user_session.php");
 ?>
+<div class="navbar_main_div">
+  <div class="navbar_logo">
+    <a href="../index.php"
+      ><img src="../assets/img/logo2_small_WIP.png" alt="logo"
+    /></a>
+  </div>
+  <div class="navbar_middle_div">
+    <a class="navbar_link" href="../index.php">
+      <button class="navbar_butn">Home</button>
+    </a>
+    <a class="navbar_link" href="../public/journey.php">
+      <button class="navbar_butn">great journey</button>
+    </a>
+    <a class="navbar_link" href="../public/contact.php">
+      <button class="navbar_butn">Contact</button>
+    </a>
+    <?php
+      if(isset($_SESSION['user_id'])){
+          $user_id = (int) $_SESSION['user_id'];
+          $blem = $conn->prepare("SELECT username FROM users WHERE user_id = :userid");
+          $blem->bindParam(":userid", $user_id, PDO::PARAM_INT);
+          $blem->execute();
+          $result = $blem->fetchAll(PDO::FETCH_ASSOC);
+          echo "<a class='navbar_link' href='../private/account.php'>
+          <button class='navbar_butn'>Logged in as ".$result[0]['username']."</button></a>";
+      } else {
+          echo "<a class='navbar_link' href='../public/login.php'>
+          <button class='navbar_butn'>Login</button></a>";
+      }
+      ?>
+  </div>
+</div>
+<div class="navbar_space"></div>
+
 <title>UNST Book</title>
 <link rel="icon" type="image/x-icon" href="../assets/img/logo2_small_WIP.png">
 <?php
@@ -39,7 +72,7 @@ foreach($result as $i)
         How many travellers?    
     </h1>
     <br>
-    <form method='POST' action='functions_admin.php'>
+    <form method='POST' action='../functions/book.php'>
     <div class='booking_slider_person'>
         <input type='range' name='rangeInput' onchange='updateTextInput(this.value);'min='1' max='10' step='1'value='1' id='slider_booking'>
         <input type='text' value='1' name='travellers'  readonly id='textInput'></p>
@@ -52,11 +85,11 @@ foreach($result as $i)
     <br>
     <div class='booking_date'>
         <p>From</p>    
-        <input type='date' name='start_date' id='currentDate' value='2022-05-25' min='2022-05-25' max='3000-12-31' >
+        <input type='date' name='start' id='currentDate' value='2022-05-25' min='2022-05-25' max='3000-12-31' >
     </div>
     <div class='booking_date'>
         <p>to</p>
-        <input type='date' name='end_date' id='currentDate2' value='2022-05-25' min='2022-05-25' max='3000-12-31'>
+        <input type='date' name='end' id='currentDate2' value='2022-05-25' min='2022-05-25' max='3000-12-31'>
     </div>
     </div>
     <div class='booking_section'>
@@ -64,7 +97,7 @@ foreach($result as $i)
         Go on a great journey!    
     </h1>
     <br>
-   <input type='submit' name='book' class='booking_buttons_butn' value='order!'/>
+   <input type='submit' name='insert_booking' class='booking_buttons_butn' value='order!'/>
     </div></form>
 
 </div></div></div>
