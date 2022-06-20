@@ -3,6 +3,8 @@ include('../includes/header.php');
 include('../includes/connect.php');
 include('../includes/navbar.php');
 ?>
+<title>UNST Contact</title>
+<link rel="icon" type="image/x-icon" href="../assets/img/logo2_small_WIP.png">
 <div class="navbar_space"></div>
 <div class="contact_main_div">
   <div class="contact_info_div" id="information">
@@ -63,7 +65,7 @@ include('../includes/navbar.php');
       </a>
     </div>
     <div class="contact_link_section">
-      <a class="contact_link_link" href="https://github.com/CeMagnum/UNST">
+      <a class="contact_link_link" target="_blank" href="https://github.com/CeMagnum/UNST">
         <button class="contact_link_butn">link to our github</button>
       </a>
     </div>

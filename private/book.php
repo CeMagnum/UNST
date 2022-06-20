@@ -2,6 +2,10 @@
 include("../includes/connect.php");
 include("../includes/header.php"); 
 include("../includes/navbar.php");
+?>
+<title>UNST Book</title>
+<link rel="icon" type="image/x-icon" href="../assets/img/logo2_small_WIP.png">
+<?php
 $stm = $conn->prepare("SELECT * FROM journeys WHERE planet = :journey");
 $stm->bindParam(":journey", $_GET['journey'], PDO::PARAM_STR);
 $stm->execute();
