@@ -63,7 +63,7 @@ foreach($result as $i)
         Go on a great journey!    
     </h1>
     <br>
-    <button class='booking_buttons_link'><input type='submit' name='book' class='booking_buttons_butn' value='order!'/></button>
+   <input type='submit' name='book' class='booking_buttons_butn' value='order!'/>
     </div></form>
 
 </div></div></div>
