@@ -3,8 +3,9 @@ include("../includes/header.php");
 include('../includes/connect.php');
 include("../includes/navbar.php") ?>
 <body>
+<title>UNST Login</title>
+<link rel="icon" type="image/x-icon" href="../assets/img/logo2_small_WIP.png">
     <div class="login_div">
-      
       <div class="loggin_main">
         <div class="loggin_txt">
           <p>Log in</p>

@@ -2,8 +2,8 @@
 include('../includes/header.php');
 include('../includes/connect.php');
 ?>
-<title>Journey</title>
-<link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+<title>UNST Journey</title>
+<link rel="icon" type="image/x-icon" href="../assets/img/logo2_small_WIP.png">
 <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
 <?php include("../includes/navbar.php");?>
 <div class="journey_search_div" id="search">

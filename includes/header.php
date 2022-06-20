@@ -11,4 +11,5 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="../UNSCAirlines/assets/img/logo2_small_WIP.png">
 </head>

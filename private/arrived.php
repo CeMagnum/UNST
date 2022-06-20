@@ -1,6 +1,8 @@
 <?php
 include("../includes/header.php");
 ?>
+<title>UNST Arrived</title>
+<link rel="icon" type="image/x-icon" href="../assets/img/logo2_small_WIP.png">
 <div class="arrived_div">
     <div class="arrvived_rev_div">
         <form class="arrived_form" method="post" action="insert_review.php">

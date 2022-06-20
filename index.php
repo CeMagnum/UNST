@@ -3,8 +3,8 @@ include("includes/header.php");
 include("includes/connect.php");
 ?>
 <link rel="stylesheet" href="./assets/css/style.css">
-<title>UNST Landing</title>
-<link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+<title>Uninted Nations Space Travels</title>
+<link rel="icon" type="image/x-icon" href="../UNSCAirlines/assets/img/logo2_small_WIP.png">
 <body>
     <div class="navbar_main_div">
         <div class="navbar_logo">

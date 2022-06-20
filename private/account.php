@@ -1,5 +1,9 @@
 <?php include('../includes/header.php');
 include('../includes/connect.php');
+?>
+<title>UNST Account</title>
+<link rel="icon" type="image/x-icon" href="../assets/img/logo2_small_WIP.png">
+<?php
 session_start();
 if(!isset($_SESSION['user_id'])){
   header('location: ../public/login.php');
@@ -60,11 +64,10 @@ if(!isset($_SESSION['user_id'])){
           <p>".$result[0]['email']."</p>
           ";
       }?>
-      
-      <a href="..IDK LINK NAAR FORGOT PASSWORD">
-
-        <button>DELETE ACCOUTN</button>
-      </a>
+      <form action="POST">
+        <input class="invisible" type="text" value="BORIS DIE HIER EEN INSERT ACCOUNT ID PLZ">
+        <input type="submit" value="Request account deletion">
+      </form>
       <a href="../functions/logout.php">
         <button>Logout</button>
       </a>
