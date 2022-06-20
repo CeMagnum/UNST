@@ -1,16 +1,10 @@
-<?php include('../includes/header.php');
+<?php
+include('../includes/header.php');
 include('../includes/connect.php');
+include('./user_session.php');
 ?>
 <title>UNST Account</title>
 <link rel="icon" type="image/x-icon" href="../assets/img/logo2_small_WIP.png">
-<?php
-session_start();
-if(!isset($_SESSION['user_id'])){
-  header('location: ../public/login.php');
-  exit();;
-  var_dump($_SESSION);
-}
-?>
 <div class="navbar_main_div">
   <div class="navbar_logo">
     <a href="../index.php"
