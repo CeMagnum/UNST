@@ -1,4 +1,4 @@
-<?php include('./navbar_admin.php');?>
+<?php include('./includes/navbar_admin.php');?>
 <main>
     <h1>Accounts</h1>
     <table>

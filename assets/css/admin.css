@@ -138,6 +138,6 @@ input[type="submit"]:hover {
   flex-direction: column;
 }
 
-.column input[type="text"] {
-  border: solid 2px black;
+.column input[type="text"], textarea {
+  border: solid 2px grey;
 }
