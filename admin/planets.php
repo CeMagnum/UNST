@@ -1,7 +1,7 @@
 <?php include('./includes/navbar_admin.php');?>
 <main>
     <h1>Add a planet</h1>
-    <form action="functions_admin.php" method="POST">
+    <form action="./includes/functions_admin.php" method="POST">
         <div class="column">
                 <input placeholder="name" type="text" name="planet">
                 <input placeholder="price" type="text" name="price">
@@ -24,7 +24,7 @@
         $blem->execute();
         $result = $blem->fetchAll(PDO::FETCH_ASSOC);
         foreach($result as $i){ echo '
-        <tr><form method="POST" action="functions_admin.php">
+        <tr><form method="POST" action="./includes/functions_admin.php">
             <td><input type="text" name="planet" value="'.$i['planet'].'"/></td>
             <td><input type="text" name="price" value="'.$i['price'].'"/></td>
             <td><img src="../assets/img/planets/'.$i['planet'].'.png" alt="'.$i['planet'].'"> </td>
@@ -33,7 +33,7 @@
             <td class="btns">
                 <input class="inv" type="text" name="planet_id" value="'.$i['planet_id'].'">
                 <input class="good" type="submit" name="edit_planet" value="Edit item"></form>
-            <form method="POST" action="functions_admin.php">
+            <form method="POST" action="./includes/functions_admin.php">
                 <input class="inv" type="text" name="planet_id" value='.$i['planet_id'].'/>
                 <input class="bad" type="submit" name="delete_planet" value="delete">
             </form>
@@ -42,4 +42,4 @@
         ';}?>
     </table>
 </main>
-<?php include('./footer_admin.php');?>
+<?php include('./includes/footer_admin.php');?>

@@ -11,7 +11,7 @@
         $blem->execute();
         $result = $blem->fetchAll(PDO::FETCH_ASSOC);
         foreach($result as $i){echo '
-            <tr><form action="functions_admin.php" method="POST">
+            <tr><form action="./includes/functions_admin.php" method="POST">
                 <td><input type="text" name="username" value="'.$i['username'].'"></td>
                 <td><input type="text" name="email" value="'.$i['email'].'"></td>
                 <td>
@@ -23,7 +23,7 @@
                     <input class="inv" type="text" value='.$i['user_id'].' name="user_id"/>
                     <input class="good" type="submit" name="edit_user" value="save">
                 </form>
-                <form action="functions_admin.php" method="POST">
+                <form action="./includes/functions_admin.php" method="POST">
                     <input class="inv" type="text" value="'.$i['user_id'].'" name="user_id"/>
                     <input class="bad" type="submit" name="delete_user" value="delete">
                 </form></td>
@@ -31,4 +31,4 @@
         ';}?>
     </table>
 </main>
-<?php include('./footer_admin.php');?>
+<?php include('./includes/footer_admin.php');?>

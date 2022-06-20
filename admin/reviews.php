@@ -1,4 +1,4 @@
-<?php include('./navbar_admin.php');?>
+<?php include('includes/navbar_admin.php');?>
 
 <main>
     <h1>Reviews</h1>
@@ -22,11 +22,11 @@
             <td>'; if($i['curated']==1){echo'Approved';}else{echo'Pending';} echo '</td>
             <td class="btns">';
             if($i['curated']!=1){echo '
-            <form action="functions_admin.php" method="POST">
+            <form action="./includes/functions_admin.php" method="POST">
                 <input class="inv" type="text" value="'.$i['review_id'].'"name="review_id"/>
                 <input class="good" type="submit" name="approvereview" value="accept">
             </form>';} echo'
-            <form action="functions_admin.php" method="POST">
+            <form action="./includes/functions_admin.php" method="POST">
                 <input class="inv" type="text" value="'.$i['review_id'].'"name="review_id"/>
                 <input class="bad" type="submit" name="deletereview" value="delete">
             </form></td>
@@ -34,4 +34,4 @@
     </table>
 </main>
 
-<?php include('./footer_admin.php');?>
+<?php include('./includes/footer_admin.php');?>
