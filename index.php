@@ -98,7 +98,7 @@ include("includes/connect.php");
         foreach($result as $i)
         {echo "
             <div class='mySlides fade'>
-            <a href=\"public/book.php?journey=".$i['planet']."\"><img class='img_slideshow' src='assets/img/planets/".$i['planet'].".png'></a>
+            <a href=\"private/book.php?journey=".$i['planet']."\"><img class='img_slideshow' src='assets/img/planets/".$i['planet'].".png'></a>
             <div class='txt_slideshow'><h1>".$i['planet']."</h1><br><p>".$i['shortdescription']."</p></div>
             </div>
         ";}?>
