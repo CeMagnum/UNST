@@ -28,4 +28,5 @@
         <a href="../public/privacy_policy.php"><h1>privacy policy</h1></a>
     </div>
     </div>
+    <script src="./assets/js/scrollfunciton.js"></script>
 </footer></html>

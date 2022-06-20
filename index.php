@@ -2,6 +2,7 @@
 include("includes/header.php");
 include("includes/connect.php");
 ?>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <link rel="stylesheet" href="./assets/css/style.css">
 <title>Uninted Nations Space Travels</title>
 <link rel="icon" type="image/x-icon" href="../UNSCAirlines/assets/img/logo2_small_WIP.png">
@@ -146,7 +147,6 @@ include("includes/connect.php");
 </div>
 </div>     
 </div>
-<script src="./assets/js/carousel.js"></script>
 <footer class="foot_div">
     <div class="footer_left">
     <img src="./assets/img/logo2_WIP.png" alt="Pelican" />
@@ -180,5 +180,6 @@ include("includes/connect.php");
 </div>
 </footer>
 <script src="./assets/js/scrollfunciton.js"></script>
+<script src="./assets/js/carousel.js"></script>
 </body>
 </html>
