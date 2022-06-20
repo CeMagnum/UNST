@@ -8,8 +8,8 @@
             <input placeholder="price" type="text" name="price">
         </div>
         <div class="column">
-            <textarea name="shortdescription"></textarea>
-            <textarea name="longdescription"></textarea>
+            <textarea placeholder="Shortdescription" name="shortdescription"></textarea>
+            <textarea placeholder="Longdescription" name="longdescription"></textarea>
             <input class="good" type="submit" value="send" name="bttn">
         </div>
     </div>
