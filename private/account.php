@@ -64,9 +64,8 @@ if(!isset($_SESSION['user_id'])){
           <p>".$result[0]['email']."</p>
           ";
       }?>
-      <form action="POST">
-        <input class="invisible" type="text" value="BORIS DIE HIER EEN INSERT ACCOUNT ID PLZ">
-        <input type="submit" value="Request account deletion">
+      <form action="../functions/delete_account.php" method="POST">
+        <input type="submit" name="delete_account" value="Request account deletion">
       </form>
       <a href="../functions/logout.php">
         <button>Logout</button>

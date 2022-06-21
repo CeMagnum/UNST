@@ -14,5 +14,9 @@ if(isset($_POST['insert_booking'])){
     var_dump($_POST);
     echo "<br>";
     var_dump($_SESSION);
+    echo "<br>";
+    var_dump($planet_id);
+    echo "<br>";
+    var_dump($price);
 }
 ?>

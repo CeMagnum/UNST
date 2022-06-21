@@ -11,7 +11,7 @@ include("../includes/navbar.php") ?>
           <p>Log in</p>
         </div>
         <div class="loggin_form">
-          <form action="../functions/login.php" method="post"> 
+          <form action="../functions/login.php" method="POST"> 
             <label for="name">Username:</label>
             <input type="text" id="name" name="username" autocomplete="off" placeholder="username here">
             <label for="pass">Password:</label>
