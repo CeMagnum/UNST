@@ -29,9 +29,8 @@ if (empty($username || $password ||$email)) {
         $sql = "INSERT INTO `users` (`user_id`, `username`, `email`, `password`, `admin`) VALUES (NULL, '$username', '$email', '$password', '0');";
         echo $sql;
         $conn->prepare($sql)->execute();
-        session_start();
         echo "successfull!";
-        header('location: ../login.php');
+        header('location: ../public/login.php');
         exit();
     } else {
         echo 'This account exists already!';
