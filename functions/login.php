@@ -31,8 +31,9 @@ include("../includes/connect.php");
         }
         header('location: ../public/login.php');
         exit();
-    } else{
+    }
+     else{
     header('location: ../index.php');
     exit();
-}
+    }
 ?>

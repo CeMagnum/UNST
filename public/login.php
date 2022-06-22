@@ -16,7 +16,7 @@ include("../includes/navbar.php") ?>
             <input type="text" id="name" name="username" autocomplete="off" placeholder="username here">
             <label for="pass">Password:</label>
             <input type="password" id="pass" name="password" autocomplete="off">
-            <input type="submit" id="button"  onsubmit="return checkFilledlog()" name="login" value="Login">
+            <input type="submit" id="formlog"  onclick="checkFilledlog()" name="login" value="Login">
           </form>
       </div>
     </div>
@@ -32,7 +32,7 @@ include("../includes/navbar.php") ?>
             <input type="text" id="newemail" name="email" autocomplete="off">
             <label for="pass">Password:</label>
             <input type="password" id="newpass" name="password" autocomplete="off">
-            <input type="submit" id="button" onclick="IsEmpty()" name="Register" value="Register">
+            <input type="submit" id="buttonreg" onclick="checkFilledreg()" name="Register" value="Register">
       </form> 
       </div>
 
