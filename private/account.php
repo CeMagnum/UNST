@@ -2,7 +2,7 @@
 include('../includes/connect.php');
 ?>
 <title>UNST Account</title>
-<link rel="icon" type="image/x-icon" href="../assets/img/logo2_small_WIP.png">
+<link rel="icon" type="image/x-icon" href="../assets/img/logo2_small_WIP.png" />
 <?php
 session_start();
 if(!isset($_SESSION['user_id'])){
@@ -31,17 +31,18 @@ if(!isset($_SESSION['user_id'])){
       // session_start();
       if(isset($_SESSION['user_id'])){
           $user_id = (int) $_SESSION['user_id'];
-          $blem = $conn->prepare("SELECT username FROM users WHERE user_id = :userid");
-          $blem->bindParam(":userid", $user_id, PDO::PARAM_INT);
-          $blem->execute();
-          $result = $blem->fetchAll(PDO::FETCH_ASSOC);
-          echo "<a class='navbar_link' href='../private/account.php'>
-          <button class='navbar_butn'>Logged in as ".$result[0]['username']."</button></a>";
-      } else {
-          echo "<a class='navbar_link' href='../public/login.php'>
-          <button class='navbar_butn'>Login</button></a>";
-      }
-      ?>
+          $blem = $conn->prepare("SELECT username FROM users WHERE user_id =
+    :userid"); $blem->bindParam(":userid", $user_id, PDO::PARAM_INT);
+    $blem->execute(); $result = $blem->fetchAll(PDO::FETCH_ASSOC); echo "<a
+      class='navbar_link'
+      href='../private/account.php'
+    >
+      <button class='navbar_butn'>
+        Logged in as ".$result[0]['username']."
+      </button></a
+    >"; } else { echo "<a class='navbar_link' href='../public/login.php'>
+      <button class='navbar_butn'>Login</button></a
+    >"; } ?>
   </div>
 </div>
 <div class="navbar_space"></div>
@@ -49,23 +50,28 @@ if(!isset($_SESSION['user_id'])){
 <div class="acc_main_div">
   <div class="acc_left_div">
     <div class="acc_info">
-      <h1>Hello <?php 
+      <h1>
+        Hello
+        <?php 
       // session_start();
       if(isset($_SESSION['user_id'])){
           $user_id = (int) $_SESSION['user_id'];
           $blem = $conn->prepare("SELECT * FROM users WHERE user_id = :userid");
-          $blem->bindParam(":userid", $user_id, PDO::PARAM_INT);
-          $blem->execute();
-          $result = $blem->fetchAll(PDO::FETCH_ASSOC);
-          echo "".$result[0]['username']."</h1>
-          <p>username:</p>
-          <p>".$result[0]['username']."</p>
-          <p>email:</p>
-          <p>".$result[0]['email']."</p>
-          ";
-      }?>
+        $blem->bindParam(":userid", $user_id, PDO::PARAM_INT); $blem->execute();
+        $result = $blem->fetchAll(PDO::FETCH_ASSOC); echo
+        "".$result[0]['username']."
+      </h1>
+      <p>username:</p>
+      <p>".$result[0]['username']."</p>
+      <p>email:</p>
+      <p>".$result[0]['email']."</p>
+      "; }?>
       <form action="../functions/delete_account.php" method="POST">
-        <input type="submit" name="delete_account" value="Request account deletion">
+        <input
+          type="submit"
+          name="delete_account"
+          value="Request account deletion"
+        />
       </form>
       <a href="../functions/logout.php">
         <button>Logout</button>
@@ -81,14 +87,16 @@ if(!isset($_SESSION['user_id'])){
       $blem->bindParam(":userid", $user_id, PDO::PARAM_INT);
       $blem->execute();
       $result = $blem->fetchAll(PDO::FETCH_ASSOC);
-      foreach($result as $i)
-      {echo '
-      <div class="book_card">
+      foreach($result as $i){
+        echo '
+        <div class="book_card">
         <div class="card_content">
           <p>'.$i["username"].'</p>
           <p>'.$i["planet"].'</p>
           <p>'.$i["start"].'</p>
           <p>'.$i["end"].'</p>
+          <a href="BORIS MAAK HIER EEN DELETE .PHP DING">
+          <button>Cancel journey</button></a>
         </div>
       </div>
       ';}?>

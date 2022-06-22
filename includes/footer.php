@@ -6,7 +6,7 @@
     <div class="footer_list">
         <a href="../index.php"><h1>Home</h1></a>
         <hr class="footer_hr" />
-        <a href="../index.php#landing"><p>Landing</p></a>
+        <a href="../index.php#landing"><p>landing</p></a>
         <a href="../index.php#info"><p>quick facts</p></a>
         <a href="../index.php#top_location"><p>top locatations</p></a>
         <a href="../index.php#recenties"><p>reviews</p></a>
@@ -21,7 +21,6 @@
         <a href="../public/contact.php"><h1>Contact</h1></a>
         <hr class="footer_hr" />
         <a href="../public/contact.php#information"><p>information</p></a>
-        <a href="../public/contact.php#message"><p>contact us</p></a>
     </div>
     
     <div class="footer_list">

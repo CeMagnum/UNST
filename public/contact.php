@@ -50,7 +50,7 @@ include('../includes/navbar.php');
     </div>
     <div class="contact_info_txt_div">
       <div class="contact_info_title">
-        <h1>waarom jij met ons mee moet doen</h1>
+        <h1>Join us!</h1>
       </div>
       <div class="contact_info_txt">
         <p>

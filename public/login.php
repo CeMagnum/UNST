@@ -16,7 +16,7 @@ include("../includes/navbar.php") ?>
             <input type="text" id="name" name="username" autocomplete="off" placeholder="username here">
             <label for="pass">Password:</label>
             <input type="password" id="pass" name="password" autocomplete="off">
-            <input type="submit" id="button" name="login" value="Login">
+            <input type="submit" id="formlog"  onclick="checkFilledlog()" name="login" value="Login">
           </form>
       </div>
     </div>
@@ -27,18 +27,18 @@ include("../includes/navbar.php") ?>
       <div class="loggin_form">       
       <form action="../functions/register.php" method="post"> 
             <label>Username:</label>
-            <input type="text" id="name" name="username" autocomplete="off">
+            <input type="text" id="newname" name="username" autocomplete="off">
             <label for="name">Email:</label>
-            <input type="text" id="email" name="email" autocomplete="off">
+            <input type="text" id="newemail" name="email" autocomplete="off">
             <label for="pass">Password:</label>
-            <input type="password" id="pass" name="password" autocomplete="off">
-            <input type="submit" id="button" name="Register" value="Register">
+            <input type="password" id="newpass" name="password" autocomplete="off">
+            <input type="submit" id="buttonreg" onclick="checkFilledreg()" name="Register" value="Register">
       </form> 
       </div>
 
     </div>
  
 </div>
-<!-- <script src="../assets/js/fieldvalidation.js"></script> -->
+<script src="../assets/js/checkbox.js"></script>
 </body>
 </html>

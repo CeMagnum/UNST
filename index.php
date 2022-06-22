@@ -43,23 +43,16 @@ include("includes/connect.php");
 <div class="navbar_space"></div>
 <div class="home_landing_title_div" id="landing">
     <div class="home_landing_title">
-        <!-- <h1>Welcome to</h1>
-        <br>
-        <h1>United Nations Space Travels</h1>
-        <p>We help create the greatest journeys</p>  -->
     </div>
    <div class="home_landing_txt">
+    <a href="./functions/logout.php">logout</a>
     <p>
-
-       <a href="./functions/logout.php">logout</a>
         We are very pleased for picking our space flight industry. We know that we are one of few
         so we try to give you the highest quality travels. Our transport is top of the line, the best of the best for the best from the best
         . Bring your friends and family, contribute to our great liniage. Whe have top of the line staff, Specificly chosen and [REDACTED] to suit our needs
         Many journeys await you along with great memmories, experiences and joy! 
     </p> 
-    <a href="private/base.php">private</a>
    </div>
-
 </div>
 <div class="home_info_div" id="info">
     <div class="home_info_section">
@@ -155,26 +148,25 @@ include("includes/connect.php");
     <div class="footer_list">
         <a href="index.php"><p>Home</p></a>
         <hr class="footer_hr" />
-        <a href="index.php#landing"><p>Landing</p></a>
+        <a href="index.php#landing"><p>landing</p></a>
         <a href="index.php#info"><p>information</p></a>
         <a href="index.php#top_location"><p>top locatations</p></a>
         <a href="index.php#recenties"><p>reviews</p></a>
     </div>
     <div class="footer_list">
-    <a href="../public/journey.php"><h1>journey</h1></a>
+    <a href="./public/journey.php"><h1>journey</h1></a>
     <hr class="footer_hr" />
-    <a href="../public/journey.php#search"><p>search journey</p></a>
-    <a href="../public/journey.php#journey"><p>destinations</p></a>
+    <a href="./public/journey.php#search"><p>search journey</p></a>
+    <a href="./public/journey.php#journey"><p>destinations</p></a>
     </div>
 <div class="footer_list">
-    <a href="../public/contact.php"><h1>Contact</h1></a>
+    <a href="./public/contact.php"><h1>Contact</h1></a>
     <hr class="footer_hr" />
-    <a href="../public/contact.php#information"><p>information</p></a>
-    <a href="../public/contact.php#message"><p>contact us</p></a>
+    <a href="./public/contact.php#information"><p>information</p></a>
 </div>
 
 <div class="footer_list">
-    <a href="../public/privacy_policy.php"><h1>privacy policy</h1></a>
+    <a href="./public/privacy_policy.php"><h1>privacy policy</h1></a>
 </div>
 </div>
 </div>
