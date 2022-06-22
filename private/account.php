@@ -76,8 +76,9 @@ if(!isset($_SESSION['user_id'])){
     <div class="acc_booked">
       <h1>Planned bookings</h1>
       <!-- PHP start here -->
-      <?php 
-      $blem = $conn->prepare('SELECT bookings.booking_id, users.username, journeys.planet, bookings.start, bookings.end FROM bookings INNER JOIN users ON bookings.user_id=users.user_id INNER JOIN journeys ON bookings.planet_id=journeys.planet_id;');
+      <?php
+      $blem = $conn->prepare('SELECT bookings.booking_id, users.username, journeys.planet, bookings.start, bookings.end FROM bookings INNER JOIN users ON bookings.user_id=users.user_id INNER JOIN journeys ON bookings.planet_id=journeys.planet_id WHERE bookings.user_id = :userid;');
+      $blem->bindParam(":userid", $user_id, PDO::PARAM_INT);
       $blem->execute();
       $result = $blem->fetchAll(PDO::FETCH_ASSOC);
       foreach($result as $i)
@@ -97,7 +98,8 @@ if(!isset($_SESSION['user_id'])){
     <div class="acc_rev">
       <h1>Written Reviews</h1>
       <?php 
-      $blem = $conn->prepare('SELECT reviews.review_id, journeys.planet, reviews.text, reviews.stars FROM reviews INNER JOIN journeys ON reviews.planet_id=journeys.planet_id;');
+      $blem = $conn->prepare('SELECT reviews.review_id, journeys.planet, reviews.text, reviews.stars FROM reviews INNER JOIN journeys ON reviews.planet_id=journeys.planet_id WHERE reviews.user_id = :userid;');
+      $blem->bindParam(":userid", $user_id, PDO::PARAM_INT);
       $blem->execute();
       $result = $blem->fetchAll(PDO::FETCH_ASSOC);
       foreach($result as $i)

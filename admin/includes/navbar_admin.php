@@ -15,5 +15,4 @@
         <a href="./accounts.php"><h1>Accounts</h1></a>
         <a href="./bookings.php"><h1>Bookings</h1></a>
         <a href="./planets.php"><h1>Planets</h1></a>
-        <a href="./"><h1>FIVE</h1></a>
     </nav>
