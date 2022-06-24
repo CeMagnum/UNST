@@ -97,11 +97,13 @@ foreach($result as $i)
         Go on a great journey!    
     </h1>
     <br>
-   <input type='submit' name='insert_booking' class='booking_buttons_butn' value='order!'/>
+    <input type='text' class='invisible' name='journey' value='".$_GET['journey']."'/>
+    <input type='submit' name='insert_booking' class='booking_buttons_butn' value='order!'/>
     </div></form>
 
 </div></div></div>
 ";}
+var_dump($_GET);
 
 ?>
 
