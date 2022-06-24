@@ -22,7 +22,7 @@ if (empty($username || $password ||$email)) {
     echo "All fields must be filled!";
     header('location: ../index.php');
     exit();
-} else if (isset($_POST['Register'])) {
+} else if (isset($_POST)) {
     $usernamecheck = $conn->prepare( "SELECT * FROM users where username = :username");
     $usernamecheck->bindParam(":username", $_POST['username'], PDO::PARAM_STR);
     $usernamecheck->execute();

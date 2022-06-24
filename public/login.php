@@ -16,7 +16,7 @@ include("../includes/navbar.php") ?>
             <input type="text" id="name" name="username" autocomplete="off" placeholder="username here">
             <label for="pass">Password:</label>
             <input type="password" id="pass" name="password" autocomplete="off">
-            <input type="submit" id="formlog"  name="login" value="Login">
+            <input type="submit" id="formlog" name="login" value="Login">
           </form>
       </div>
     </div>

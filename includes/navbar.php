@@ -18,13 +18,13 @@
       include('../includes/connect.php');
       session_start();
       if(isset($_SESSION['user_id'])){
-          $user_id = (int) $_SESSION['user_id'];
+          $user_id = $_SESSION['user_id'];
           $blem = $conn->prepare("SELECT username FROM users WHERE user_id = :userid");
           $blem->bindParam(":userid", $user_id, PDO::PARAM_INT);
           $blem->execute();
-          $result = $blem->fetchAll(PDO::FETCH_ASSOC);
+          $result = $blem->fetch(PDO::FETCH_ASSOC);
           echo "<a class='navbar_link' href='../private/account.php'>
-          <button class='navbar_butn'>".$result[0]['username']."</button></a>";
+          <button class='navbar_butn'>".$result['username']."</button></a>";
       } else {
           echo "<a class='navbar_link' href='../public/login.php'>
           <button class='navbar_butn'>Login</button></a>";

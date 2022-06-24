@@ -1,15 +1,14 @@
 <?php
 include("../includes/connect.php");
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
     // $qu = "SELECT * FROM users WHERE 'username' = $username"; 
 
     // Ophalen userID, password en admin 
     // password om daarna te controleren of die klopt met het ingevoerde wachtwoord (password_verify)
     // Als die kloppen, dan controleren of admin 0 of 1 is, zodat je weet of je de sessioN_admin op true moet zetten
     // dan sturen naar de juiste pagina, bij admin kan dat de backend zijn, bij user kan het de frontend zijn
-    if(isset($_POST['login'])){
+    if(isset($_POST)){
+        $username = $_POST['username'];
+        $password = $_POST['password'];
         $sql = "SELECT user_id, admin, password FROM users WHERE username = :username";
         $usercheck = $conn->prepare($sql);
         $usercheck->bindParam(":username", $username, PDO::PARAM_STR);
