@@ -91,8 +91,7 @@ body {
   align-items: center;
 }
 .navbar_link {
-  min-width: 250px;
-  max-width: max-content;
+  width: 250px;
   height: 100%;
   background-color: transparent;
 }
@@ -698,7 +697,10 @@ body {
 
 .booking_slider_person {
   width: 95%;
-  height: 40px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .booking_slider_person input[type="text"] {
@@ -791,13 +793,13 @@ input[type="range"]::-ms-fill-upper {
   border-radius: 15.4px;
 }
 input[type="range"]::-ms-thumb {
-  width: 16px;
-  height: 42px;
-  background: #ff4bff;
-  border: 2.5px solid rgba(0, 0, 0, 0);
+  margin-top: -15.2px;
+  width: 15px;
+  height: 40px;
+  background: var(--red);
   border-radius: 6px;
   cursor: pointer;
-  margin-top: 0px;
+  -webkit-appearance: none;
 }
 input[type="range"]:focus::-ms-fill-lower {
   background: #0071a9;
@@ -844,6 +846,25 @@ input[type="range"]:focus::-ms-fill-upper {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.booking_date {
+  width: 100%;
+}
+.booking_date input[type="date"] {
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid var(--white);
+  font-size: 20px;
+  color: var(--white);
+}
+.form_date {
+  width: 90%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .credits {
@@ -1583,6 +1604,14 @@ input[type="range"]:focus::-ms-fill-upper {
 .invisible {
   display: none;
 }
+
+input[type="date"] {
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid var(--white);
+  color: var(--white);
+}
 /* js css ----------------------------------------------------------- */
 
 #myBtn {
@@ -1672,6 +1701,11 @@ input[type="range"]:focus::-ms-fill-upper {
 
   .journey_txt p {
     font-size: 18px;
+  }
+
+  .journey_main_div {
+    width: 100%;
+    scroll-behavior: auto;
   }
 
   .aspect_div {
@@ -1767,6 +1801,10 @@ input[type="range"]:focus::-ms-fill-upper {
   }
   .slideshow {
     width: auto;
+  }
+
+  .navbar_link {
+    min-width: none;
   }
 
   .home_info_section {
@@ -1875,6 +1913,12 @@ input[type="range"]:focus::-ms-fill-upper {
     width: 100%;
     height: 600px;
   }
+  .acc_booked h1 {
+    font-size: 40px;
+  }
+  .acc_rev h1 {
+    font-size: 30px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1884,6 +1928,7 @@ input[type="range"]:focus::-ms-fill-upper {
   }
   .navbar_link {
     width: 100px;
+    min-width: none;
   }
 
   .navbar_butn {
@@ -2032,5 +2077,11 @@ input[type="range"]:focus::-ms-fill-upper {
   .contact_mail_mail_txt p,
   .contact_mail_message_txt p {
     font-size: 25px;
+  }
+  .acc_booked h1 {
+    font-size: 30px;
+  }
+  .acc_rev h1 {
+    font-size: 30px;
   }
 }

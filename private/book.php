@@ -27,7 +27,7 @@ include("./user_session.php");
           $blem->execute();
           $result = $blem->fetchAll(PDO::FETCH_ASSOC);
           echo "<a class='navbar_link' href='../private/account.php'>
-          <button class='navbar_butn'>Logged in as ".$result[0]['username']."</button></a>";
+          <button class='navbar_butn'>".$result[0]['username']."</button></a>";
       } else {
           echo "<a class='navbar_link' href='../public/login.php'>
           <button class='navbar_butn'>Login</button></a>";
@@ -72,10 +72,10 @@ foreach($result as $i)
         How many travellers?    
     </h1>
     <br>
-    <form method='POST' action='../functions/book.php'>
+    <form class='form_date'  method='POST' action='../functions/book.php'>
     <div class='booking_slider_person'>
         <input type='range' name='rangeInput' onchange='updateTextInput(this.value);'min='1' max='10' step='1'value='1' id='slider_booking'>
-        <input type='text' value='1' name='travellers'  readonly id='textInput'></p>
+        <input type='text' value='1' name='travellers' readonly id='textInput'>
     </div>
     </div>
     <div class='booking_section'>

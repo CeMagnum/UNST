@@ -38,7 +38,7 @@ if(!isset($_SESSION['user_id'])){
       href='../private/account.php'
     >
       <button class='navbar_butn'>
-        Logged in as ".$result[0]['username']."
+        ".$result[0]['username']."
       </button></a
     >"; } else { echo "<a class='navbar_link' href='../public/login.php'>
       <button class='navbar_butn'>Login</button></a

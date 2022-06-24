@@ -31,7 +31,7 @@ include("includes/connect.php");
                 $blem->execute();
                 $result = $blem->fetchAll(PDO::FETCH_ASSOC);
                 echo "<a class='navbar_link' href='./private/account.php'>
-                <button class='navbar_butn'>Logged in as ".$result[0]['username']."</button></a>";
+                <button class='navbar_butn'>".$result[0]['username']."</button></a>";
             } else {
                 echo "<a class='navbar_link' href='./public/login.php'>
                 <button class='navbar_butn'>Login</button></a>";
