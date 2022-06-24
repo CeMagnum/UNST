@@ -35,7 +35,7 @@ include("./user_session.php");
       ?>
   </div>
 </div>
-<div class="navbar_space"></div>
+<div style="background-color: black;" class="navbar_space"></div>
 
 <title>UNST Book</title>
 <link rel="icon" type="image/x-icon" href="../assets/img/logo2_small_WIP.png">
@@ -103,7 +103,6 @@ foreach($result as $i)
 
 </div></div></div>
 ";}
-var_dump($_GET);
 
 ?>
 

@@ -715,22 +715,6 @@ body {
   color: var(--white);
 }
 
-/* .booking_slider_person input[type="text"]:active {
-  border: none;
-}
-
-.booking_slider_person input[type="range"] {
-  width: 100%;
-  height: 100%;
-  background-color: var(--lightblue);
-}
-
-.booking_slider_person input[type="range"]::-webkit-slider-thumb {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--lightblue);
-} */
 input[type="range"] {
   width: 100%;
   /* margin: 15.2px 0; */
@@ -766,12 +750,13 @@ input[type="range"]::-moz-range-track {
   cursor: pointer;
 }
 input[type="range"]::-moz-range-thumb {
-  width: 16px;
-  height: 42px;
-  background: #ff4bff;
-  border: 2.5px solid rgba(0, 0, 0, 0);
+  margin-top: -15.2px;
+  width: 15px;
+  height: 40px;
+  background: var(--red);
   border-radius: 6px;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 input[type="range"]::-ms-track {
   background: transparent;
@@ -782,16 +767,16 @@ input[type="range"]::-ms-track {
   height: 11.6px;
   cursor: pointer;
 }
-input[type="range"]::-ms-fill-lower {
+/* input[type="range"]::-ms-fill-lower {
   background: #004b71;
   border: 0;
   border-radius: 15.4px;
 }
 input[type="range"]::-ms-fill-upper {
-  background: #0071a9;
+  background: #var;
   border: 0;
   border-radius: 15.4px;
-}
+} */
 input[type="range"]::-ms-thumb {
   margin-top: -15.2px;
   width: 15px;
@@ -801,12 +786,12 @@ input[type="range"]::-ms-thumb {
   cursor: pointer;
   -webkit-appearance: none;
 }
-input[type="range"]:focus::-ms-fill-lower {
+/* input[type="range"]:focus::-ms-fill-lower {
   background: #0071a9;
 }
 input[type="range"]:focus::-ms-fill-upper {
   background: #0097e1;
-}
+} */
 
 .booking_buttons_link {
   width: 150px;
@@ -1718,7 +1703,6 @@ input[type="date"] {
     height: 300px;
   }
   /* contact */
-
   .contact_info_title h1 {
     font-size: 30px;
   }
