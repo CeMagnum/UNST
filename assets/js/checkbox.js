@@ -1,77 +1,73 @@
-function checkFilledlog() {
-  var inputname = document.getElementById("name").value;
-  var inputpass = document.getElementById("pass").value;
-  // name
-  console.log("ik werk met naam");
-  if (inputname == "") {
-    inputname.style.backgroundColor = "red";
-    alert("test lol2");
-  } else {
-    inputname.style.backgroundColor = "green";
-    alert("test lol1");
-  }
-  //   pass
-  if (inputpass == "") {
-    inputpass.style.backgroundColor = "red";
-    console.log("ik werk met naam");
-  } else {
-    inputpass.style.backgroundColor = "green";
-    console.log("ik werk met wachtwoord");
-  }
-  alert("ok kijken of dit werkt");
-}
+const loginform = document.querySelector("#loginform");
 
-function checkFilledreg() {
-  var inputnewname = document.getElementById("newname").value;
-  var inputnewemail = document.getElementById("newemail").value;
-  var inputnewpass = document.getElementById("newpass").value;
-
-  alert("test lol");
-  //   newname
-  if (inputnewname == "") {
-    inputnewname.style.backgroundColor = "red";
-    console.log("ik werk met wachtwoord");
-  } else {
-    inputnewname.style.backgroundColor = "green";
-    console.log("ik werk met wachtwoord");
-  }
-  //   newemail
-  if (inputnewemail == "") {
-    inputnewemail.style.backgroundColor = "red";
-    console.log("ik werk met wachtwoord");
-  } else {
-    inputnewemail.style.backgroundColor = "green";
-    console.log("ik werk met wachtwoord");
-  }
-  //   newpass
-  if (inputnewpass == "") {
-    inputnewpass.style.backgroundColor = "red";
-  } else {
-    inputnewpass.style.backgroundColor = "green";
-  }
-}
-
-// epic
-
-// var forming = document.getElementById("formlog");
-// document.getElementById("buttonlog").addEventListener("click", function () {
-//   forming.submit();
-// });
-
-// nog epicer
-
-const input = document.querySelectorAll(".input");
-const button = document.querySelector("#formlog");
-console.log(button);
-button.addEventListener("click", (e) => {
+loginform.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  for (let i = 0; i < input.length; i++) {
-    if (!input[i].value.length) {
-      input[i].style.border = "10px solid red !important";
-    }
+  const inputname = document.getElementById("name");
+  const inputpass = document.getElementById("pass");
+
+  let errors = 0;
+
+  // name
+  if (inputname.value == "") {
+    inputname.style.border = "solid 5px var(--red)";
+    errors++;
+  } else {
+    inputname.style.border = "solid 5px var(--lightgreen)";
+  }
+
+  //   pass
+  if (inputpass.value == "") {
+    inputpass.style.border = "solid 5px var(--red)";
+    errors++;
+  } else {
+    inputpass.style.border = "solid 5px var(--lightgreen)";
+  }
+
+  if (!errors) {
+    loginform.submit();
+  } else {
+    alert("Vul de resterende velden in");
   }
 });
 
-const form = document.querySelector("form");
-form.sumbit();
+const registerform = document.querySelector("#registerform");
+
+registerform.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const inputnewname = document.getElementById("newname");
+  const inputnewemail = document.getElementById("newemail");
+  const inputnewpass = document.getElementById("newpass");
+
+  let errors = 0;
+
+  // name
+  if (inputnewname.value == "") {
+    inputnewname.style.border = "solid 5px var(--red)";
+    errors++;
+  } else {
+    inputnewname.style.border = "solid 5px var(--lightgreen)";
+  }
+
+  //   email
+  if (inputnewemail.value == "") {
+    inputnewemail.style.border = "solid 5px var(--red)";
+    errors++;
+  } else {
+    inputnewemail.style.border = "solid 5px var(--lightgreen)";
+  }
+  //   pass
+  if (inputnewpass.value == "") {
+    inputnewpass.style.border = "solid 5px var(--red)";
+    errors++;
+  } else {
+    inputnewpass.style.border = "solid 5px var(--lightgreen)";
+  }
+
+  if (!errors) {
+    registerform.submit();
+  } else {
+    alert("Vul de resterende velden in");
+  }
+});
