@@ -1,5 +1,6 @@
 <?php
 include("../includes/connect.php");
+<<<<<<< Updated upstream
     // $qu = "SELECT * FROM users WHERE 'username' = $username"; 
 
     // Ophalen userID, password en admin 
@@ -9,6 +10,11 @@ include("../includes/connect.php");
     if(isset($_POST)){
         $username = $_POST['username'];
         $password = $_POST['password'];
+=======
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+if(isset($_POST['login'])){
+>>>>>>> Stashed changes
         $sql = "SELECT user_id, admin, password FROM users WHERE username = :username";
         $usercheck = $conn->prepare($sql);
         $usercheck->bindParam(":username", $username, PDO::PARAM_STR);
