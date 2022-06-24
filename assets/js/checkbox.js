@@ -60,18 +60,18 @@ function checkFilledreg() {
 
 // nog epicer
 
-// const input = document.querySelectorAll(".input");
-// const button = document.querySelector("#formlog");
-// console.log(button);
-// button.addEventListener("click", (e) => {
-//   e.preventDefault();
+const input = document.querySelectorAll(".input");
+const button = document.querySelector("#formlog");
+console.log(button);
+button.addEventListener("click", (e) => {
+  e.preventDefault();
 
-//   for (let i = 0; i < input.length; i++) {
-//     if (!input[i].value.length) {
-//       input[i].style.border = "10px solid red !important";
-//     }
-//   }
-// });
+  for (let i = 0; i < input.length; i++) {
+    if (!input[i].value.length) {
+      input[i].style.border = "10px solid red !important";
+    }
+  }
+});
 
-// const form = document.querySelector("form");
-// form.sumbit();
+const form = document.querySelector("form");
+form.sumbit();
