@@ -5,13 +5,13 @@ include("../includes/header.php");
 <link rel="icon" type="image/x-icon" href="../assets/img/logo2_small_WIP.png">
 <div class="arrived_div">
     <div class="arrvived_rev_div">
-        <form class="arrived_form" method="post" action="insert_review.php">
+        <form class="arrived_form" method="POST" action="insert_review.php">
             <div class="arrived_txt">
                 <h1>Do you want to write a review?</h1>
             </div>
             <div class="arrvived_rev_txt_div">
               <div class="arrvived_txt">
-                <p>write your expreriance</p>
+                <p>write your experience</p>
               </div>
               <div class="arrvided_rev_txt_input">
                 <textarea name="text" placeholder="        type something here"></textarea>
@@ -30,10 +30,12 @@ include("../includes/header.php");
             </div>
             <div class="arrived_rev_butn">
                 <!-- <a href="../index.php"><button  class="arrived_butn1">no i do not want to leave a reveiuw</button></a> -->
-                <input class="arrived_butn1" type="submit" value="nosend" name="bttn">
-                <input class="arrived_butn2" type="submit" value="send" name="bttn">
+                
+                <input class="arrived_butn2" type="submit" value="send" name="insert_review">
+                </form>
+                <a href="../private/account.php" class="arrived_butn1" >nosend</a>
              </div>
-        </form>
+        
        
       </div>
 </div>

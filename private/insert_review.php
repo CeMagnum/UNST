@@ -1,22 +1,18 @@
 <?php
 include("../includes/connect.php");
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    $user = $_POST['userid'];
-    $planet = $_POST['planet_id'];
-    $text = $_POST['text'];
-    $stars = $_POST['stars'];
-    $sql = "INSERT INTO reviews (stars , username, planet, curated) VALUES ('$stars', '$user', '$planet', $text , 2)";
-    $sql1 = "SELECT username FROM users WHERE userid = $user";
-    $sql2 = "SELECT planet FROM journeys WHERE planet_id = $planet";
+session_start();
+if(!isset($_SESSION['user_id'])){
+  header('location: ../public/login.php');
+  exit();;
 }
 
-// if name = nosend{
-//       header('location: ../public/login.php');
-// exit();
-// }
-// 
-// 
-// 
-// 
-// 
+if (isset($_POST['insert_review'])){
+    $user_id = (int) $_SESSION['user_id'];
+    var_dump($user_id);
+    $planet_id = $_POST['planet_id'];
+    $text = $_POST['text'];
+    $stars = $_POST['stars'];
+    $sql = "INSERT INTO reviews (`stars` , `user_id`, `planet_id`, `text`) VALUES ('$stars', '$user_id', '$planet_id', $text)";
+    
+}
 ?>

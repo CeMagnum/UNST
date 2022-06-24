@@ -103,7 +103,6 @@ foreach($result as $i)
 
 </div></div></div>
 ";}
-var_dump($_GET);
 
 ?>
 
