@@ -1,5 +1,6 @@
 <?php
 include("../includes/connect.php");
+include("./user_session.php");
 if (isset($_POST['book'])){
     $travellers = $_POST['travellers'];
     $start = $_POST['start_date'];
@@ -17,4 +18,14 @@ if (isset($_POST['book'])){
         echo 'idk what happened';
     }
 } else {
-    echo "<br>";}?>
+    echo "<br>";}
+var_dump($_POST['booking_id']);
+if (isset($_POST['delete_booking'])){
+    $stm = $conn->prepare("DELETE FROM bookings WHERE `booking_id` = ".(int) $_POST['booking_id']."");
+    $stm->execute();
+    header("Location: ../bookings.php");
+    exit();
+}
+
+
+?>

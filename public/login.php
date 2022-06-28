@@ -11,7 +11,7 @@ include("../includes/navbar.php") ?>
           <p>Log in</p>
         </div>
         <div class="loggin_form">
-          <form action="../functions/login.php" method="POST" id='loginform'> 
+          <form action="../functions/login.php" method="POST"> 
             <label for="name">Username:</label>
             <input type="text" id="name" name="username" autocomplete="off" placeholder="username here">
             <label for="pass">Password:</label>
@@ -25,7 +25,7 @@ include("../includes/navbar.php") ?>
         <p>Register</p>
       </div>
       <div class="loggin_form">       
-      <form action="../functions/register.php" method="post" id="registerform"> 
+      <form action="../functions/register.php" method="POST"> 
             <label>Username:</label>
             <input type="text" id="newname" name="username" autocomplete="off">
             <label for="name">Email:</label>

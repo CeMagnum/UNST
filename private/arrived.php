@@ -1,5 +1,6 @@
 <?php
 include("../includes/header.php");
+include("./user_session.php");
 ?>
 <title>UNST Arrived</title>
 <link rel="icon" type="image/x-icon" href="../assets/img/logo2_small_WIP.png">
@@ -24,8 +25,8 @@ include("../includes/header.php");
               <div class="arrvived_rev_star_input">
                 <input type='range' name='rangeInput' onchange='updateTextInput(this.value);'min='1' max='5' step='1'value='5' id='slider_booking'>
                 <input type='text' name='stars' value='5' readonly id='textInput'>..</p>
-                <input class='invisible' type='text' name='userid' value='<?php echo $_GET['userid']?>'>
-                <input class='invisible' type='text' name='planet_id' value='<?php echo $_GET['planet_id']?>'>
+                <input class='invisible' type='text' name='user_id' value='<?php echo $_SESSION['user_id']?>'>
+                <input class='invisible' type='text' name='planet' value='<?php echo $_GET['journey']?>'>
               </div>
             </div>
             <div class="arrived_rev_butn">

@@ -83,21 +83,21 @@ if(!isset($_SESSION['user_id'])){
       <h1>Planned bookings</h1>
       <!-- PHP start here -->
       <?php
-      $blem = $conn->prepare('SELECT bookings.booking_id, users.username, journeys.planet, bookings.start, bookings.end FROM bookings INNER JOIN users ON bookings.user_id=users.user_id INNER JOIN journeys ON bookings.planet_id=journeys.planet_id WHERE bookings.user_id = :userid;');
+      $blem = $conn->prepare('SELECT bookings.booking_id, users.username, journeys.planet, bookings.start, bookings.end, bookings.booking_id FROM bookings INNER JOIN users ON bookings.user_id=users.user_id INNER JOIN journeys ON bookings.planet_id=journeys.planet_id WHERE bookings.user_id = :userid;');
       $blem->bindParam(":userid", $user_id, PDO::PARAM_INT);
       $blem->execute();
       $result = $blem->fetchAll(PDO::FETCH_ASSOC);
       foreach($result as $i){
         echo '
         <div class="book_card">
-        <div class="card_content">
+        <form action="./functions_private.php" method="POST" class="card_content">
           <p>'.$i["username"].'</p>
           <p>'.$i["planet"].'</p>
           <p>'.$i["start"].'</p>
           <p>'.$i["end"].'</p>
-          <a href="BORIS MAAK HIER EEN DELETE .PHP DING">
-          <button>Cancel journey</button></a>
-        </div>
+          <input type="text" class="invisible" name="booking_id" value="'.$i["booking_id"].'"/> 
+          <input type="submit" name="delete_booking" value="Cancel journey"/>
+        </form>
       </div>
       ';}?>
     </div>

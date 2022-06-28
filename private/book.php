@@ -22,8 +22,8 @@ include("./user_session.php");
     <?php
       if(isset($_SESSION['user_id'])){
           $user_id = (int) $_SESSION['user_id'];
-          $blem = $conn->prepare("SELECT username FROM users WHERE user_id = :userid");
-          $blem->bindParam(":userid", $user_id, PDO::PARAM_INT);
+          $blem = $conn->prepare("SELECT username FROM users WHERE user_id = :user_id");
+          $blem->bindParam(":user_id", $user_id, PDO::PARAM_INT);
           $blem->execute();
           $result = $blem->fetchAll(PDO::FETCH_ASSOC);
           echo "<a class='navbar_link' href='../private/account.php'>

@@ -91,8 +91,7 @@ include('admin_session.php');
             exit();
         }
         if(isset($_POST['delete_booked'])){
-            $stm = $conn->prepare("DELETE FROM users WHERE user_id = :userid");
-            $stm->bindParam(":userid", $_POST['user_id'], PDO::PARAM_INT);
+            $stm = $conn->prepare("DELETE FROM bookings WHERE `booking_id` = ".(int) $_POST['booking_id']."");
             $stm->execute();
             header("Location: ../bookings.php");
             exit();
