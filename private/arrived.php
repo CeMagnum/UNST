@@ -32,7 +32,7 @@ include("./user_session.php");
                 
                 <input class="arrived_butn2" type="submit" value="send" name="insert_review">
                 </form>
-                <a href="../private/account.php" class="arrived_butn1"><button>nosend</button></a>
+                <a href="../private/account.php" class="arrived_butn1">nosend</a>
              </div>
         
        
