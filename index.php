@@ -45,7 +45,6 @@ include("includes/connect.php");
     <div class="home_landing_title">
     </div>
    <div class="home_landing_txt">
-    <a href="./functions/logout.php">logout</a>
     <p>
         We are very pleased for picking our space flight industry. We know that we are one of few
         so we try to give you the highest quality travels. Our transport is top of the line, the best of the best for the best from the best
