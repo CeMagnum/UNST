@@ -1109,8 +1109,8 @@ input[type="range"]:focus::-ms-fill-upper {
   justify-content: space-evenly;
 }
 
-.arrvided_rev_txt_input textarea {
-  width: 800px;
+.arrvived_rev_txt_div textarea {
+  width: 90%;
   height: 150px;
   resize: none;
   border: none;
@@ -1134,12 +1134,13 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 
 .arrvived_rev_star_input {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .arrvived_rev_star_input input[type="range"] {
-  width: 500px;
+  width: 80%;
   height: 30px;
 }
 .arrvived_rev_star_input input[type="text"] {
@@ -1922,6 +1923,12 @@ input[type="date"] {
   }
   .acc_rev h1 {
     font-size: 30px;
+  }
+  .arrived_txt h1 {
+    font-size: 30px;
+  }
+  .arrvived_txt p {
+    font-size: 20px;
   }
 }
 

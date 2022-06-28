@@ -14,14 +14,10 @@ include("./user_session.php");
               <div class="arrvived_txt">
                 <p>write your experience</p>
               </div>
-              <div class="arrvided_rev_txt_input">
                 <textarea name="text" placeholder="        type something here"></textarea>
-              </div>
             </div>
             <div class="arrvived_rev_star_div">
-              <div class="arrvived_txt">
                 <p>rate out of 5</p>
-              </div>
               <div class="arrvived_rev_star_input">
                 <input type='range' name='rangeInput' onchange='updateTextInput(this.value);'min='1' max='5' step='1'value='5' id='slider_booking'>
                 <input type='text' name='stars' value='5' readonly id='textInput'>..</p>
