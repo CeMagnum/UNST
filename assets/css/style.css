@@ -722,7 +722,7 @@ input[type="range"] {
   -webkit-appearance: none;
 }
 input[type="range"]::-webkit-slider-runnable-track {
-  background: var(--lightblue);
+  background: var(--yellow);
   border: 0;
   border-radius: 7.7px;
   width: 100%;
@@ -739,10 +739,10 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
 input[type="range"]:focus::-webkit-slider-runnable-track {
-  background: var(--lightblue);
+  background: var(--yellow);
 }
 input[type="range"]::-moz-range-track {
-  background: var(--lightblue);
+  background: var(--yellow);
   border: 0;
   border-radius: 7.7px;
   width: 100%;
@@ -1165,13 +1165,28 @@ input[type="range"]:focus::-ms-fill-upper {
 .arrived_butn1 {
   width: 250px;
   height: 50px;
+}
+/* .arrived_butn1:hover {
+  background-color: var(--red);
+  border: var(--red) solid 7px;
+  transition: ease-in 0.1s;
+  color: var(--white);
+  box-shadow: 0px 0px 8px 4px var(--red);
+  cursor: pointer;
+} */
+
+.arrived_butn1 button {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  height: 100%;
   background-color: transparent;
   border: var(--red) solid 2px;
   transition: ease-in 0.3s;
   color: var(--white);
   border-radius: 4px;
 }
-.arrived_butn1:hover {
+.arrived_butn1 button:hover {
   background-color: var(--red);
   border: var(--red) solid 7px;
   transition: ease-in 0.1s;

@@ -17,7 +17,9 @@ include("./user_session.php");
                 <textarea name="text" placeholder="        type something here"></textarea>
             </div>
             <div class="arrvived_rev_star_div">
+            <div class="arrvived_txt">
                 <p>rate out of 5</p>
+                </div>
               <div class="arrvived_rev_star_input">
                 <input type='range' name='rangeInput' onchange='updateTextInput(this.value);'min='1' max='5' step='1'value='5' id='slider_booking'>
                 <input type='text' name='stars' value='5' readonly id='textInput'>..</p>
@@ -30,7 +32,7 @@ include("./user_session.php");
                 
                 <input class="arrived_butn2" type="submit" value="send" name="insert_review">
                 </form>
-                <a href="../private/account.php" class="arrived_butn1" >nosend</a>
+                <a href="../private/account.php" class="arrived_butn1"><button>nosend</button></a>
              </div>
         
        
