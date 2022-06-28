@@ -23,7 +23,7 @@ var_dump($_POST['booking_id']);
 if (isset($_POST['delete_booking'])){
     $stm = $conn->prepare("DELETE FROM bookings WHERE `booking_id` = ".(int) $_POST['booking_id']."");
     $stm->execute();
-    header("Location: ../bookings.php");
+    header("Location: ./account.php");
     exit();
 }
 
